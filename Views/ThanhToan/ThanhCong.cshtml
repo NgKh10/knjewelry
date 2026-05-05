@@ -1,0 +1,43 @@
+﻿@model knjewelry.Models.Entities.HoaDon
+@{
+    ViewData["Title"] = "Đặt hàng thành công - K&N JEWELRY";
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Đặt hàng thành công</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <div class="border p-5">
+                    <i class='bx bx-check-circle' style="font-size: 70px; color: #28a745;"></i>
+                    <h2 class="mt-3">ĐẶT HÀNG THÀNH CÔNG!</h2>
+                    <p class="lead">Cảm ơn bạn đã tin tưởng và mua sắm tại K&N Jewelry</p>
+
+                    <div class="alert alert-info mt-4 text-start">
+                        <p><strong> Mã đơn hàng:</strong> <span class="fw-bold">@Model.ma_hoa_don</span></p>
+                        <p><strong> Ngày đặt:</strong> @Model.thoi_gian_dat.ToString("dd/MM/yyyy HH:mm")</p>
+                        <p><strong> Tổng tiền:</strong> <span class="fw-bold text-danger">@string.Format("{0:N0}₫", Model.tong_tien)</span></p>
+                        <p><strong> Phương thức thanh toán:</strong> @Model.phuong_thuc_tt</p>
+                        <p><strong>📞 Chúng tôi sẽ liên hệ xác nhận đơn hàng trong thời gian sớm nhất!</strong></p>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="/" class="btn btn-black px-4">Về trang chủ</a>
+                        <a href="/SanPham" class="btn btn-outline-dark px-4 ms-2">Tiếp tục mua sắm</a>
+                        <a href="/TaiKhoan/DonHang" class="btn btn-outline-secondary px-4 ms-2">Xem đơn hàng</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

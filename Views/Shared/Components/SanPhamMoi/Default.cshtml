@@ -1,0 +1,31 @@
+﻿@model IEnumerable<knjewelry.Models.Entities.SanPham>
+
+@foreach (var product in Model)
+{
+    <div class="item">
+        <div class="item-entry">
+            <a href="/SanPham/Detail/@product.id_san_pham" class="product-item md-height bg-gray d-block">
+                <img src="@(product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")" alt="@product.ten_sp" class="img-fluid">
+            </a>
+            <h2 class="item-title"><a href="/SanPham/Detail/@product.id_san_pham">@product.ten_sp</a></h2>
+            <strong class="item-price">
+                @if (product.gia_khuyen_mai.HasValue)
+                {
+                    <del>@string.Format("{0:N0}₫", product.gia)</del>
+                    @string.Format("{0:N0}₫", product.gia_khuyen_mai)
+                }
+                else
+                {
+                    @string.Format("{0:N0}₫", product.gia)
+                }
+            </strong>
+            <div class="star-rating">
+                <span class="icon-star2 text-warning"></span>
+                <span class="icon-star2 text-warning"></span>
+                <span class="icon-star2 text-warning"></span>
+                <span class="icon-star2 text-warning"></span>
+                <span class="icon-star2 text-warning"></span>
+            </div>
+        </div>
+    </div>
+}

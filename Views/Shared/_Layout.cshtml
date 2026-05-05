@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - K&N JEWELRY</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miniver&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500&family=Quintessential&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"-->
+    <!-- Bootstrap từ lib -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/site.css?v=2" />
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body>
+    <div class="site-wrap">
+        @await Html.PartialAsync("_Header")
+
+        <main role="main">
+            @RenderBody()
+        </main>
+
+        @await Html.PartialAsync("_Footer")
+    </div>
+
+    <!-- JS từ lib -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS chính -->
+    <script src="~/js/site.js"></script>
+    <script src="~/js/cart.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'slide',
+            once: true
+        });
+
+        // Tìm kiếm
+        $('.js-search-open').click(function (e) {
+            e.preventDefault();
+            $('.search-wrap').addClass('active');
+        });
+
+        $('.js-search-close').click(function (e) {
+            e.preventDefault();
+            $('.search-wrap').removeClass('active');
+        });
+
+        // Menu mobile
+        $('.js-menu-toggle').click(function (e) {
+            e.preventDefault();
+            $('body').toggleClass('offcanvas-menu');
+        });
+    </script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

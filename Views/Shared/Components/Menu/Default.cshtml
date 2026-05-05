@@ -1,0 +1,29 @@
+﻿@model IEnumerable<knjewelry.Models.Entities.LoaiSanPham>
+
+@if (Model != null && Model.Any())
+{
+    <li class="has-children">
+        <a href="/SanPham">Sản phẩm <i class='bx bx-chevron-down'></i></a>
+        <ul class="dropdown">
+            @foreach (var category in Model)
+            {
+                if (category.LoaiCon != null && category.LoaiCon.Any())
+                {
+                    <li class="has-children">
+                        <a href="#">@category.ten_loai <i class='bx bx-chevron-right'></i></a>
+                        <ul class="dropdown">
+                            @foreach (var child in category.LoaiCon)
+                            {
+                                <li><a href="/SanPham?loaiId=@child.id_loai_sp">@child.ten_loai</a></li>
+                            }
+                        </ul>
+                    </li>
+                }
+                else
+                {
+                    <li><a href="/SanPham?loaiId=@category.id_loai_sp">@category.ten_loai</a></li>
+                }
+            }
+        </ul>
+    </li>
+}

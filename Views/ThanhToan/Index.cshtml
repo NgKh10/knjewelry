@@ -1,0 +1,134 @@
+﻿@model knjewelry.Models.ViewModels.ThanhToanViewModel
+@{
+    ViewData["Title"] = "Thanh toán - K&N JEWELRY";
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <a href="/GioHang">Giỏ hàng</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Thanh toán</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <form asp-action="HoanTat" method="post">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="border p-4">
+                        <h3 class="mb-4">Thông tin nhận hàng</h3>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="HoTen">Họ tên <span class="text-danger">*</span></label>
+                            <input asp-for="HoTen" class="form-control" />
+                            <span asp-validation-for="HoTen" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="Email">Email <span class="text-danger">*</span></label>
+                            <input asp-for="Email" class="form-control" type="email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="SoDienThoai">Số điện thoại <span class="text-danger">*</span></label>
+                            <input asp-for="SoDienThoai" class="form-control" />
+                            <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="TinhTP">Tỉnh/Thành phố <span class="text-danger">*</span></label>
+                            <input asp-for="TinhTP" class="form-control" />
+                            <span asp-validation-for="TinhTP" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="QuanHuyen">Quận/Huyện <span class="text-danger">*</span></label>
+                            <input asp-for="QuanHuyen" class="form-control" />
+                            <span asp-validation-for="QuanHuyen" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="PhuongXa">Phường/Xã <span class="text-danger">*</span></label>
+                            <input asp-for="PhuongXa" class="form-control" />
+                            <span asp-validation-for="PhuongXa" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="DiaChiCuThe">Địa chỉ cụ thể <span class="text-danger">*</span></label>
+                            <input asp-for="DiaChiCuThe" class="form-control" placeholder="Số nhà, đường" />
+                            <span asp-validation-for="DiaChiCuThe" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="GhiChu">Ghi chú</label>
+                            <textarea asp-for="GhiChu" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="border p-4">
+                        <h3 class="mb-4">Đơn hàng của bạn</h3>
+
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr><th>Sản phẩm</th><th>Số lượng</th><th>Thành tiền</th></tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.GioHang.DanhSachSanPham)
+                                {
+                                    <tr>
+                                        <td>@item.TenSanPham</td>
+                                        <td class="text-center">@item.SoLuong</td>
+                                        <td class="text-end">@string.Format("{0:N0}₫", item.ThanhTien)</td>
+                                    </tr>
+                                }
+                            </tbody>
+                            <tfoot>
+                                <tr><th colspan="2">Tạm tính</th><th>@string.Format("{0:N0}₫", Model.GioHang.TongTienHang)</th></tr>
+                                <tr><th colspan="2">Phí vận chuyển</th><th>@string.Format("{0:N0}₫", Model.GioHang.PhiVanChuyen)</th></tr>
+                                <tr class="table-active"><th colspan="2">Tổng cộng</th><th class="text-danger">@string.Format("{0:N0}₫", Model.GioHang.TongTien)</th></tr>
+                            </tfoot>
+                        </table>
+
+                        <div class="form-group mb-3">
+                            <label>Phương thức thanh toán</label>
+                            <div class="form-check">
+                                <input type="radio" asp-for="PhuongThucThanhToan" value="Chuyển khoản QR" class="form-check-input" id="qr" checked />
+                                <label class="form-check-label" for="qr">Chuyển khoản QR</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" asp-for="PhuongThucThanhToan" value="COD" class="form-check-input" id="cod" />
+                                <label class="form-check-label" for="cod">Thanh toán khi nhận hàng</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-black w-100 py-3">ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $('#btn-apply-coupon').click(function () {
+            var code = $('#MaGiamGia').val();
+            $.post('/GioHang/ApDungMaGiamGia', { maGiamGia: code }, function (res) {
+                if (res.success) {
+                    location.reload();
+                } else {
+                    alert(res.message);
+                }
+            });
+        });
+    </script>
+}

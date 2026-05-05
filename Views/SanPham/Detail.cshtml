@@ -1,0 +1,148 @@
+﻿@model knjewelry.Models.Entities.SanPham
+@{
+    ViewData["Title"] = Model.ten_sp + " - K&N JEWELRY";
+    var relatedProducts = ViewBag.RelatedProducts as IEnumerable<knjewelry.Models.Entities.SanPham> ?? new List<knjewelry.Models.Entities.SanPham>();
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <a href="/SanPham">Sản phẩm</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">@Model.ten_sp</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <!-- Hình ảnh -->
+            <div class="col-md-6">
+                <div class="border text-center bg-white p-4">
+                    <img src="@(Model.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")" alt="@Model.ten_sp" class="img-fluid" id="mainImage" style="max-height: 400px;">
+                </div>
+                @if (Model.HinhAnhs != null && Model.HinhAnhs.Count > 1)
+                {
+                    <div class="row mt-3">
+                        @foreach (var img in Model.HinhAnhs)
+                        {
+                            <div class="col-3">
+                                <img src="@img.duong_dan" alt="Thumb" class="img-fluid border p-1" style="height: 80px; width: 100%; object-fit: cover; cursor: pointer;" onclick="document.getElementById('mainImage').src = this.src">
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+
+            <!-- Thông tin -->
+            <div class="col-md-6">
+                <h2 class="text-black">@Model.ten_sp</h2>
+                <p class="text-muted">Mã: SP@(Model.id_san_pham.ToString("D6"))</p>
+
+                <div class="mb-4">
+                    @if (Model.gia_khuyen_mai.HasValue)
+                    {
+                        <span class="display-5 text-primary fw-bold">@string.Format("{0:N0}₫", Model.gia_khuyen_mai)</span>
+                        <span class="ms-2 text-muted"><del>@string.Format("{0:N0}₫", Model.gia)</del></span>
+                        <span class="badge bg-danger ms-2">-@((int)((Model.gia - Model.gia_khuyen_mai.Value) / Model.gia * 100))%</span>
+                    }
+                    else
+                    {
+                        <span class="display-5 text-primary fw-bold">@string.Format("{0:N0}₫", Model.gia)</span>
+                    }
+                </div>
+
+                <div class="mb-4">
+                    <p><strong>Chất liệu:</strong> @Model.ChatLieu?.ten_chat_lieu</p>
+                    <p><strong>Danh mục:</strong> @Model.LoaiSanPham?.ten_loai</p>
+                    @if (Model.trong_luong.HasValue)
+                    {
+                        <p><strong>Trọng lượng:</strong> @Model.trong_luong.Value.ToString("0.00") g</p>
+                    }
+                    <p><strong>Tình trạng:</strong> <span class="text-success">Còn hàng</span></p>
+                </div>
+
+                @if (Model.BienThes != null && Model.BienThes.Any(b => !string.IsNullOrEmpty(b.kich_co)))
+                {
+                    <div class="mb-4">
+                        <h5 class="mb-2">Kích cỡ</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            @foreach (var size in Model.BienThes.Where(b => !string.IsNullOrEmpty(b.kich_co)).Select(b => b.kich_co).Distinct())
+                            {
+                                <button class="btn-size btn btn-outline-secondary" data-size="@size">@size</button>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @if (Model.BienThes != null && Model.BienThes.Any(b => !string.IsNullOrEmpty(b.mau_sac)))
+                {
+                    <div class="mb-4">
+                        <h5 class="mb-2">Màu sắc</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            @foreach (var color in Model.BienThes.Where(b => !string.IsNullOrEmpty(b.mau_sac)).Select(b => b.mau_sac).Distinct())
+                            {
+                                <button class="btn-color btn btn-outline-secondary" data-color="@color">@color</button>
+                            }
+                        </div>
+                    </div>
+                }
+
+                <div class="mb-4">
+                    <h5 class="mb-2">Số lượng</h5>
+                    <div class="input-group" style="width: 130px;">
+                        <button class="btn btn-outline-secondary" type="button" id="btn-minus">-</button>
+                        <input id="quantity" class="form-control text-center" value="1" min="1" max="99">
+                        <button class="btn btn-outline-secondary" type="button" id="btn-plus">+</button>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <button class="btn btn-black px-5 py-2" id="btn-add-to-cart" data-id="@Model.id_san_pham">
+                        <i class='bx bx-cart-add'></i> Thêm vào giỏ
+                    </button>
+                    <button class="btn btn-outline-primary px-4 py-2 ms-2">
+                        <i class='bx bx-heart'></i> Yêu thích
+                    </button>
+                </div>
+
+                <div class="mt-5">
+                    <h5>Mô tả sản phẩm</h5>
+                    <p class="text-muted">@Html.Raw(Model.mo_ta)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (relatedProducts.Any())
+{
+    <div class="site-section bg-light">
+        <div class="container">
+            <div class="title-section text-center mb-5">
+                <h2>Sản phẩm liên quan</h2>
+            </div>
+            <div class="row">
+                @foreach (var product in relatedProducts)
+                {
+                    <div class="col-lg-3 col-md-6 item-entry mb-4">
+                        <a href="/SanPham/Detail/@product.id_san_pham" class="product-item d-block">
+                            <img src="@(product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")" alt="@product.ten_sp" class="img-fluid">
+                        </a>
+                        <h3 class="item-title mt-2"><a href="/SanPham/Detail/@product.id_san_pham">@product.ten_sp</a></h3>
+                        <div class="item-price">@string.Format("{0:N0}₫", product.gia_khuyen_mai ?? product.gia)</div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+}
+
+<script>
+    $('#btn-minus').click(function () { var qty = $('#quantity'); if (parseInt(qty.val()) > 1) qty.val(parseInt(qty.val()) - 1); });
+    $('#btn-plus').click(function () { var qty = $('#quantity'); if (parseInt(qty.val()) < 99) qty.val(parseInt(qty.val()) + 1); });
+    $('.btn-size, .btn-color').click(function () { $(this).siblings().removeClass('active'); $(this).addClass('active'); });
+</script>

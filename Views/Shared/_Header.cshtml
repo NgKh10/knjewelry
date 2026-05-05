@@ -1,0 +1,78 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var userName = Context.Session.GetString("UserName");
+    var userRole = Context.Session.GetString("UserRole");
+    var cartCount = Context.Session.GetInt32("CartCount") ?? 0;
+}
+
+<div class="site-navbar bg-white py-2">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="site-logo">
+                    <a href="/" class="js-logo-clone">K&N JEWELRY</a>
+                </div>
+            </div>
+
+            <!-- Menu chính -->
+            <div class="main-nav d-none d-lg-block">
+                <nav class="site-navigation" role="navigation">
+                    <ul class="site-menu">
+                        <li><a href="/">Trang chủ</a></li>
+                        @await Component.InvokeAsync("Menu")
+                        <li><a href="/LienHe">Liên hệ</a></li>
+                        <li><a href="/TraCuu">Tra cứu</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Icon bên phải (tìm kiếm, giỏ hàng, user) -->
+            <div class="icons">
+                <!-- Form tìm kiếm nhỏ gọn -->
+                <form action="/SanPham/Index" method="get" class="search-form-header">
+                    <div class="input-group input-group-sm">
+                        <input type="text" name="search" class="form-control"
+                               placeholder="Tìm kiếm..."
+                               value="@Context.Request.Query["search"]">
+                        <button class="btn btn-dark" type="submit">
+                            <i class='bx bx-search'></i>
+                        </button>
+                    </div>
+                </form>
+
+                <a href="/GioHang" class="icons-btn bag">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span class="number" id="cart-count">@cartCount</span>
+                </a>
+
+                @if (!string.IsNullOrEmpty(userName))
+                {
+                    <div class="dropdown d-inline-block">
+                        <a href="#" class="icons-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class='bx bx-user'></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="/TaiKhoan/ThongTin"><i class='bx bx-user me-2'></i>Tài khoản</a></li>
+                            <li><a class="dropdown-item" href="/TaiKhoan/DonHang"><i class='bx bx-package me-2'></i>Đơn hàng</a></li>
+                            <li><a class="dropdown-item" href="/TaiKhoan/DoiMatKhau"><i class='bx bx-key me-2'></i>Đổi mật khẩu</a></li>
+                            @if (userRole == "quan_tri")
+                            {
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="/Admin"><i class='bx bx-chart me-2'></i>Quản trị</a></li>
+                            }
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/TaiKhoan/DangXuat"><i class='bx bx-log-out me-2'></i>Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                }
+                else
+                {
+                    <a href="/TaiKhoan/DangNhap" class="icons-btn"><i class='bx bx-user'></i></a>
+                }
+            </div>
+        </div>
+    </div>
+</div>

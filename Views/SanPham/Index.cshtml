@@ -1,0 +1,202 @@
+﻿@model knjewelry.Models.ViewModels.DanhSachSanPhamViewModel
+@{
+    ViewData["Title"] = "Sản phẩm - K&N JEWELRY";
+}
+@if (ViewBag.GiaMin != null || ViewBag.GiaMax != null)
+{
+    <div class="container mt-3">
+        <div class="alert alert-info">
+            Đang lọc theo giá:
+            @string.Format("{0:N0}₫", ViewBag.GiaMin ?? 0) -
+            @string.Format("{0:N0}₫", ViewBag.GiaMax ?? 2000000)
+            <a href="/SanPham" class="float-end">Xóa lọc</a>
+        </div>
+    </div>
+}
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Sản phẩm</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-9 order-2">
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between align-items-center">
+                        <!--
+                            <div>
+                                <span>Tìm thấy <strong>@Model.DanhSachSanPham.Count()</strong> sản phẩm</span>
+                            </div>
+                            -->
+                            <!-- Sắp xếp theo -->
+                            <!-- Sắp xếp theo -->
+                            <div class="d-flex gap-2">
+                                <select class="form-select form-select-sm" id="sort-select" style="width: 150px;">
+                                    <option value="">Mặc định</option>
+                                    <option value="price-asc">Giá tăng dần</option>
+                                    <option value="price-desc">Giá giảm dần</option>
+                                    <option value="name-asc">Tên A-Z</option>
+                                    <option value="name-desc">Tên Z-A</option>
+                                </select>
+                            </div>
+
+                            <script>
+                                // Set selected value từ server
+                                var sortValue = '@ViewBag.Sort';
+                                if (sortValue && sortValue !== '') {
+                                    document.getElementById('sort-select').value = sortValue;
+                                }
+
+                                // Xử lý khi thay đổi select
+                                document.getElementById('sort-select').addEventListener('change', function () {
+                                    var sort = this.value;
+                                    var url = new URL(window.location.href);
+
+                                    if (sort) {
+                                        url.searchParams.set('sort', sort);
+                                    } else {
+                                        url.searchParams.delete('sort');
+                                    }
+
+                                    // Giữ lại các tham số khác
+                                    var loaiId = '@ViewBag.LoaiId';
+                                    var search = '@ViewBag.TuKhoa';
+                                    var giaMin = '@ViewBag.GiaMin';
+                                    var giaMax = '@ViewBag.GiaMax';
+
+                                    if (loaiId && loaiId !== '') url.searchParams.set('loaiId', loaiId);
+                                    if (search && search !== '') url.searchParams.set('search', search);
+                                    if (giaMin && giaMin !== '') url.searchParams.set('giaMin', giaMin);
+                                    if (giaMax && giaMax !== '') url.searchParams.set('giaMax', giaMax);
+
+                                    window.location.href = url.toString();
+                                });
+                            </script>
+
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    @foreach (var product in Model.DanhSachSanPham)
+                    {
+                        <div class="col-lg-4 col-md-6 item-entry mb-4">
+                            <a href="/SanPham/Detail/@product.id_san_pham" class="product-item d-block">
+                                <img src="@(product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "images/default.png")" alt="@product.ten_sp" class="img-fluid">
+                                @if (product.gia_khuyen_mai.HasValue)
+                                {
+                                    <span class="sale-badge">-@((int)((product.gia - product.gia_khuyen_mai.Value) / product.gia * 100))%</span>
+                                }
+                            </a>
+                            <h3 class="item-title mt-2"><a href="/SanPham/Detail/@product.id_san_pham">@product.ten_sp</a></h3>
+                            <div class="item-price">
+                                @if (product.gia_khuyen_mai.HasValue)
+                                {
+                                    <del>@string.Format("{0:N0}₫", product.gia)</del>
+                                    <span class="current-price ms-2">@string.Format("{0:N0}₫", product.gia_khuyen_mai)</span>
+                                }
+                                else
+                                {
+                                    <span class="current-price">@string.Format("{0:N0}₫", product.gia)</span>
+                                }
+                            </div>
+                            <button class="btn-add-cart mt-2 btn btn-sm btn-outline-dark w-100" data-id="@product.id_san_pham">
+                                <i class='bx bx-cart-add'></i> Thêm vào giỏ
+                            </button>
+                        </div>
+                    }
+                </div>
+
+                @if (Model.TongTrang > 1)
+                {
+                    <div class="row mt-5">
+                        <div class="col-md-12 text-center">
+                            <ul class="pagination justify-content-center">
+                                @if (Model.TrangHienTai > 1)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" href="@Url.Action("Index", new { page = Model.TrangHienTai - 1, loaiId = Model.LoaiId, search = Model.TuKhoa })">«</a>
+                                    </li>
+                                }
+
+                                @for (int i = 1; i <= Model.TongTrang; i++)
+                                {
+                                    if (i >= Model.TrangHienTai - 2 && i <= Model.TrangHienTai + 2)
+                                    {
+                                        <li class="page-item @(i == Model.TrangHienTai ? "active" : "")">
+                                            <a class="page-link" href="@Url.Action("Index", new { page = i, loaiId = Model.LoaiId, search = Model.TuKhoa })">@i</a>
+                                        </li>
+                                    }
+                                }
+
+                                @if (Model.TrangHienTai < Model.TongTrang)
+                                {
+                                    <li class="page-item">
+                                        <a class="page-link" href="@Url.Action("Index", new { page = Model.TrangHienTai + 1, loaiId = Model.LoaiId, search = Model.TuKhoa })">»</a>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                }
+
+            </div>
+            
+            <!-- Sidebar Filter -->
+            <div class="col-md-3 order-1 mb-5 mb-md-0">
+                <div class="border p-4 rounded mb-4">
+                    <h4 class="mb-3">Danh mục</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/SanPham">Tất cả</a></li>
+                        @await Component.InvokeAsync("DanhMucMenu")
+                    </ul>
+                </div>
+                
+                <div class="border p-4 rounded">
+                    <h4 class="mb-3">Khoảng giá</h4>
+                    <form method="get" action="/SanPham/Index" id="priceFilterForm">
+                        @if (ViewBag.LoaiId != null)
+                        {
+                            <input type="hidden" name="loaiId" value="@ViewBag.LoaiId" />
+                        }
+                        @if (!string.IsNullOrEmpty(ViewBag.TuKhoa))
+                        {
+                            <input type="hidden" name="search" value="@ViewBag.TuKhoa" />
+                        }
+                        @if (!string.IsNullOrEmpty(ViewBag.Sort))
+                        {
+                            <input type="hidden" name="sort" value="@ViewBag.Sort" />
+                        }
+
+                        <div class="mb-3">
+                            <label class="form-label small">Từ:</label>
+                            <input type="number" name="giaMin" class="form-control form-control-sm"
+                                   placeholder="0" value="@ViewBag.GiaMin" step="50000">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small">Đến:</label>
+                            <input type="number" name="giaMax" class="form-control form-control-sm"
+                                   placeholder="10.000.000" value="@ViewBag.GiaMax" step="50000">
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-sm w-100">Lọc theo giá</button>
+
+                        @if (ViewBag.GiaMin != null || ViewBag.GiaMax != null)
+                        {
+                            <a href="@Url.Action("Index", new { loaiId = ViewBag.LoaiId, search = ViewBag.TuKhoa, sort = ViewBag.Sort })"
+                               class="btn btn-outline-secondary btn-sm w-100 mt-2">Xóa lọc giá</a>
+                        }
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

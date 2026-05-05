@@ -1,0 +1,36 @@
+﻿@model IEnumerable<knjewelry.Models.Entities.SanPham>
+
+@foreach (var product in Model)
+{
+    <div class="col-lg-4 col-md-6 item-entry mb-4">
+        <a href="/SanPham/Detail/@product.id_san_pham" class="product-item md-height bg-gray d-block">
+            <img src="@(product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")" alt="@product.ten_sp" class="img-fluid">
+            @if (product.gia_khuyen_mai.HasValue)
+            {
+                <span class="sale-badge">-@((int)((product.gia - product.gia_khuyen_mai.Value) / product.gia * 100))%</span>
+            }
+        </a>
+        <h2 class="item-title"><a href="/SanPham/Detail/@product.id_san_pham">@product.ten_sp</a></h2>
+        @if (product.gia_khuyen_mai.HasValue)
+        {
+            <strong class="item-price">
+                <del>@string.Format("{0:N0}₫", product.gia)</del>
+                @string.Format("{0:N0}₫", product.gia_khuyen_mai)
+            </strong>
+        }
+        else
+        {
+            <strong class="item-price">@string.Format("{0:N0}₫", product.gia)</strong>
+        }
+        <div class="star-rating">
+            <span class="icon-star2 text-warning"></span>
+            <span class="icon-star2 text-warning"></span>
+            <span class="icon-star2 text-warning"></span>
+            <span class="icon-star2 text-warning"></span>
+            <span class="icon-star2 text-warning"></span>
+        </div>
+        <button class="btn-add-cart mt-2" data-id="@product.id_san_pham">
+            <i class='bx bx-shopping-bag'></i> Thêm vào giỏ
+        </button>
+    </div>
+}

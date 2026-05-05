@@ -1,0 +1,88 @@
+﻿@model knjewelry.Models.ViewModels.DangKyViewModel
+@{
+    ViewData["Title"] = "Đăng ký - K&N JEWELRY";
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Đăng ký</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="border p-5">
+                    <h3 class="mb-4 text-center">Đăng ký tài khoản</h3>
+
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="HoTen">Họ tên</label>
+                                    <input asp-for="HoTen" class="form-control">
+                                    <span asp-validation-for="HoTen" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Email">Email</label>
+                                    <input asp-for="Email" type="email" class="form-control">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="TenDangNhap">Tên đăng nhập</label>
+                                    <input asp-for="TenDangNhap" class="form-control">
+                                    <span asp-validation-for="TenDangNhap" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="SoDienThoai">Số điện thoại</label>
+                                    <input asp-for="SoDienThoai" class="form-control">
+                                    <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="MatKhau">Mật khẩu</label>
+                                    <input asp-for="MatKhau" type="password" class="form-control">
+                                    <span asp-validation-for="MatKhau" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="XacNhanMatKhau">Xác nhận mật khẩu</label>
+                                    <input asp-for="XacNhanMatKhau" type="password" class="form-control">
+                                    <span asp-validation-for="XacNhanMatKhau" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <label asp-for="DiaChi">Địa chỉ</label>
+                                    <input asp-for="DiaChi" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-black w-100 py-2">Đăng ký</button>
+                        </div>
+
+                        <div class="text-center mt-3">
+                            <p>Đã có tài khoản? <a href="/TaiKhoan/DangNhap">Đăng nhập ngay</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

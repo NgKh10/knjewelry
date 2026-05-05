@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Liên hệ - K&N JEWELRY";
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Liên hệ</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="border p-4">
+                    <h3 class="mb-4">Gửi tin nhắn cho chúng tôi</h3>
+
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["Success"]</div>
+                    }
+
+                    <form method="post">
+                        <div class="form-group mb-3">
+                            <label>Họ tên</label>
+                            <input type="text" name="hoTen" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Email</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Số điện thoại</label>
+                            <input type="tel" name="soDienThoai" class="form-control">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Tiêu đề</label>
+                            <input type="text" name="tieuDe" class="form-control" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label>Nội dung</label>
+                            <textarea name="noiDung" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-black">Gửi liên hệ</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="border p-4">
+                    <h3 class="mb-4">Thông tin liên hệ</h3>
+                    <div class="mb-4">
+                        <h5><i class='bx bx-map me-2'></i> Địa chỉ</h5>
+                        <p>236 Hoàng Quốc Việt, Phường Nghĩa Đô, Quận Cầu Giấy, Hà Nội</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class='bx bx-phone me-2'></i> Điện thoại</h5>
+                        <p>0901 234 567</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class='bx bx-envelope me-2'></i> Email</h5>
+                        <p>contact@knjewelry.vn</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5><i class='bx bx-time me-2'></i> Giờ làm việc</h5>
+                        <p>Thứ 2 - Chủ nhật: 8:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

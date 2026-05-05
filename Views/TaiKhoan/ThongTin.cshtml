@@ -1,0 +1,84 @@
+﻿@model knjewelry.Models.ViewModels.CapNhatThongTinViewModel
+@{
+    ViewData["Title"] = "Thông tin tài khoản";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Thông tin tài khoản</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar trái -->
+            <div class="col-md-3">
+                <div class="border p-3 mb-3">
+                    <h4 class="mb-3">Tài khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/TaiKhoan/ThongTin" class="text-black fw-bold">Thông tin cá nhân</a></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DonHang" class="text-black">Đơn hàng của tôi</a></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DoiMatKhau" class="text-black">Đổi mật khẩu</a></li>
+                        <li class="mb-2"><hr></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DangXuat" class="text-danger">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Nội dung chính -->
+            <div class="col-md-9">
+                <div class="border p-4">
+                    <h3 class="mb-4">Thông tin cá nhân</h3>
+
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["Success"]</div>
+                    }
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger">@TempData["Error"]</div>
+                    }
+
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <label asp-for="HoTen">Họ tên</label>
+                                    <input asp-for="HoTen" class="form-control" />
+                                    <span asp-validation-for="HoTen" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <label asp-for="Email">Email</label>
+                                    <input asp-for="Email" class="form-control" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label asp-for="SoDienThoai">Số điện thoại</label>
+                                    <input asp-for="SoDienThoai" class="form-control" />
+                                    <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group mb-3">
+                                    <label asp-for="DiaChi">Địa chỉ</label>
+                                    <input asp-for="DiaChi" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-black">Cập nhật</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
