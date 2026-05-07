@@ -53,6 +53,7 @@ C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\knjewel
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\knjewelry.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\knjewelry.RazorAssemblyInfo.cache
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\knjewelry.RazorAssemblyInfo.cs
+C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\knjewelry.sourcelink.json
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\obj\Debug\net8.0\staticwebassets\msbuild.knjewelry.Microsoft.AspNetCore.StaticWebAssets.props

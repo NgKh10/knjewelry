@@ -857,13 +857,13 @@ a, .item-title a, .list-unstyled li a, .dropdown li a {
 
 /* Form tìm kiếm trong header */
 .search-form-header {
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
     .search-form-header .input-group {
-        width: 220px;
+        width: 240px;
         border-radius: 30px;
-        overflow: hidden;
+       /*overflow: hidden;*/
     }
 
     .search-form-header .form-control {
@@ -872,11 +872,13 @@ a, .item-title a, .list-unstyled li a, .dropdown li a {
         font-size: 13px;
         padding: 6px 12px;
         height: 35px;
+        border-radius: 4px 0 0 4px;
     }
 
         .search-form-header .form-control:focus {
             border-color: #483925;
             box-shadow: none;
+            outline: none;
         }
 
     .search-form-header .btn {
@@ -887,11 +889,18 @@ a, .item-title a, .list-unstyled li a, .dropdown li a {
         padding: 0 12px;
         display: flex;
         align-items: center;
+        border-radius: 0 4px 4px 0;
     }
 
         .search-form-header .btn:hover {
             background: #2e2417;
         }
+
+    .input-group > .form-control,
+    .input-group > .btn {
+        position: relative;
+        z-index: 1;
+    }
 
 /* Icon buttons */
 .icons-btn {
