@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Jewelry.APIService\\Jewelry.APIService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Jewelry.AuthService\\Jewelry.AuthService.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\bin\Debug\net8.0\Jewelry.Entities.deps.json
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\bin\Debug\net8.0\Jewelry.Entities.dll
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\bin\Debug\net8.0\Jewelry.Entities.pdb
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.csproj.AssemblyReference.cache
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.AssemblyInfoInputs.cache
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.AssemblyInfo.cs
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.csproj.CoreCompileInputs.cache
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.dll
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\refint\Jewelry.Entities.dll
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.pdb
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Entities\obj\Debug\net8.0\ref\Jewelry.Entities.dll

@@ -1,0 +1,12 @@
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\bin\Debug\net8.0\Jewelry.Libs.deps.json
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\bin\Debug\net8.0\Jewelry.Libs.dll
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\bin\Debug\net8.0\Jewelry.Libs.pdb
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.csproj.AssemblyReference.cache
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.AssemblyInfoInputs.cache
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.AssemblyInfo.cs
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.csproj.CoreCompileInputs.cache
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.dll
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\refint\Jewelry.Libs.dll
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.pdb
+D:\Nam3\HK2\Cong_Nghe_Web\BTL\Jewelry\Jewelry.Libs\obj\Debug\net8.0\ref\Jewelry.Libs.dll
