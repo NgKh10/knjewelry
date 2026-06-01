@@ -1,4 +1,4 @@
-using knjewelry.Data;
+﻿using knjewelry.Data;
 using knjewelry.Repository;
 using knjewelry.Services;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +15,11 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddRouting(options =>
+{
+    options.LowercaseUrls = true;  // tự động chuyển URL thành chữ thường
+});
 
 // DbContext
 builder.Services.AddDbContext<TrangSucBacContext>(options =>
@@ -41,6 +46,8 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
+app.MapFallbackToFile("/admin/{**path}", "admin/index.html");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

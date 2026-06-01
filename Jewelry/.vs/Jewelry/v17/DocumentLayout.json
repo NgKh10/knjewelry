@@ -1,45 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\",
+  "WorkspaceRootPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.services\\loaisanphamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|solutionrelative:jewelry.services\\loaisanphamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D0FDC81-B8B3-424B-8BF2-AFB183BF3A04}|Jewelry.Repository\\Jewelry.Repository.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.repository\\efcore\\loaisanphamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D0FDC81-B8B3-424B-8BF2-AFB183BF3A04}|Jewelry.Repository\\Jewelry.Repository.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.repository\\efcore\\loaisanphamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D0FDC81-B8B3-424B-8BF2-AFB183BF3A04}|Jewelry.Repository\\Jewelry.Repository.csproj|solutionrelative:jewelry.repository\\efcore\\loaisanphamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.apiservice\\controllers\\loaisanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.services\\loaisanphamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|solutionrelative:jewelry.services\\loaisanphamservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\loaisanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|solutionrelative:jewelry.apiservice\\controllers\\loaisanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.apiservice\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|solutionrelative:jewelry.apiservice\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.apiservice\\controllers\\chatlieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\chatlieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|solutionrelative:jewelry.apiservice\\controllers\\chatlieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D0FDC81-B8B3-424B-8BF2-AFB183BF3A04}|Jewelry.Repository\\Jewelry.Repository.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.repository\\efcore\\chatlieurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1D0FDC81-B8B3-424B-8BF2-AFB183BF3A04}|Jewelry.Repository\\Jewelry.Repository.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.repository\\efcore\\chatlieurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D0FDC81-B8B3-424B-8BF2-AFB183BF3A04}|Jewelry.Repository\\Jewelry.Repository.csproj|solutionrelative:jewelry.repository\\efcore\\chatlieurepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.apiservice\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|solutionrelative:jewelry.apiservice\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.services\\chatlieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.services\\chatlieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|solutionrelative:jewelry.services\\chatlieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.services\\ichatlieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.services\\ichatlieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2D42939-8B33-48E9-A616-1CB1C9CBF015}|Jewelry.Services\\Jewelry.Services.csproj|solutionrelative:jewelry.services\\ichatlieuservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|d:\\nam3\\hk2\\cong_nghe_web\\btl\\jewelry\\jewelry.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AAC91571-6239-1D62-C4EE-C81116FFA9F4}|Jewelry.APIService\\Jewelry.APIService.csproj|solutionrelative:jewelry.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,44 +50,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "LoaiSanPhamService.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Services\\LoaiSanPhamService.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Services\\LoaiSanPhamService.cs",
               "RelativeDocumentMoniker": "Jewelry.Services\\LoaiSanPhamService.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Services\\LoaiSanPhamService.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Services\\LoaiSanPhamService.cs",
               "RelativeToolTip": "Jewelry.Services\\LoaiSanPhamService.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvxYAAAA2AAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T08:32:02Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "LoaiSanPhamRepository.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Repository\\EFCore\\LoaiSanPhamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Repository\\EFCore\\LoaiSanPhamRepository.cs",
               "RelativeDocumentMoniker": "Jewelry.Repository\\EFCore\\LoaiSanPhamRepository.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Repository\\EFCore\\LoaiSanPhamRepository.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Repository\\EFCore\\LoaiSanPhamRepository.cs",
               "RelativeToolTip": "Jewelry.Repository\\EFCore\\LoaiSanPhamRepository.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAwwAoAAAAMAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-12T08:20:54.905Z"
+              "WhenOpened": "2026-05-12T08:20:54.905Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "NguoiDungController.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
               "RelativeDocumentMoniker": "Jewelry.APIService\\Controllers\\NguoiDungController.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
               "RelativeToolTip": "Jewelry.APIService\\Controllers\\NguoiDungController.cs",
               "ViewState": "AgIAALYAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -97,9 +98,9 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "SanPhamController.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
               "RelativeDocumentMoniker": "Jewelry.APIService\\Controllers\\SanPhamController.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
               "RelativeToolTip": "Jewelry.APIService\\Controllers\\SanPhamController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -109,9 +110,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "LoaiSanPhamController.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
               "RelativeDocumentMoniker": "Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
               "RelativeToolTip": "Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -121,9 +122,9 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ChatLieuController.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
               "RelativeDocumentMoniker": "Jewelry.APIService\\Controllers\\ChatLieuController.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
               "RelativeToolTip": "Jewelry.APIService\\Controllers\\ChatLieuController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,9 +134,9 @@
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "ChatLieuService.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Services\\ChatLieuService.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Services\\ChatLieuService.cs",
               "RelativeDocumentMoniker": "Jewelry.Services\\ChatLieuService.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Services\\ChatLieuService.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Services\\ChatLieuService.cs",
               "RelativeToolTip": "Jewelry.Services\\ChatLieuService.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAkwEoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,9 +146,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "IChatLieuService.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Services\\IChatLieuService.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Services\\IChatLieuService.cs",
               "RelativeDocumentMoniker": "Jewelry.Services\\IChatLieuService.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Services\\IChatLieuService.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Services\\IChatLieuService.cs",
               "RelativeToolTip": "Jewelry.Services\\IChatLieuService.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAMwA4AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -157,9 +158,9 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ChatLieuRepository.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Repository\\EFCore\\ChatLieuRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Repository\\EFCore\\ChatLieuRepository.cs",
               "RelativeDocumentMoniker": "Jewelry.Repository\\EFCore\\ChatLieuRepository.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.Repository\\EFCore\\ChatLieuRepository.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Repository\\EFCore\\ChatLieuRepository.cs",
               "RelativeToolTip": "Jewelry.Repository\\EFCore\\ChatLieuRepository.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAswEgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -169,27 +170,13 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Program.cs",
               "RelativeDocumentMoniker": "Jewelry.APIService\\Program.cs",
-              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\BTL\\Jewelry\\Jewelry.APIService\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\Program.cs",
               "RelativeToolTip": "Jewelry.APIService\\Program.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-05T06:45:54.773Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1217,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

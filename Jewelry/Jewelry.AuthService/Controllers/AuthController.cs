@@ -1,6 +1,5 @@
 ﻿using Jewelry.Common.Auth;
 using Jewelry.Services.Authen;
-using Jewelry.Common.Auth;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 

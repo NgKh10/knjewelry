@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\jewelry\\jewelry.repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\views\\sanpham\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:views\\sanpham\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +30,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Header.cshtml",
-              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Views\\Shared\\_Header.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Header.cshtml",
-              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Views\\Shared\\_Header.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Header.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAACgAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-05T08:59:24.236Z",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "ViewState": "AQIAAJMAAAAAAAAAAAAAAKQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T08:07:31.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AQIAAFMDAAAAAAAAAAAwwGEDAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-05-05T08:42:52.824Z",
+              "DocumentIndex": 1,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Views\\SanPham\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\SanPham\\Detail.cshtml",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Views\\SanPham\\Detail.cshtml",
+              "RelativeToolTip": "Views\\SanPham\\Detail.cshtml",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAA8AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-01T08:02:22.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:49:58.716Z",
               "EditorCaption": ""
             }
           ]

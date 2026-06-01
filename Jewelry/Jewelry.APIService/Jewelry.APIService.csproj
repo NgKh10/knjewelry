@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Jewelry.ApiGateway\Jewelry.ApiGateway.csproj" />
     <ProjectReference Include="..\Jewelry.Common\Jewelry.Common.csproj" />
     <ProjectReference Include="..\Jewelry.DTO\Jewelry.DTO.csproj" />
     <ProjectReference Include="..\Jewelry.Entities\Jewelry.Entities.csproj" />

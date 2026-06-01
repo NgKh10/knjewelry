@@ -965,10 +965,7 @@
           "System.IdentityModel.Tokens.Jwt": "8.17.0"
         },
         "runtime": {
-          "Jewelry.Common.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Jewelry.Common.dll": {}
         }
       },
       "Jewelry.DTO/1.0.0": {
@@ -978,10 +975,7 @@
           "System.IdentityModel.Tokens.Jwt": "8.17.0"
         },
         "runtime": {
-          "Jewelry.DTO.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Jewelry.DTO.dll": {}
         }
       },
       "Jewelry.Entities/1.0.0": {
@@ -992,10 +986,7 @@
           "System.IdentityModel.Tokens.Jwt": "8.17.0"
         },
         "runtime": {
-          "Jewelry.Entities.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Jewelry.Entities.dll": {}
         }
       },
       "Jewelry.Libs/1.0.0": {
@@ -1006,10 +997,7 @@
           "System.IdentityModel.Tokens.Jwt": "8.17.0"
         },
         "runtime": {
-          "Jewelry.Libs.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Jewelry.Libs.dll": {}
         }
       },
       "Jewelry.Repository/1.0.0": {
@@ -1024,10 +1012,7 @@
           "System.IdentityModel.Tokens.Jwt": "8.17.0"
         },
         "runtime": {
-          "Jewelry.Repository.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Jewelry.Repository.dll": {}
         }
       },
       "Jewelry.Services/1.0.0": {
@@ -1040,10 +1025,7 @@
           "System.IdentityModel.Tokens.Jwt": "8.17.0"
         },
         "runtime": {
-          "Jewelry.Services.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Jewelry.Services.dll": {}
         }
       }
     }

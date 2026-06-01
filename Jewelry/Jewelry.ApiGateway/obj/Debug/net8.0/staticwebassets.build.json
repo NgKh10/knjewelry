@@ -1,1 +1,11 @@
-{"Version":1,"Hash":"fxTanod0vQUP9kKSqQqrmw6KbQoad74m7gtB4byakcM=","Source":"Jewelry.ApiGateway","BasePath":"_content/Jewelry.ApiGateway","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "FKcysGxGUja60m9TnrSE9kDbItdyHkCFsEUenLIsKOA=",
+  "Source": "Jewelry.ApiGateway",
+  "BasePath": "_content/Jewelry.ApiGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
