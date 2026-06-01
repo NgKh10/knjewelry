@@ -167,7 +167,7 @@ namespace Jewelry.Repository
             {
                 entity.HasKey(e => e.id_log);
                 entity.Property(e => e.ten_bang).HasMaxLength(100).IsRequired();
-                entity.Property(e => e.hanh_dong).HasMaxLength(20).IsRequired();
+                entity.Property(e => e.hanh_dong).HasMaxLength(20).IsRequired();   
                 entity.Property(e => e.noi_dung).HasMaxLength(int.MaxValue);
             });
         }
