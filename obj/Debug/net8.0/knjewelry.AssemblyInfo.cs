@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("knjewelry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6582d48f59baaa31aa5908f5216cf9ccf5c41ad")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30164742a47deff9f3da4e4cedd689f94a345000")]
 [assembly: System.Reflection.AssemblyProductAttribute("knjewelry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("knjewelry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
