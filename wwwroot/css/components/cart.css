@@ -1,10 +1,16 @@
-﻿.table-bordered th,
+﻿/*bảng giỏ hàng*/
+.table-bordered th,
 .table-bordered td {
     vertical-align: middle;
     text-align: center;
     border-color: var(--border);
 }
 
+.cart-qty {
+    width: 60px;
+    text-align: center;
+}
+/*style nút tăng giảm số lượng*/
 .quantity-wrapper {
     display: flex;
     align-items: center;

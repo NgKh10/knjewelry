@@ -69,3 +69,14 @@
     margin-top: 40px;
     text-align: center;
 }
+
+
+/* Footer links */
+.site-footer a {
+    color: #aaa !important;
+    text-decoration: none !important;
+}
+
+    .site-footer a:hover {
+        color: #c4a67a !important;
+    }

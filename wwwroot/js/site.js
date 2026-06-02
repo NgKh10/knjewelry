@@ -1767,8 +1767,7 @@ jQuery(document).ready(function ($) {
 			stagePadding: 15,
 			margin: 20,
 			nav: true,
-			navText: ['<span class="icon-arrow_back">', '<span class="icon-arrow_forward">'],
-			responsive: {
+			navText: ['<i class="bx bx-chevron-left"></i>', '<i class="bx bx-chevron-right"></i>']			responsive: {
 				600: {
 					margin: 20,
 					items: 2
@@ -1913,7 +1912,7 @@ jQuery(document).ready(function ($) {
 	};
 	siteSliderRange();
 
-
+/*
 	var siteMagnificPopup = function () {
 		$('.image-popup').magnificPopup({
 			type: 'image',
@@ -1946,6 +1945,7 @@ jQuery(document).ready(function ($) {
 		});
 	};
 	siteMagnificPopup();
+	*/
 
 	var searchShow = function () {
 		// alert();
@@ -1964,10 +1964,4 @@ jQuery(document).ready(function ($) {
 	};
 	searchShow();
 
-});
-
-AOS.init({
-	duration: 800,
-	easing: 'slide',
-	once: true
 });

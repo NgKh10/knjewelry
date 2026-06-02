@@ -1,0 +1,13 @@
+﻿/* Helper classes */
+.text-primary {
+    color: #483925 !important;
+}
+
+.btn, .btn-link {
+    text-decoration: none !important;
+}
+
+/* Đảm bảo không có màu xanh dương ở đâu */
+.text-primary {
+    color: #483925 !important;
+}

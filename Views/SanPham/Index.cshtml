@@ -51,12 +51,14 @@
                             <script>
                                 // Set selected value từ server
                                 var sortValue = '@ViewBag.Sort';
+                                var sortSelect = document.getElementById('sort-select');
+
                                 if (sortValue && sortValue !== '') {
-                                    document.getElementById('sort-select').value = sortValue;
+                                    sortSelect.value = sortValue;
                                 }
 
                                 // Xử lý khi thay đổi select
-                                document.getElementById('sort-select').addEventListener('change', function () {
+                                sortSelect.addEventListener('change', function () {
                                     var sort = this.value;
                                     var url = new URL(window.location.href);
 
@@ -65,17 +67,6 @@
                                     } else {
                                         url.searchParams.delete('sort');
                                     }
-
-                                    // Giữ lại các tham số khác
-                                    var loaiId = '@ViewBag.LoaiId';
-                                    var search = '@ViewBag.TuKhoa';
-                                    var giaMin = '@ViewBag.GiaMin';
-                                    var giaMax = '@ViewBag.GiaMax';
-
-                                    if (loaiId && loaiId !== '') url.searchParams.set('loaiId', loaiId);
-                                    if (search && search !== '') url.searchParams.set('search', search);
-                                    if (giaMin && giaMin !== '') url.searchParams.set('giaMin', giaMin);
-                                    if (giaMax && giaMax !== '') url.searchParams.set('giaMax', giaMax);
 
                                     window.location.href = url.toString();
                                 });

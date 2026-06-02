@@ -37,12 +37,20 @@
       "PackagePath": "staticwebassets\\css\\base\\variables.css"
     },
     {
+      "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\breadcrumb.css",
+      "PackagePath": "staticwebassets\\css\\components\\breadcrumb.css"
+    },
+    {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\buttons.css",
       "PackagePath": "staticwebassets\\css\\components\\buttons.css"
     },
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\cart.css",
       "PackagePath": "staticwebassets\\css\\components\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\checkout.css",
+      "PackagePath": "staticwebassets\\css\\components\\checkout.css"
     },
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\filter.css",
@@ -55,6 +63,10 @@
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\header.css",
       "PackagePath": "staticwebassets\\css\\components\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\notification.css",
+      "PackagePath": "staticwebassets\\css\\components\\notification.css"
     },
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\components\\pagination.css",
@@ -79,6 +91,10 @@
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\utilities\\helper.css",
+      "PackagePath": "staticwebassets\\css\\utilities\\helper.css"
     },
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\css\\utilities\\responsive.css",
@@ -283,6 +299,10 @@
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\images\\products\\sp152_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp152_main.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\images\\products\\sp15_main.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp15_main.jpg"
     },
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\images\\products\\sp16_main.jpg",
@@ -511,6 +531,14 @@
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\images\\products\\sp66_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp66_main.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\images\\products\\sp67_main.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp67_main.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\images\\products\\sp68_main.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp68_main.jpg"
     },
     {
       "Id": "C:\\Users\\nguye\\source\\repos\\knjewelry\\wwwroot\\images\\products\\sp69_main.jpg",

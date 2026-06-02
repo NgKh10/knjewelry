@@ -48,3 +48,8 @@
         border-color: var(--primary);
         color: var(--white);
     }
+
+.btn-primary {
+    background-color: #483925 !important;
+    border-color: #483925 !important;
+}

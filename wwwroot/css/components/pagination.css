@@ -1,1 +1,25 @@
 ﻿/*PHÂN TRANG*/
+.pagination {
+    margin-top: 30px;
+}
+
+    .pagination .page-link {
+        color: #333 !important;
+        border: 1px solid var(--border);
+        margin: 0 3px;
+        border-radius: 4px;
+        padding: 8px 14px;
+        text-decoration: none !important;
+    }
+
+    .pagination .page-item.active .page-link {
+        background: #483925 !important;
+        border-color: #483925 !important;
+        color: white !important;
+    }
+
+    .pagination .page-link:hover {
+        background: #483925 !important;
+        border-color: #483925 !important;
+        color: white !important;
+    }

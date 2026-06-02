@@ -129,9 +129,11 @@ namespace knjewelry.Controllers
             };
 
             //truyền giá trị tìm kiếm sang view 
+            ViewBag.Sort = sort;
             ViewBag.GiaMin = giaMin;
             ViewBag.GiaMax = giaMax;
-            ViewBag.Sort = sort;
+            ViewBag.LoaiId = loaiId;
+            ViewBag.TuKhoa = search;
             ViewBag.CartCount = await GetCartCount();
 
             return View(viewModel);

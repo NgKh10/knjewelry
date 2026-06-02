@@ -1,0 +1,23 @@
+﻿.bg-light {
+    background: var(--gray-bg) !important;
+    padding: 15px 0;
+}
+
+.breadcrumb {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+    .breadcrumb a {
+        color: #666 !important;
+    }
+
+        .breadcrumb a:hover {
+            color: #483925 !important;
+        }
+
+    .breadcrumb .text-black {
+        color: var(--primary);
+        font-weight: 500;
+    }
