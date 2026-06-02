@@ -16,7 +16,9 @@ namespace knjewelry.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ThemVaoGio(int sanPhamId, int soLuong = 1)
+        public async Task<IActionResult> ThemVaoGio(int sanPhamId, string tenSanPham, decimal donGia,
+                                             string hinhAnh, int soLuong = 1,
+                                             string size = "", string mauSac = "")
         {
             var product = await _context.SanPhams
                 .Include(p => p.HinhAnhs)
@@ -31,8 +33,11 @@ namespace knjewelry.Controllers
                 ? new List<GioHangSessionItem>()
                 : JsonConvert.DeserializeObject<List<GioHangSessionItem>>(cartJson);
 
-            // Thêm sản phẩm vào giỏ
-            var existing = cart.FirstOrDefault(x => x.SanPhamId == sanPhamId);
+            // Kiểm tra sản phẩm đã tồn tại trong giỏ (cùng size và màu)
+            var existing = cart.FirstOrDefault(x => x.SanPhamId == sanPhamId
+                                                  && x.Size == size
+                                                  && x.MauSac == mauSac);
+
             if (existing != null)
             {
                 existing.SoLuong += soLuong;
@@ -42,10 +47,12 @@ namespace knjewelry.Controllers
                 cart.Add(new GioHangSessionItem
                 {
                     SanPhamId = sanPhamId,
-                    TenSanPham = product.ten_sp,
-                    DonGia = product.gia_khuyen_mai ?? product.gia,
-                    HinhAnh = product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg",
-                    SoLuong = soLuong
+                    TenSanPham = tenSanPham ?? product.ten_sp,
+                    DonGia = donGia > 0 ? donGia : (product.gia_khuyen_mai ?? product.gia),
+                    HinhAnh = hinhAnh ?? product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg",
+                    SoLuong = soLuong,
+                    Size = size ?? "",
+                    MauSac = mauSac ?? ""
                 });
             }
 

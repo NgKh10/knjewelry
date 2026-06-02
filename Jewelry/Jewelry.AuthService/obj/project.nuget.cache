@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rZ2Hh4MFS9HPnY8fGwuy1aBzI6eFFb+jJzNF5b1lCD1/02wFuBz2V8oWH9BpADHHNi6Wk/tXqrewp5E6dOpzBA==",
+  "dgSpecHash": "5xfbqvrzWYtEJe/0JeGOqF4pWHOkfya0DBQY/cXyIq980SqOS5n4EALps0kDDNF5CJ8DpDtZavI7wEDpjOpEvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.AuthService\\Jewelry.AuthService.csproj",
+  "projectFilePath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.AuthService\\Jewelry.AuthService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

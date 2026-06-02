@@ -1250,11 +1250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+      "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
       "projectName": "Jewelry.ApiGateway",
-      "projectPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+      "projectPath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\obj\\",
+      "outputPath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"

@@ -95,13 +95,17 @@
                     <h5 class="mb-2">Số lượng</h5>
                     <div class="input-group" style="width: 130px;">
                         <button class="btn btn-outline-secondary" type="button" id="btn-minus">-</button>
-                        <input id="quantity" class="form-control text-center" value="1" min="1" max="99">
+                        <input type="text" id="quantity" class="form-control text-center" value="1" min="1" max="99">
                         <button class="btn btn-outline-secondary" type="button" id="btn-plus">+</button>
                     </div>
                 </div>
 
                 <div class="mb-4">
-                    <button class="btn btn-black px-5 py-2" id="btn-add-to-cart" data-id="@Model.id_san_pham">
+                    <button class="btn btn-black px-5 py-2" id="btn-add-to-cart"
+                            data-id="@Model.id_san_pham"
+                            data-ten="@Model.ten_sp"
+                            data-gia="@(Model.gia_khuyen_mai ?? Model.gia)"
+                            data-hinhanh="@(Model.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")">
                         <i class='bx bx-cart-add'></i> Thêm vào giỏ
                     </button>
                     <button class="btn btn-outline-primary px-4 py-2 ms-2">
@@ -142,7 +146,68 @@
 }
 
 <script>
-    $('#btn-minus').click(function () { var qty = $('#quantity'); if (parseInt(qty.val()) > 1) qty.val(parseInt(qty.val()) - 1); });
-    $('#btn-plus').click(function () { var qty = $('#quantity'); if (parseInt(qty.val()) < 99) qty.val(parseInt(qty.val()) + 1); });
-    $('.btn-size, .btn-color').click(function () { $(this).siblings().removeClass('active'); $(this).addClass('active'); });
+    // Tăng/giảm số lượng
+    $('#btn-minus').click(function () {
+        var qty = $('#quantity');
+        if (parseInt(qty.val()) > 1) qty.val(parseInt(qty.val()) - 1);
+    });
+
+    $('#btn-plus').click(function () {
+        var qty = $('#quantity');
+        if (parseInt(qty.val()) < 99) qty.val(parseInt(qty.val()) + 1);
+    });
+
+    // Chọn size và màu
+    $('.btn-size, .btn-color').click(function () {
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Thêm vào giỏ hàng
+    $('#btn-add-to-cart').click(function (e) {
+        e.preventDefault();
+
+        var sanPhamId = $(this).data('id');
+        var tenSanPham = '@Model.ten_sp';
+        var donGia = @((Model.gia_khuyen_mai ?? Model.gia));
+        var hinhAnh = '@(Model.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")';
+        var soLuong = parseInt($('#quantity').val());
+        var size = $('.btn-size.active').data('size') || '';
+        var mauSac = $('.btn-color.active').data('color') || '';
+
+        console.log('Thêm vào giỏ:', {
+            sanPhamId: sanPhamId,
+            tenSanPham: tenSanPham,
+            donGia: donGia,
+            soLuong: soLuong,
+            size: size,
+            mauSac: mauSac
+        });
+
+        $.ajax({
+            url: '/GioHang/ThemVaoGio',
+            type: 'POST',
+            data: {
+                sanPhamId: sanPhamId,
+                tenSanPham: tenSanPham,
+                donGia: donGia,
+                hinhAnh: hinhAnh,
+                soLuong: soLuong,
+                size: size,
+                mauSac: mauSac
+            },
+            success: function (response) {
+                if (response.success) {
+                    $('#cart-count').text(response.soLuongGioHang);
+                    alert('Đã thêm ' + tenSanPham + ' vào giỏ hàng!');
+                } else {
+                    alert('Thêm thất bại: ' + (response.message || 'Lỗi không xác định'));
+                }
+            },
+            error: function (xhr) {
+                console.log(xhr.responseText);
+                alert('Có lỗi xảy ra khi thêm vào giỏ hàng');
+            }
+        });
+    });
 </script>

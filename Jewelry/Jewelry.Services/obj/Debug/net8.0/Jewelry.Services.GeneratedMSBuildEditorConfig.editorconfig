@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Jewelry.Services
-build_property.ProjectDir = C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\Jewelry\Jewelry.Services\
+build_property.ProjectDir = C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.Services\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

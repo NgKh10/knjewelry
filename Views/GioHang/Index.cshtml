@@ -70,25 +70,58 @@
 
 <script>
     $(document).ready(function () {
+        // Cập nhật số lượng
+        function updateCart(id, size, mau, qty) {
+            $.post('/GioHang/CapNhatSoLuong', { 
+                sanPhamId: id, 
+                size: size, 
+                mauSac: mau, 
+                soLuong: qty 
+            }, function (response) {
+                if (response.success) {
+                    location.reload();
+                } else {
+                    alert('Cập nhật thất bại');
+                }
+            });
+        }
+        
+        // Nút tăng
         $('.btn-plus').click(function () {
             var id = $(this).data('id');
+            var size = $(this).data('size') || '';
+            var mau = $(this).data('mau') || '';
             var input = $(this).closest('tr').find('.qty-input');
             var qty = parseInt(input.val()) + 1;
-            updateCart(id, qty);
+            updateCart(id, size, mau, qty);
         });
 
+        // Nút giảm
         $('.btn-minus').click(function () {
             var id = $(this).data('id');
+            var size = $(this).data('size') || '';
+            var mau = $(this).data('mau') || '';
             var input = $(this).closest('tr').find('.qty-input');
             var qty = parseInt(input.val()) - 1;
             if (qty < 1) qty = 1;
-            updateCart(id, qty);
+            updateCart(id, size, mau, qty);
         });
-
-        function updateCart(id, qty) {
-            $.post('/GioHang/CapNhatSoLuong', { sanPhamId: id, soLuong: qty }, function () {
-                location.reload();
-            });
-        }
+        
+        // Xóa sản phẩm
+        $('.btn-remove').click(function (e) {
+            e.preventDefault();
+            var id = $(this).data('id');
+            var size = $(this).data('size') || '';
+            var mau = $(this).data('mau') || '';
+            if (confirm('Bạn có chắc muốn xóa sản phẩm này?')) {
+                $.post('/GioHang/XoaKhoiGio', { 
+                    sanPhamId: id, 
+                    size: size, 
+                    mauSac: mau 
+                }, function () {
+                    location.reload();
+                });
+            }
+        });
     });
 </script>

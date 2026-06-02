@@ -1,0 +1,50 @@
+﻿/* BUTTON */
+
+.btn-black {
+    background: #483925;
+    color: #ffffff !important;
+    border: none;
+    padding: 14px 40px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+    .btn-black:hover {
+        background: #2e2417;
+        color: #ffffff !important;
+        transform: translateY(-2px);
+    }
+
+.btn-outline-dark {
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+    .btn-outline-dark:hover {
+        background: var(--primary);
+        color: var(--white);
+    }
+
+.btn-add-cart {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+    .btn-add-cart:hover {
+        background: var(--primary);
+        border-color: var(--primary);
+        color: var(--white);
+    }

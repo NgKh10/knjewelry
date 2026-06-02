@@ -960,11 +960,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Common\\Jewelry.Common.csproj",
+      "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.Common\\Jewelry.Common.csproj",
       "projectName": "Jewelry.Common",
-      "projectPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Common\\Jewelry.Common.csproj",
+      "projectPath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.Common\\Jewelry.Common.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.Common\\obj\\",
+      "outputPath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"

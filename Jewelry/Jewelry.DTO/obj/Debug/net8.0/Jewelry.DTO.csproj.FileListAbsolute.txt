@@ -11,3 +11,16 @@ C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\Jewelry\Jewelry.DTO\obj\
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\refint\Jewelry.DTO.dll
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.pdb
 C:\Users\nguye\source\repos\ki2nam3\cnweb\BTL\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\ref\Jewelry.DTO.dll
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\bin\Debug\net8.0\Jewelry.DTO.deps.json
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\bin\Debug\net8.0\Jewelry.DTO.dll
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\bin\Debug\net8.0\Jewelry.DTO.pdb
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.csproj.AssemblyReference.cache
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.AssemblyInfoInputs.cache
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.AssemblyInfo.cs
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.csproj.CoreCompileInputs.cache
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.sourcelink.json
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.dll
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\refint\Jewelry.DTO.dll
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.pdb
+C:\Users\nguye\source\repos\knjewelry\Jewelry\Jewelry.DTO\obj\Debug\net8.0\ref\Jewelry.DTO.dll

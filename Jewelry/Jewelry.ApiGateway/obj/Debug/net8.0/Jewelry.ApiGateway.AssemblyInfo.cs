@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Jewelry.ApiGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+585fba3dfd17a6e0794b77a183bc9081303c110a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1798940a6e5e15a40f83d3793413ed11b61f019f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jewelry.ApiGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jewelry.ApiGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

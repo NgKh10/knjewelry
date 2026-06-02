@@ -550,11 +550,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.DTO\\Jewelry.DTO.csproj",
+      "projectUniqueName": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.DTO\\Jewelry.DTO.csproj",
       "projectName": "Jewelry.DTO",
-      "projectPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.DTO\\Jewelry.DTO.csproj",
+      "projectPath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.DTO\\Jewelry.DTO.csproj",
       "packagesPath": "C:\\Users\\nguye\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.DTO\\obj\\",
+      "outputPath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.DTO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"

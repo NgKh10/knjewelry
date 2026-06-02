@@ -1,0 +1,30 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+    a, a:hover, a:focus, a:active {
+        text-decoration: none !important;
+        outline: none !important;
+    }
+
+a, .item-title a, .list-unstyled li a, .dropdown li a {
+    color: #333 !important;
+}
+
+    a:hover, .item-title a:hover, .list-unstyled li a:hover, .dropdown li a:hover {
+        color: var(--primary) !important;
+    }

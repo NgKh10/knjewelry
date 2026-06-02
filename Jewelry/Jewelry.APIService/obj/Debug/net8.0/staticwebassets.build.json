@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "roDXdVt8tloQNtnvVDPqakjwk/lMYtSA3NeAjW/javw=",
+  "Hash": "dgUFgQOTRisMWOGWUMvcwXBrJwONUL2BCv3gG7SjSHk=",
   "Source": "Jewelry.APIService",
   "BasePath": "_content/Jewelry.APIService",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Jewelry.APIService\\wwwroot",
       "Source": "Jewelry.APIService",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\1ea98efe-87fc-43d1-961e-3b65eb55389d.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\1ea98efe-87fc-43d1-961e-3b65eb55389d.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/1ea98efe-87fc-43d1-961e-3b65eb55389d.jpg",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\1ea98efe-87fc-43d1-961e-3b65eb55389d.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp1_1.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp1_1.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp1_1.jpg",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp1_1.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp1_2.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp1_2.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp1_2.jpg",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp1_2.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp1_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp1_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp1_main.jpg",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp1_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp10_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp10_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp10_main.jpg",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp10_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp100_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp100_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp100_main.jpg",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp100_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp101_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp101_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp101_main.jpg",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp101_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp102_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp102_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp102_main.jpg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp102_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp103_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp103_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp103_main.jpg",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp103_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp104_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp104_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp104_main.jpg",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp104_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp105_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp105_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp105_main.jpg",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp105_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp106_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp106_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp106_main.jpg",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp106_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp107_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp107_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp107_main.jpg",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp107_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp108_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp108_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp108_main.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp108_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp109_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp109_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp109_main.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp109_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp11_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp11_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp11_main.jpg",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp11_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp110_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp110_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp110_main.jpg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp110_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp112_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp112_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp112_main.jpg",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp112_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp113_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp113_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp113_main.jpg",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp113_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp114_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp114_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp114_main.jpg",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp114_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp115_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp115_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp115_main.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp115_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp116_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp116_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp116_main.jpg",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp116_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp117_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp117_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp117_main.jpg",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp117_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp119_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp119_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp119_main.jpg",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp119_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp12_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp12_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp12_main.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp12_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp13_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp13_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp13_main.jpg",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp13_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp133_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp133_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp133_main.jpg",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp133_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp134_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp134_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp134_main.jpg",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp134_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp135_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp135_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp135_main.jpg",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp135_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp136_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp136_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp136_main.jpg",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp136_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp137_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp137_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp137_main.jpg",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp137_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp139_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp139_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp139_main.jpg",
       "AssetKind": "All",
@@ -625,10 +625,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp139_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp14_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp14_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp14_main.jpg",
       "AssetKind": "All",
@@ -644,10 +644,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp14_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp140_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp140_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp140_main.jpg",
       "AssetKind": "All",
@@ -663,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp140_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp141_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp141_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp141_main.jpg",
       "AssetKind": "All",
@@ -682,10 +682,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp141_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp142_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp142_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp142_main.jpg",
       "AssetKind": "All",
@@ -701,10 +701,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp142_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp143_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp143_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp143_main.jpg",
       "AssetKind": "All",
@@ -720,10 +720,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp143_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp144_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp144_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp144_main.jpg",
       "AssetKind": "All",
@@ -739,10 +739,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp144_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp145_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp145_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp145_main.jpg",
       "AssetKind": "All",
@@ -758,10 +758,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp145_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp146_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp146_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp146_main.jpg",
       "AssetKind": "All",
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp146_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp147_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp147_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp147_main.jpg",
       "AssetKind": "All",
@@ -796,10 +796,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp147_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp148_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp148_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp148_main.jpg",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp148_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp149_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp149_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp149_main.jpg",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp149_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp150_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp150_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp150_main.jpg",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp150_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp151_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp151_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp151_main.jpg",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp151_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp152_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp152_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp152_main.jpg",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp152_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp16_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp16_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp16_main.jpg",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp16_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp17_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp17_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp17_main.jpg",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp17_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp18_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp18_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp18_main.jpg",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp18_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp19_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp19_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp19_main.jpg",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp19_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp2_1.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp2_1.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp2_1.jpg",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp2_1.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp2_2.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp2_2.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp2_2.jpg",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp2_2.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp2_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp2_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp2_main.jpg",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp2_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp20_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp20_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp20_main.jpg",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp20_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp21_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp21_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp21_main.jpg",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp21_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp22_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp22_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp22_main.jpg",
       "AssetKind": "All",
@@ -1081,10 +1081,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp22_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp23_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp23_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp23_main.jpg",
       "AssetKind": "All",
@@ -1100,10 +1100,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp23_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp24_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp24_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp24_main.jpg",
       "AssetKind": "All",
@@ -1119,10 +1119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp24_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp25_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp25_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp25_main.jpg",
       "AssetKind": "All",
@@ -1138,10 +1138,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp25_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp26_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp26_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp26_main.jpg",
       "AssetKind": "All",
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp26_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp27_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp27_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp27_main.jpg",
       "AssetKind": "All",
@@ -1176,10 +1176,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp27_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp28_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp28_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp28_main.jpg",
       "AssetKind": "All",
@@ -1195,10 +1195,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp28_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp29_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp29_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp29_main.jpg",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp29_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp3_1.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp3_1.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp3_1.jpg",
       "AssetKind": "All",
@@ -1233,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp3_1.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp3_2.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp3_2.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp3_2.jpg",
       "AssetKind": "All",
@@ -1252,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp3_2.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp3_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp3_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp3_main.jpg",
       "AssetKind": "All",
@@ -1271,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp3_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp30_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp30_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp30_main.jpg",
       "AssetKind": "All",
@@ -1290,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp30_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp31_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp31_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp31_main.jpg",
       "AssetKind": "All",
@@ -1309,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp31_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp32_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp32_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp32_main.jpg",
       "AssetKind": "All",
@@ -1328,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp32_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp33_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp33_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp33_main.jpg",
       "AssetKind": "All",
@@ -1347,10 +1347,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp33_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp34_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp34_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp34_main.jpg",
       "AssetKind": "All",
@@ -1366,10 +1366,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp34_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp35_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp35_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp35_main.jpg",
       "AssetKind": "All",
@@ -1385,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp35_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp36_1.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp36_1.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp36_1.jpg",
       "AssetKind": "All",
@@ -1404,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp36_1.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp36_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp36_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp36_main.jpg",
       "AssetKind": "All",
@@ -1423,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp36_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp37_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp37_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp37_main.jpg",
       "AssetKind": "All",
@@ -1442,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp37_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp38_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp38_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp38_main.jpg",
       "AssetKind": "All",
@@ -1461,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp38_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp39_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp39_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp39_main.jpg",
       "AssetKind": "All",
@@ -1480,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp39_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp4_1.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp4_1.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp4_1.jpg",
       "AssetKind": "All",
@@ -1499,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp4_1.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp4_2.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp4_2.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp4_2.jpg",
       "AssetKind": "All",
@@ -1518,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp4_2.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp4_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp4_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp4_main.jpg",
       "AssetKind": "All",
@@ -1537,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp4_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp40_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp40_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp40_main.jpg",
       "AssetKind": "All",
@@ -1556,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp40_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp41_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp41_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp41_main.jpg",
       "AssetKind": "All",
@@ -1575,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp41_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp42_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp42_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp42_main.jpg",
       "AssetKind": "All",
@@ -1594,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp42_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp43_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp43_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp43_main.jpg",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp43_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp44_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp44_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp44_main.jpg",
       "AssetKind": "All",
@@ -1632,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp44_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp45_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp45_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp45_main.jpg",
       "AssetKind": "All",
@@ -1651,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp45_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp46_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp46_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp46_main.jpg",
       "AssetKind": "All",
@@ -1670,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp46_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp47_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp47_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp47_main.jpg",
       "AssetKind": "All",
@@ -1689,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp47_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp48_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp48_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp48_main.jpg",
       "AssetKind": "All",
@@ -1708,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp48_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp49_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp49_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp49_main.jpg",
       "AssetKind": "All",
@@ -1727,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp49_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp5_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp5_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp5_main.jpg",
       "AssetKind": "All",
@@ -1746,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp5_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp50_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp50_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp50_main.jpg",
       "AssetKind": "All",
@@ -1765,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp50_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp51_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp51_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp51_main.jpg",
       "AssetKind": "All",
@@ -1784,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp51_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp52_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp52_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp52_main.jpg",
       "AssetKind": "All",
@@ -1803,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp52_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp53_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp53_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp53_main.jpg",
       "AssetKind": "All",
@@ -1822,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp53_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp54_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp54_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp54_main.jpg",
       "AssetKind": "All",
@@ -1841,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp54_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp55_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp55_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp55_main.jpg",
       "AssetKind": "All",
@@ -1860,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp55_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp56_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp56_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp56_main.jpg",
       "AssetKind": "All",
@@ -1879,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp56_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp57_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp57_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp57_main.jpg",
       "AssetKind": "All",
@@ -1898,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp57_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp58_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp58_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp58_main.jpg",
       "AssetKind": "All",
@@ -1917,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp58_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp59_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp59_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp59_main.jpg",
       "AssetKind": "All",
@@ -1936,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp59_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp6_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp6_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp6_main.jpg",
       "AssetKind": "All",
@@ -1955,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp6_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp60_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp60_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp60_main.jpg",
       "AssetKind": "All",
@@ -1974,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp60_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp61_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp61_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp61_main.jpg",
       "AssetKind": "All",
@@ -1993,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp61_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp62_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp62_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp62_main.jpg",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp62_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp63_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp63_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp63_main.jpg",
       "AssetKind": "All",
@@ -2031,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp63_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp64_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp64_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp64_main.jpg",
       "AssetKind": "All",
@@ -2050,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp64_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp65_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp65_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp65_main.jpg",
       "AssetKind": "All",
@@ -2069,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp65_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp66_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp66_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp66_main.jpg",
       "AssetKind": "All",
@@ -2088,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp66_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp69_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp69_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp69_main.jpg",
       "AssetKind": "All",
@@ -2107,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp69_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp7_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp7_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp7_main.jpg",
       "AssetKind": "All",
@@ -2126,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp7_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp70_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp70_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp70_main.jpg",
       "AssetKind": "All",
@@ -2145,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp70_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp71_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp71_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp71_main.jpg",
       "AssetKind": "All",
@@ -2164,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp71_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp72_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp72_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp72_main.jpg",
       "AssetKind": "All",
@@ -2183,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp72_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp73_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp73_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp73_main.jpg",
       "AssetKind": "All",
@@ -2202,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp73_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp74_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp74_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp74_main.jpg",
       "AssetKind": "All",
@@ -2221,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp74_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp75_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp75_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp75_main.jpg",
       "AssetKind": "All",
@@ -2240,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp75_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp79_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp79_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp79_main.jpg",
       "AssetKind": "All",
@@ -2259,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp79_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp8_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp8_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp8_main.jpg",
       "AssetKind": "All",
@@ -2278,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp8_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp80_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp80_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp80_main.jpg",
       "AssetKind": "All",
@@ -2297,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp80_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp81_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp81_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp81_main.jpg",
       "AssetKind": "All",
@@ -2316,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp81_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp82_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp82_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp82_main.jpg",
       "AssetKind": "All",
@@ -2335,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp82_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp83_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp83_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp83_main.jpg",
       "AssetKind": "All",
@@ -2354,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp83_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp84_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp84_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp84_main.jpg",
       "AssetKind": "All",
@@ -2373,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp84_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp85_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp85_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp85_main.jpg",
       "AssetKind": "All",
@@ -2392,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp85_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp86_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp86_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp86_main.jpg",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp86_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp88_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp88_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp88_main.jpg",
       "AssetKind": "All",
@@ -2430,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp88_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp89_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp89_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp89_main.jpg",
       "AssetKind": "All",
@@ -2449,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp89_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp9_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp9_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp9_main.jpg",
       "AssetKind": "All",
@@ -2468,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp9_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp90_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp90_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp90_main.jpg",
       "AssetKind": "All",
@@ -2487,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp90_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp92_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp92_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp92_main.jpg",
       "AssetKind": "All",
@@ -2506,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp92_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp93_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp93_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp93_main.jpg",
       "AssetKind": "All",
@@ -2525,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp93_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp94_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp94_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp94_main.jpg",
       "AssetKind": "All",
@@ -2544,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp94_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp95_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp95_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp95_main.jpg",
       "AssetKind": "All",
@@ -2563,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp95_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp97_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp97_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp97_main.jpg",
       "AssetKind": "All",
@@ -2582,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp97_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp98_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp98_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp98_main.jpg",
       "AssetKind": "All",
@@ -2601,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\images\\products\\sp98_main.jpg"
     },
     {
-      "Identity": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp99_main.jpg",
+      "Identity": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\images\\products\\sp99_main.jpg",
       "SourceId": "Jewelry.APIService",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.APIService\\wwwroot\\",
       "BasePath": "_content/Jewelry.APIService",
       "RelativePath": "images/products/sp99_main.jpg",
       "AssetKind": "All",

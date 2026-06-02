@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/M8AWfv9mgbrHdqK+a1HnxLCUpqwnWW4dP9QvOMbR3oVdpMSi3DD6udPHcSvuJD/fHWeFWyZ4qmnLjGzQNO7vg==",
+  "dgSpecHash": "08KgH4NT4th8lyRcbM60YafjSq4duf155Rt+f0LmgrOrFUsFeOUJ64KR7bAYO81Dtbs+ChpteSuap0g2eenHnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.DTO\\Jewelry.DTO.csproj",
+  "projectFilePath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.DTO\\Jewelry.DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.0\\microsoft.aspnetcore.authentication.jwtbearer.8.0.0.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.26\\microsoft.aspnetcore.cryptography.internal.8.0.26.nupkg.sha512",

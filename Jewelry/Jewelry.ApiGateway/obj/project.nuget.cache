@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EXObRWgI+PjnBO0HVdg2FyffxvOKU9ABpdYg8gAYzQ4FTB5f8szSxDgxdHgKO1Qi0Z6k6ukRn2myzetgc0dyVw==",
+  "dgSpecHash": "ltiVVCci1MDQCzDf5NqCODlPFIr0/duUaZ0Y9bVC/MPg3U9MIul2NBaSKfJ8WKYz0SpTeqdkfgiH5+VS82c85A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+  "projectFilePath": "C:\\Users\\nguye\\source\\repos\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nguye\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\nguye\\.nuget\\packages\\ipaddressrange\\6.0.0\\ipaddressrange.6.0.0.nupkg.sha512",
