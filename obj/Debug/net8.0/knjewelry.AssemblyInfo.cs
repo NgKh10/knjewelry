@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("knjewelry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< Updated upstream
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+587bca6446aa661230a39b73fa0dd94308a1013b")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a4afca3e461fe65a58742fa5b7798058243e677")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("knjewelry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("knjewelry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

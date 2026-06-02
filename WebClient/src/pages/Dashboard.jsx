@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { productApi, categoryApi, materialApi, orderApi, userApi } from '../services/api';
 import { useAuth } from '../contexts/AuthContext';
 
@@ -86,9 +87,10 @@ const Dashboard = () => {
                                     <div className="icon">
                                         <i className="fas fa-box"></i>
                                     </div>
-                                    <a href="/products" className="small-box-footer">
+                                    {/* Sửa: dùng Link thay a href để không reload trang */}
+                                    <Link to="/products" className="small-box-footer">
                                         Xem chi tiết <i className="fas fa-arrow-circle-right"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-6">
@@ -100,9 +102,9 @@ const Dashboard = () => {
                                     <div className="icon">
                                         <i className="fas fa-tags"></i>
                                     </div>
-                                    <a href="/categories" className="small-box-footer">
+                                    <Link to="/categories" className="small-box-footer">
                                         Xem chi tiết <i className="fas fa-arrow-circle-right"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-6">
@@ -114,9 +116,9 @@ const Dashboard = () => {
                                     <div className="icon">
                                         <i className="fas fa-gem"></i>
                                     </div>
-                                    <a href="/materials" className="small-box-footer">
+                                    <Link to="/chatlieu" className="small-box-footer">
                                         Xem chi tiết <i className="fas fa-arrow-circle-right"></i>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                             {isAdmin() && (
@@ -130,9 +132,9 @@ const Dashboard = () => {
                                             <div className="icon">
                                                 <i className="fas fa-shopping-cart"></i>
                                             </div>
-                                            <a href="/orders" className="small-box-footer">
+                                            <Link to="/orders" className="small-box-footer">
                                                 Xem chi tiết <i className="fas fa-arrow-circle-right"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                     <div className="col-lg-4 col-6">
@@ -144,9 +146,9 @@ const Dashboard = () => {
                                             <div className="icon">
                                                 <i className="fas fa-users"></i>
                                             </div>
-                                            <a href="/users" className="small-box-footer">
+                                            <Link to="/users" className="small-box-footer">
                                                 Xem chi tiết <i className="fas fa-arrow-circle-right"></i>
-                                            </a>
+                                            </Link>
                                         </div>
                                     </div>
                                 </>

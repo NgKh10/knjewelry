@@ -1,6 +1,14 @@
 import axios from 'axios';
 
+<<<<<<< Updated upstream
 const API_BASE_URL = '/api';
+=======
+// Khi VITE_API_URL trống: dùng relative URL '/api' để Vite proxy định tuyến đúng port
+// Khi VITE_API_URL có giá trị (production): dùng URL tuyệt đối
+const API_BASE_URL = import.meta.env.VITE_API_URL
+    ? `${import.meta.env.VITE_API_URL}/api`
+    : '/api';
+>>>>>>> Stashed changes
 
 const api = axios.create({
     baseURL: API_BASE_URL,

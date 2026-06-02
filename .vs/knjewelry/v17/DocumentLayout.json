@@ -1,14 +1,87 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\",
+  "WorkspaceRootPath": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|c:\\users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl\\knjewelry\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\obj\\Debug\\net8.0\\knjewelry.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\net8.0\\knjewelry.AssemblyInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.repository\\obj\\debug\\net8.0\\jewelry.repository.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.repository\\obj\\debug\\net8.0\\jewelry.repository.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.libs\\obj\\debug\\net8.0\\jewelry.libs.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.libs\\obj\\debug\\net8.0\\jewelry.libs.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.dto\\obj\\debug\\net8.0\\jewelry.dto.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.dto\\obj\\debug\\net8.0\\jewelry.dto.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.common\\obj\\debug\\net8.0\\jewelry.common.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.common\\obj\\debug\\net8.0\\jewelry.common.assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\loaisanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apiservice\\controllers\\loaisanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.authservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apiservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apiservice\\controllers\\nguoidungcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\magiamgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apiservice\\controllers\\magiamgiacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apigateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apigateway\\jewelry.apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apigateway\\jewelry.apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.authservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\chatlieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apiservice\\controllers\\chatlieucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.apiservice\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.apiservice\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\jewelry\\jewelry.repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:jewelry\\jewelry.repository\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|d:\\nam3\\hk2\\cong_nghe_web\\test\\knjewelry\\views\\sanpham\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A024AD7-1CCF-47C5-831B-80DC069C7D60}|knjewelry.csproj|solutionrelative:views\\sanpham\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -22,10 +95,11 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 1,
               "Title": "_Header.cshtml",
               "DocumentMoniker": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\Views\\Shared\\_Header.cshtml",
@@ -49,6 +123,236 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-05-05T08:42:52.824Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 0,
+              "Title": "knjewelry.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\obj\\Debug\\net8.0\\knjewelry.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "obj\\Debug\\net8.0\\knjewelry.AssemblyInfo.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\obj\\Debug\\net8.0\\knjewelry.AssemblyInfo.cs",
+              "RelativeToolTip": "obj\\Debug\\net8.0\\knjewelry.AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T08:00:50.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Jewelry.Repository.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Repository\\obj\\Debug\\net8.0\\Jewelry.Repository.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.Repository\\obj\\Debug\\net8.0\\Jewelry.Repository.AssemblyInfo.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Repository\\obj\\Debug\\net8.0\\Jewelry.Repository.AssemblyInfo.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.Repository\\obj\\Debug\\net8.0\\Jewelry.Repository.AssemblyInfo.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowA4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T08:00:48.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Jewelry.Libs.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Libs\\obj\\Debug\\net8.0\\Jewelry.Libs.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.Libs\\obj\\Debug\\net8.0\\Jewelry.Libs.AssemblyInfo.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Libs\\obj\\Debug\\net8.0\\Jewelry.Libs.AssemblyInfo.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.Libs\\obj\\Debug\\net8.0\\Jewelry.Libs.AssemblyInfo.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAowAwAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T08:00:46.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Jewelry.DTO.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.DTO\\obj\\Debug\\net8.0\\Jewelry.DTO.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.DTO\\obj\\Debug\\net8.0\\Jewelry.DTO.AssemblyInfo.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.DTO\\obj\\Debug\\net8.0\\Jewelry.DTO.AssemblyInfo.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.DTO\\obj\\Debug\\net8.0\\Jewelry.DTO.AssemblyInfo.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T08:00:44.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Jewelry.Common.AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Common\\obj\\Debug\\net8.0\\Jewelry.Common.AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.Common\\obj\\Debug\\net8.0\\Jewelry.Common.AssemblyInfo.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Common\\obj\\Debug\\net8.0\\Jewelry.Common.AssemblyInfo.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.Common\\obj\\Debug\\net8.0\\Jewelry.Common.AssemblyInfo.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowBIAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T08:00:34.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoaiSanPhamController.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.APIService\\Controllers\\LoaiSanPhamController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:59:28.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.AuthService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.AuthService\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.AuthService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.AuthService\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAowA4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:59:25.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Program.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.APIService\\Program.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Program.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.APIService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:59:22.919Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MaGiamGiaController.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\MaGiamGiaController.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.APIService\\Controllers\\MaGiamGiaController.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\MaGiamGiaController.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.APIService\\Controllers\\MaGiamGiaController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAowFoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:57:38.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Program.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.ApiGateway\\Program.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Program.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.ApiGateway\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:52:40.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Jewelry.ApiGateway.csproj",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+              "RelativeToolTip": "Jewelry\\Jewelry.ApiGateway\\Jewelry.ApiGateway.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-02T07:52:37.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.AuthService\\Program.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.AuthService\\Program.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.AuthService\\Program.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.AuthService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:51:58.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NguoiDungController.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.APIService\\Controllers\\NguoiDungController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:51:55.974Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChatLieuController.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.APIService\\Controllers\\ChatLieuController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:51:48.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.APIService\\Controllers\\SanPhamController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-02T07:46:47.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "RelativeToolTip": "Jewelry\\Jewelry.Repository\\AppDbContext.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAAAAJoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T08:07:31.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-01T07:49:58.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Views\\SanPham\\Detail.cshtml",
+              "RelativeDocumentMoniker": "Views\\SanPham\\Detail.cshtml",
+              "ToolTip": "D:\\Nam3\\HK2\\Cong_Nghe_Web\\test\\knjewelry\\Views\\SanPham\\Detail.cshtml",
+              "RelativeToolTip": "Views\\SanPham\\Detail.cshtml",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAA8AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-01T08:02:22.144Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1217,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+>>>>>>> Stashed changes
             }
           ]
         }
