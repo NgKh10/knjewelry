@@ -1945,7 +1945,7 @@ jQuery(document).ready(function ($) {
 			fixedContentPos: false
 		});
 	};
-	siteMagnificPopup();
+	if ($.fn.magnificPopup) { siteMagnificPopup(); }
 
 	var searchShow = function () {
 		// alert();

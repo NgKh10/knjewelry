@@ -1,5 +1,95 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+@model IEnumerable<knjewelry.Models.Entities.HoaDon>
 @{
+    ViewData["Title"] = "Đơn hàng của tôi - K&N JEWELRY";
+    var statusBadge = new Dictionary<string, string>
+    {
+        { "Chờ xác nhận", "badge-warning" },
+        { "Đã xác nhận",  "badge-primary" },
+        { "Đang giao",    "badge-info"    },
+        { "Hoàn thành",   "badge-success" },
+        { "Hủy",          "badge-danger"  },
+    };
 }
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="col-md-12 mb-0">
+            <a href="/">Trang chủ</a> <span class="mx-2">/</span>
+            <strong class="text-black">Đơn hàng của tôi</strong>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar tài khoản -->
+            <div class="col-md-3">
+                <div class="border p-3 mb-3">
+                    <h4 class="mb-3">Tài khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/TaiKhoan/ThongTin" class="text-black">Thông tin cá nhân</a></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DonHang" class="text-black fw-bold">Đơn hàng của tôi</a></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DoiMatKhau" class="text-black">Đổi mật khẩu</a></li>
+                        <li class="mb-2"><hr></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DangXuat" class="text-danger">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Danh sách đơn hàng -->
+            <div class="col-md-9">
+                <div class="border p-4">
+                    <h3 class="mb-4">Đơn hàng của tôi</h3>
+
+                    @if (Model == null || !Model.Any())
+                    {
+                        <div class="text-center py-5">
+                            <i class='bx bx-package' style="font-size:50px;color:#ccc;"></i>
+                            <p class="mt-3 text-muted">Bạn chưa có đơn hàng nào</p>
+                            <a href="/SanPham" class="btn btn-black mt-2">Mua sắm ngay</a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th>Mã đơn</th>
+                                        <th>Ngày đặt</th>
+                                        <th>Tổng tiền</th>
+                                        <th>Trạng thái</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var order in Model.OrderByDescending(o => o.thoi_gian_dat))
+                                    {
+                                        <tr>
+                                            <td><strong>@order.ma_hoa_don</strong></td>
+                                            <td>@order.thoi_gian_dat.ToString("dd/MM/yyyy HH:mm")</td>
+                                            <td class="text-danger fw-bold">@string.Format("{0:N0}₫", order.tong_tien)</td>
+                                            <td>
+                                                @{
+                                                    var cls = statusBadge.GetValueOrDefault(order.trang_thai ?? "", "badge-secondary");
+                                                }
+                                                <span class="badge @cls">@order.trang_thai</span>
+                                            </td>
+                                            <td>
+                                                <a href="/TaiKhoan/ChiTietDonHang/@order.id_hoa_don"
+                                                   class="btn btn-sm btn-outline-dark">
+                                                    Chi tiết
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -142,7 +142,8 @@ a {
             font-size: 12px;
         }*/
 
-.dropdown {
+/* Nav dropdown — CHỈ áp dụng cho menu nav con, KHÔNG áp dụng cho Bootstrap .dropdown */
+.has-children > .dropdown {
     position: absolute;
     top: 100%;
     left: 0;
@@ -162,33 +163,33 @@ a {
     visibility: visible;
 }
 
-.dropdown li {
+.has-children > .dropdown li {
     list-style: none;
     border-bottom: 1px solid var(--border);
 }
 
-    .dropdown li a {
-        display: block;
-        padding: 10px 20px;
-        color: var(--text-dark);
-        font-size: 14px;
-    }
+.has-children > .dropdown li a {
+    display: block;
+    padding: 10px 20px;
+    color: var(--text-dark) !important;
+    font-size: 14px;
+}
 
-        .dropdown li a:hover {
-            background: var(--gray-bg);
-            color: var(--primary);
-            padding-left: 25px;
-        }
+.has-children > .dropdown li a:hover {
+    background: var(--gray-bg);
+    color: var(--primary) !important;
+    padding-left: 25px;
+}
 
 /* Dropdown cấp 3 */
-.dropdown .has-children {
+.has-children > .dropdown .has-children {
     position: relative;
 }
 
-    .dropdown .has-children .dropdown {
-        top: 0;
-        left: 100%;
-    }
+.has-children > .dropdown .has-children > .dropdown {
+    top: 0;
+    left: 100%;
+}
 
 /* Header Icons */
 .icons {

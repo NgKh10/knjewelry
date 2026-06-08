@@ -5,7 +5,7 @@ namespace knjewelry.Models.ViewModels
 {
     public class ThanhToanViewModel
     {
-        public GioHangViewModel GioHang { get; set; }
+        public GioHangViewModel? GioHang { get; set; }  // loaded server-side, not in form
 
         [Required(ErrorMessage = "Vui lòng nhập họ tên")]
         [Display(Name = "Họ tên")]
@@ -47,11 +47,11 @@ namespace knjewelry.Models.ViewModels
         public string PhuongThucThanhToan { get; set; } = "Chuyển khoản QR";
 
         [Display(Name = "Mã giảm giá")]
-        public string MaGiamGia { get; set; }
+        public string? MaGiamGia { get; set; }  // optional
 
         [Display(Name = "Ghi chú")]
         [StringLength(500, ErrorMessage = "Ghi chú tối đa 500 ký tự")]
-        public string GhiChu { get; set; }
+        public string? GhiChu { get; set; }  // optional
     }
 
     public class ThanhToanQRViewModel

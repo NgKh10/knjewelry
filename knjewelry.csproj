@@ -14,6 +14,10 @@
     <None Remove="Jewelry\**\*" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Jewelry\AppSettings.cs" />
+    <Compile Include="Jewelry\Constants.cs" />
+    <Compile Include="Jewelry\Entity.cs" />
+    <Compile Include="Jewelry\Enums.cs" />
     <Compile Include="Jewelry\Jewelry.ApiGateway\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
     <Compile Include="Jewelry\Jewelry.ApiGateway\obj\Debug\net8.0\Jewelry.ApiGateway.AssemblyInfo.cs" />
     <Compile Include="Jewelry\Jewelry.ApiGateway\obj\Debug\net8.0\Jewelry.ApiGateway.GlobalUsings.g.cs" />
@@ -41,6 +45,79 @@
     <Compile Include="Jewelry\Jewelry.AuthService\obj\Debug\net8.0\Jewelry.AuthService.MvcApplicationPartsAssemblyInfo.cs" />
     <Compile Include="Jewelry\Jewelry.AuthService\obj\Debug\net8.0\Jewelry.AuthService.RazorAssemblyInfo.cs" />
     <Compile Include="Jewelry\Jewelry.AuthService\Program.cs" />
+    <Compile Include="Jewelry\Jewelry.Common\Auth\RoleConstant.cs" />
+    <Compile Include="Jewelry\Jewelry.Common\Auth\TokenHelper.cs" />
+    <Compile Include="Jewelry\Jewelry.Common\Helpers\EnumHelper.cs" />
+    <Compile Include="Jewelry\Jewelry.Common\Helpers\FileHelper.cs" />
+    <Compile Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.AssemblyInfo.cs" />
+    <Compile Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.GlobalUsings.g.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\Common\Paging.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\Common\SearchResult.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\Common\SortColumn.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.AssemblyInfo.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.GlobalUsings.g.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\Response\ApiResponse.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\Response\ConstantResponseMessage.cs" />
+    <Compile Include="Jewelry\Jewelry.DTO\Response\JsonRestApiResponse.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\AdminLog.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\Audit\IAuditable.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\Audit\IVersionable.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\BienThe.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\ChatLieu.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\ChiTietGioHang.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\ChiTietHoaDon.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\GioHang.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\HinhAnhSanPham.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\HoaDon.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\LoaiSanPham.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\MaGiamGia.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\NguoiDung.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.AssemblyInfo.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.GlobalUsings.g.cs" />
+    <Compile Include="Jewelry\Jewelry.Entities\SanPham.cs" />
+    <Compile Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.AssemblyInfo.cs" />
+    <Compile Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.GlobalUsings.g.cs" />
+    <Compile Include="Jewelry\Jewelry.Libs\Utils\EnumHelper.cs" />
+    <Compile Include="Jewelry\Jewelry.Libs\Utils\LinqExtenison.cs" />
+    <Compile Include="Jewelry\Jewelry.Libs\Utils\Utils.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\AppDbContext.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\BienTheRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\ChatLieuRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\HinhAnhSanPhamRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\HoaDonRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\IRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\LoaiSanPhamRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\MaGiamGiaRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\NguoiDungRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\Repository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\EFCore\SanPhamRepository.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.AssemblyInfo.cs" />
+    <Compile Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.GlobalUsings.g.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\Authen\UserService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\BienTheService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\ChatLieuService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\HinhAnhSanPhamService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\HoaDonService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\IBienTheService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\IChatLieuService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\IHinhAnhSanPhamService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\IHoaDonService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\ILoaiSanPhamService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\IMaGiamGiaService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\INguoiDungService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\ISanPhamService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\LoaiSanPhamService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\MaGiamGiaService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\NguoiDungService.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.AssemblyInfo.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.GlobalUsings.g.cs" />
+    <Compile Include="Jewelry\Jewelry.Services\SanPhamService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Jewelry\Jewelry.ApiGateway\appsettings.json" />
@@ -232,6 +309,36 @@
     <Content Include="Jewelry\Jewelry.AuthService\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
     <Content Include="Jewelry\Jewelry.AuthService\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt" />
     <Content Include="Jewelry\Jewelry.AuthService\wwwroot\lib\jquery\LICENSE.txt" />
+    <Content Include="Jewelry\Jewelry.Common\bin\Debug\net8.0\Jewelry.Common.deps.json" />
+    <Content Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.csproj.FileListAbsolute.txt" />
+    <Content Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.sourcelink.json" />
+    <Content Include="Jewelry\Jewelry.Common\obj\Jewelry.Common.csproj.nuget.dgspec.json" />
+    <Content Include="Jewelry\Jewelry.Common\obj\project.assets.json" />
+    <Content Include="Jewelry\Jewelry.DTO\bin\Debug\net8.0\Jewelry.DTO.deps.json" />
+    <Content Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.csproj.FileListAbsolute.txt" />
+    <Content Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.sourcelink.json" />
+    <Content Include="Jewelry\Jewelry.DTO\obj\Jewelry.DTO.csproj.nuget.dgspec.json" />
+    <Content Include="Jewelry\Jewelry.DTO\obj\project.assets.json" />
+    <Content Include="Jewelry\Jewelry.Entities\bin\Debug\net8.0\Jewelry.Entities.deps.json" />
+    <Content Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.csproj.FileListAbsolute.txt" />
+    <Content Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.sourcelink.json" />
+    <Content Include="Jewelry\Jewelry.Entities\obj\Jewelry.Entities.csproj.nuget.dgspec.json" />
+    <Content Include="Jewelry\Jewelry.Entities\obj\project.assets.json" />
+    <Content Include="Jewelry\Jewelry.Libs\bin\Debug\net8.0\Jewelry.Libs.deps.json" />
+    <Content Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.csproj.FileListAbsolute.txt" />
+    <Content Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.sourcelink.json" />
+    <Content Include="Jewelry\Jewelry.Libs\obj\Jewelry.Libs.csproj.nuget.dgspec.json" />
+    <Content Include="Jewelry\Jewelry.Libs\obj\project.assets.json" />
+    <Content Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Repository.deps.json" />
+    <Content Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.csproj.FileListAbsolute.txt" />
+    <Content Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.sourcelink.json" />
+    <Content Include="Jewelry\Jewelry.Repository\obj\Jewelry.Repository.csproj.nuget.dgspec.json" />
+    <Content Include="Jewelry\Jewelry.Repository\obj\project.assets.json" />
+    <Content Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Services.deps.json" />
+    <Content Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.csproj.FileListAbsolute.txt" />
+    <Content Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.sourcelink.json" />
+    <Content Include="Jewelry\Jewelry.Services\obj\Jewelry.Services.csproj.nuget.dgspec.json" />
+    <Content Include="Jewelry\Jewelry.Services\obj\project.assets.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Jewelry\Jewelry.ApiGateway\bin\Debug\net8.0\FluentValidation.dll" />
@@ -622,6 +729,116 @@
     <None Include="Jewelry\Jewelry.AuthService\wwwroot\lib\jquery\dist\jquery.js" />
     <None Include="Jewelry\Jewelry.AuthService\wwwroot\lib\jquery\dist\jquery.min.js" />
     <None Include="Jewelry\Jewelry.AuthService\wwwroot\lib\jquery\dist\jquery.min.map" />
+    <None Include="Jewelry\Jewelry.Common\bin\Debug\net8.0\Jewelry.Common.dll" />
+    <None Include="Jewelry\Jewelry.Common\bin\Debug\net8.0\Jewelry.Common.pdb" />
+    <None Include="Jewelry\Jewelry.Common\Jewelry.Common.csproj" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.AssemblyInfoInputs.cache" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.assets.cache" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.csproj.AssemblyReference.cache" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.csproj.CoreCompileInputs.cache" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.dll" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\Jewelry.Common.pdb" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\refint\Jewelry.Common.dll" />
+    <None Include="Jewelry\Jewelry.Common\obj\Debug\net8.0\ref\Jewelry.Common.dll" />
+    <None Include="Jewelry\Jewelry.Common\obj\Jewelry.Common.csproj.nuget.g.props" />
+    <None Include="Jewelry\Jewelry.Common\obj\Jewelry.Common.csproj.nuget.g.targets" />
+    <None Include="Jewelry\Jewelry.Common\obj\project.nuget.cache" />
+    <None Include="Jewelry\Jewelry.DTO\bin\Debug\net8.0\Jewelry.DTO.dll" />
+    <None Include="Jewelry\Jewelry.DTO\bin\Debug\net8.0\Jewelry.DTO.pdb" />
+    <None Include="Jewelry\Jewelry.DTO\Jewelry.DTO.csproj" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.AssemblyInfoInputs.cache" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.assets.cache" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.csproj.AssemblyReference.cache" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.csproj.CoreCompileInputs.cache" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.dll" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\Jewelry.DTO.pdb" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\refint\Jewelry.DTO.dll" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Debug\net8.0\ref\Jewelry.DTO.dll" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Jewelry.DTO.csproj.nuget.g.props" />
+    <None Include="Jewelry\Jewelry.DTO\obj\Jewelry.DTO.csproj.nuget.g.targets" />
+    <None Include="Jewelry\Jewelry.DTO\obj\project.nuget.cache" />
+    <None Include="Jewelry\Jewelry.Entities\bin\Debug\net8.0\Jewelry.Entities.dll" />
+    <None Include="Jewelry\Jewelry.Entities\bin\Debug\net8.0\Jewelry.Entities.pdb" />
+    <None Include="Jewelry\Jewelry.Entities\Jewelry.Entities.csproj" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.AssemblyInfoInputs.cache" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.assets.cache" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.csproj.AssemblyReference.cache" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.csproj.CoreCompileInputs.cache" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.dll" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\Jewelry.Entities.pdb" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\refint\Jewelry.Entities.dll" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Debug\net8.0\ref\Jewelry.Entities.dll" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Jewelry.Entities.csproj.nuget.g.props" />
+    <None Include="Jewelry\Jewelry.Entities\obj\Jewelry.Entities.csproj.nuget.g.targets" />
+    <None Include="Jewelry\Jewelry.Entities\obj\project.nuget.cache" />
+    <None Include="Jewelry\Jewelry.Libs\bin\Debug\net8.0\Jewelry.Libs.dll" />
+    <None Include="Jewelry\Jewelry.Libs\bin\Debug\net8.0\Jewelry.Libs.pdb" />
+    <None Include="Jewelry\Jewelry.Libs\Jewelry.Libs.csproj" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.AssemblyInfoInputs.cache" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.assets.cache" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.csproj.AssemblyReference.cache" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.csproj.CoreCompileInputs.cache" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.dll" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\Jewelry.Libs.pdb" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\refint\Jewelry.Libs.dll" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Debug\net8.0\ref\Jewelry.Libs.dll" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Jewelry.Libs.csproj.nuget.g.props" />
+    <None Include="Jewelry\Jewelry.Libs\obj\Jewelry.Libs.csproj.nuget.g.targets" />
+    <None Include="Jewelry\Jewelry.Libs\obj\project.nuget.cache" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Common.dll" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Common.pdb" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.DTO.dll" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.DTO.pdb" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Entities.dll" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Entities.pdb" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Libs.dll" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Libs.pdb" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Repository.dll" />
+    <None Include="Jewelry\Jewelry.Repository\bin\Debug\net8.0\Jewelry.Repository.pdb" />
+    <None Include="Jewelry\Jewelry.Repository\Jewelry.Repository.csproj" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry..788FE2D7.Up2Date" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.AssemblyInfoInputs.cache" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.assets.cache" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.csproj.AssemblyReference.cache" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.csproj.CoreCompileInputs.cache" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.dll" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\Jewelry.Repository.pdb" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\refint\Jewelry.Repository.dll" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Debug\net8.0\ref\Jewelry.Repository.dll" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Jewelry.Repository.csproj.nuget.g.props" />
+    <None Include="Jewelry\Jewelry.Repository\obj\Jewelry.Repository.csproj.nuget.g.targets" />
+    <None Include="Jewelry\Jewelry.Repository\obj\project.nuget.cache" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Common.dll" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Common.pdb" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.DTO.dll" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.DTO.pdb" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Entities.dll" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Entities.pdb" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Libs.dll" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Libs.pdb" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Repository.dll" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Repository.pdb" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Services.dll" />
+    <None Include="Jewelry\Jewelry.Services\bin\Debug\net8.0\Jewelry.Services.pdb" />
+    <None Include="Jewelry\Jewelry.Services\Jewelry.Services.csproj" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry..2714F1DB.Up2Date" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.AssemblyInfoInputs.cache" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.assets.cache" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.csproj.AssemblyReference.cache" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.csproj.CoreCompileInputs.cache" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.dll" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\Jewelry.Services.pdb" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\refint\Jewelry.Services.dll" />
+    <None Include="Jewelry\Jewelry.Services\obj\Debug\net8.0\ref\Jewelry.Services.dll" />
+    <None Include="Jewelry\Jewelry.Services\obj\Jewelry.Services.csproj.nuget.g.props" />
+    <None Include="Jewelry\Jewelry.Services\obj\Jewelry.Services.csproj.nuget.g.targets" />
+    <None Include="Jewelry\Jewelry.Services\obj\project.nuget.cache" />
   </ItemGroup>
 
   <ItemGroup>
@@ -633,6 +850,19 @@
     <PackageReference Include="Ocelot" Version="24.1.0" />
     <PackageReference Include="StackExchange.Redis" Version="2.13.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.0.0" />
+  </ItemGroup>
+
+  <!--
+    FIX: Loại bỏ các file gây lỗi compile khi gộp microservices vào 1 project:
+    1. Các file Program.cs của microservices → lỗi "Only one compilation unit can have top-level statements"
+    2. Các file auto-generated trong obj/ → lỗi duplicate assembly attributes
+  -->
+  <ItemGroup>
+    <Compile Remove="Jewelry\**\obj\**" />
+    <Compile Remove="Jewelry\Jewelry.APIService\Program.cs" />
+    <Compile Remove="Jewelry\Jewelry.AuthService\Program.cs" />
+    <Compile Remove="Jewelry\Jewelry.ApiGateway\Program.cs" />
+    <Compile Remove="Jewelry\Jewelry.AuthService\Models\ErrorViewModel.cs" />
   </ItemGroup>
 
 </Project>

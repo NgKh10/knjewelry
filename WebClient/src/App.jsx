@@ -70,7 +70,10 @@ function AppRoutes() {
 
 function App() {
     return (
-        <Router>
+        // basename="/admin" khớp với base: '/admin/' trong vite.config.js
+        // Khi deploy, React app chạy tại /admin/ — BrowserRouter cần biết điều này
+        // để các Link to="/products" render đúng thành href="/admin/products"
+        <Router basename="/admin">
             <AuthProvider>
                 <AppRoutes />
             </AuthProvider>

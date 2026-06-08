@@ -1,7 +1,19 @@
-﻿@model knjewelry.Models.Entities.SanPham
+@model knjewelry.Models.Entities.SanPham
 @{
     ViewData["Title"] = Model.ten_sp + " - K&N JEWELRY";
     var relatedProducts = ViewBag.RelatedProducts as IEnumerable<knjewelry.Models.Entities.SanPham> ?? new List<knjewelry.Models.Entities.SanPham>();
+
+    // Dữ liệu biến thể sang JSON để JavaScript dùng
+    var bienThesJson = System.Text.Json.JsonSerializer.Serialize(
+        Model.BienThes?.Select(b => new {
+            id = b.id_bien_the,
+            kich_co = b.kich_co,
+            mau_sac = b.mau_sac,
+            so_luong_ton = b.so_luong_ton,
+            gia_them = b.gia_them
+        }) ?? Enumerable.Empty<object>()
+    );
+    var giaCoSo = (double)(Model.gia_khuyen_mai ?? Model.gia);
 }
 
 <div class="bg-light py-3">
@@ -22,7 +34,8 @@
             <!-- Hình ảnh -->
             <div class="col-md-6">
                 <div class="border text-center bg-white p-4">
-                    <img src="@(Model.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")" alt="@Model.ten_sp" class="img-fluid" id="mainImage" style="max-height: 400px;">
+                    <img src="@(Model.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")" alt="@Model.ten_sp"
+                         class="img-fluid" id="mainImage" style="max-height: 400px;">
                 </div>
                 @if (Model.HinhAnhs != null && Model.HinhAnhs.Count > 1)
                 {
@@ -30,28 +43,30 @@
                         @foreach (var img in Model.HinhAnhs)
                         {
                             <div class="col-3">
-                                <img src="@img.duong_dan" alt="Thumb" class="img-fluid border p-1" style="height: 80px; width: 100%; object-fit: cover; cursor: pointer;" onclick="document.getElementById('mainImage').src = this.src">
+                                <img src="@img.duong_dan" alt="Thumb" class="img-fluid border p-1 thumb-img"
+                                     style="height: 80px; width: 100%; object-fit: cover; cursor: pointer;">
                             </div>
                         }
                     </div>
                 }
             </div>
 
-            <!-- Thông tin -->
+            <!-- Thông tin sản phẩm -->
             <div class="col-md-6">
                 <h2 class="text-black">@Model.ten_sp</h2>
                 <p class="text-muted">Mã: SP@(Model.id_san_pham.ToString("D6"))</p>
 
+                <!-- Giá (cập nhật động khi chọn biến thể) -->
                 <div class="mb-4">
                     @if (Model.gia_khuyen_mai.HasValue)
                     {
-                        <span class="display-5 text-primary fw-bold">@string.Format("{0:N0}₫", Model.gia_khuyen_mai)</span>
+                        <span class="display-5 text-primary fw-bold" id="display-price">@string.Format("{0:N0}₫", Model.gia_khuyen_mai)</span>
                         <span class="ms-2 text-muted"><del>@string.Format("{0:N0}₫", Model.gia)</del></span>
                         <span class="badge bg-danger ms-2">-@((int)((Model.gia - Model.gia_khuyen_mai.Value) / Model.gia * 100))%</span>
                     }
                     else
                     {
-                        <span class="display-5 text-primary fw-bold">@string.Format("{0:N0}₫", Model.gia)</span>
+                        <span class="display-5 text-primary fw-bold" id="display-price">@string.Format("{0:N0}₫", Model.gia)</span>
                     }
                 </div>
 
@@ -62,14 +77,15 @@
                     {
                         <p><strong>Trọng lượng:</strong> @Model.trong_luong.Value.ToString("0.00") g</p>
                     }
-                    <p><strong>Tình trạng:</strong> <span class="text-success">Còn hàng</span></p>
+                    <p><strong>Tình trạng:</strong> <span id="stock-text" class="text-success">Còn hàng</span></p>
                 </div>
 
+                <!-- Chọn kích cỡ -->
                 @if (Model.BienThes != null && Model.BienThes.Any(b => !string.IsNullOrEmpty(b.kich_co)))
                 {
                     <div class="mb-4">
                         <h5 class="mb-2">Kích cỡ</h5>
-                        <div class="d-flex flex-wrap gap-2">
+                        <div class="d-flex flex-wrap gap-2" id="size-group">
                             @foreach (var size in Model.BienThes.Where(b => !string.IsNullOrEmpty(b.kich_co)).Select(b => b.kich_co).Distinct())
                             {
                                 <button class="btn-size btn btn-outline-secondary" data-size="@size">@size</button>
@@ -78,11 +94,12 @@
                     </div>
                 }
 
+                <!-- Chọn màu sắc -->
                 @if (Model.BienThes != null && Model.BienThes.Any(b => !string.IsNullOrEmpty(b.mau_sac)))
                 {
                     <div class="mb-4">
                         <h5 class="mb-2">Màu sắc</h5>
-                        <div class="d-flex flex-wrap gap-2">
+                        <div class="d-flex flex-wrap gap-2" id="color-group">
                             @foreach (var color in Model.BienThes.Where(b => !string.IsNullOrEmpty(b.mau_sac)).Select(b => b.mau_sac).Distinct())
                             {
                                 <button class="btn-color btn btn-outline-secondary" data-color="@color">@color</button>
@@ -91,21 +108,27 @@
                     </div>
                 }
 
+                <!-- Số lượng -->
                 <div class="mb-4">
                     <h5 class="mb-2">Số lượng</h5>
-                    <div class="input-group" style="width: 130px;">
-                        <button class="btn btn-outline-secondary" type="button" id="btn-minus">-</button>
-                        <input id="quantity" class="form-control text-center" value="1" min="1" max="99">
-                        <button class="btn btn-outline-secondary" type="button" id="btn-plus">+</button>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="input-group" style="width: 130px;">
+                            <button class="btn btn-outline-secondary" type="button" id="btn-minus">-</button>
+                            <input id="quantity" class="form-control text-center" value="1" min="1" max="99">
+                            <button class="btn btn-outline-secondary" type="button" id="btn-plus">+</button>
+                        </div>
+                        <small id="stock-info" class="text-muted"></small>
                     </div>
                 </div>
 
+                <!-- Nút hành động -->
                 <div class="mb-4">
                     <button class="btn btn-black px-5 py-2" id="btn-add-to-cart" data-id="@Model.id_san_pham">
                         <i class='bx bx-cart-add'></i> Thêm vào giỏ
                     </button>
-                    <button class="btn btn-outline-primary px-4 py-2 ms-2">
-                        <i class='bx bx-heart'></i> Yêu thích
+                    <button class="btn btn-outline-primary px-4 py-2 ms-2" id="btn-wishlist"
+                            data-id="@Model.id_san_pham" data-name="@Model.ten_sp">
+                        <i class='bx bx-heart' id="heart-icon"></i> Yêu thích
                     </button>
                 </div>
 
@@ -141,8 +164,138 @@
     </div>
 }
 
+@section Scripts {
 <script>
-    $('#btn-minus').click(function () { var qty = $('#quantity'); if (parseInt(qty.val()) > 1) qty.val(parseInt(qty.val()) - 1); });
-    $('#btn-plus').click(function () { var qty = $('#quantity'); if (parseInt(qty.val()) < 99) qty.val(parseInt(qty.val()) + 1); });
-    $('.btn-size, .btn-color').click(function () { $(this).siblings().removeClass('active'); $(this).addClass('active'); });
+$(document).ready(function () {
+
+    // ── Dữ liệu biến thể ─────────────────────────────────
+    var variants  = @Html.Raw(bienThesJson);
+    var basePrice = @giaCoSo;
+    var hasSizes  = variants.some(function(v){ return v.kich_co; });
+    var hasColors = variants.some(function(v){ return v.mau_sac; });
+
+    // ── Ảnh thumbnail ────────────────────────────────────
+    $('.thumb-img').click(function(){
+        $('#mainImage').attr('src', $(this).attr('src'));
+    });
+
+    // ── Tìm biến thể khớp với lựa chọn ──────────────────
+    function findVariant() {
+        var sz = $('.btn-size.active').data('size')  || null;
+        var cl = $('.btn-color.active').data('color') || null;
+        return variants.find(function(v){
+            return (!hasSizes  || v.kich_co === sz) &&
+                   (!hasColors || v.mau_sac === cl);
+        }) || null;
+    }
+
+    // ── Cập nhật giá & tồn kho khi chọn biến thể ─────────
+    function updateVariantDisplay() {
+        var sizeOk  = !hasSizes  || $('.btn-size.active').length  > 0;
+        var colorOk = !hasColors || $('.btn-color.active').length > 0;
+
+        if (!sizeOk || !colorOk) {
+            $('#stock-info').text('');
+            $('#btn-add-to-cart').data('bien-the-id', null).prop('disabled', false);
+            return;
+        }
+
+        var v = findVariant();
+        if (!v) {
+            $('#stock-info').text('Không có biến thể này').removeClass('text-success').addClass('text-danger');
+            $('#btn-add-to-cart').prop('disabled', true);
+            return;
+        }
+
+        // Cập nhật giá
+        var finalPrice = basePrice + (v.gia_them || 0);
+        $('#display-price').text(finalPrice.toLocaleString('vi-VN') + '₫');
+
+        // Cập nhật tồn kho
+        if (v.so_luong_ton > 0) {
+            $('#stock-info').text('Còn ' + v.so_luong_ton + ' sản phẩm').removeClass('text-danger').addClass('text-success');
+            $('#stock-text').text('Còn hàng').removeClass('text-danger').addClass('text-success');
+            $('#quantity').attr('max', v.so_luong_ton);
+            var curQty = parseInt($('#quantity').val());
+            if (curQty > v.so_luong_ton) $('#quantity').val(v.so_luong_ton);
+            $('#btn-add-to-cart').prop('disabled', false);
+        } else {
+            $('#stock-info').text('Hết hàng').removeClass('text-success').addClass('text-danger');
+            $('#stock-text').text('Hết hàng').removeClass('text-success').addClass('text-danger');
+            $('#btn-add-to-cart').prop('disabled', true);
+        }
+
+        $('#btn-add-to-cart').data('bien-the-id', v.id);
+    }
+
+    // ── Chọn kích cỡ ──────────────────────────────────────
+    $('.btn-size').click(function () {
+        $('.btn-size').removeClass('active');
+        $(this).addClass('active');
+        updateVariantDisplay();
+    });
+
+    // ── Chọn màu sắc ──────────────────────────────────────
+    $('.btn-color').click(function () {
+        $('.btn-color').removeClass('active');
+        $(this).addClass('active');
+        updateVariantDisplay();
+    });
+
+    // ── Nút tăng/giảm số lượng ────────────────────────────
+    $('#btn-minus').click(function () {
+        var v = parseInt($('#quantity').val());
+        if (v > 1) $('#quantity').val(v - 1);
+    });
+
+    $('#btn-plus').click(function () {
+        var v   = parseInt($('#quantity').val());
+        var max = parseInt($('#quantity').attr('max')) || 99;
+        if (v < max) $('#quantity').val(v + 1);
+    });
+
+    // ── Nút Yêu thích (localStorage) ─────────────────────
+    var productId   = $('#btn-wishlist').data('id').toString();
+    var productName = $('#btn-wishlist').data('name');
+    var wishlist    = JSON.parse(localStorage.getItem('wishlist') || '[]');
+
+    function updateHeartUI() {
+        if (wishlist.indexOf(productId) >= 0) {
+            $('#heart-icon').removeClass('bx-heart').addClass('bxs-heart');
+            $('#btn-wishlist').addClass('btn-primary').removeClass('btn-outline-primary');
+        } else {
+            $('#heart-icon').removeClass('bxs-heart').addClass('bx-heart');
+            $('#btn-wishlist').addClass('btn-outline-primary').removeClass('btn-primary');
+        }
+    }
+
+    updateHeartUI();
+
+    $('#btn-wishlist').click(function () {
+        var idx = wishlist.indexOf(productId);
+        if (idx >= 0) {
+            wishlist.splice(idx, 1);
+            showToast('Đã xóa khỏi danh sách yêu thích', '#6c757d');
+        } else {
+            wishlist.push(productId);
+            showToast('Đã thêm vào danh sách yêu thích ❤', '#e74c3c');
+        }
+        localStorage.setItem('wishlist', JSON.stringify(wishlist));
+        updateHeartUI();
+    });
+
+    // ── Toast thông báo ────────────────────────────────────
+    function showToast(msg, bg) {
+        var t = $('<div>').text(msg).css({
+            position:'fixed', bottom:'24px', right:'24px', zIndex:9999,
+            background: bg || '#28a745', color:'#fff',
+            padding:'12px 22px', borderRadius:'8px',
+            fontSize:'14px', boxShadow:'0 2px 10px rgba(0,0,0,.25)'
+        });
+        $('body').append(t);
+        setTimeout(function(){ t.fadeOut(400, function(){ t.remove(); }); }, 2800);
+    }
+
+});
 </script>
+}

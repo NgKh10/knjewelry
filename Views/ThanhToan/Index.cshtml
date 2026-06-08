@@ -23,6 +23,18 @@
                     <div class="border p-4">
                         <h3 class="mb-4">Thông tin nhận hàng</h3>
 
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger">
+                                <ul class="mb-0">
+                                    @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                    {
+                                        <li>@err.ErrorMessage</li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+
                         <div class="form-group mb-3">
                             <label asp-for="HoTen">Họ tên <span class="text-danger">*</span></label>
                             <input asp-for="HoTen" class="form-control" />
@@ -81,21 +93,58 @@
                                 <tr><th>Sản phẩm</th><th>Số lượng</th><th>Thành tiền</th></tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model.GioHang.DanhSachSanPham)
+                                @foreach (var item in (Model.GioHang?.DanhSachSanPham ?? new List<knjewelry.Models.ViewModels.GioHangItemViewModel>()))
                                 {
                                     <tr>
-                                        <td>@item.TenSanPham</td>
+                                        <td>
+                                            @item.TenSanPham
+                                            @if (!string.IsNullOrEmpty(item.KichCo) || !string.IsNullOrEmpty(item.MauSac))
+                                            {
+                                                <small class="text-muted d-block">
+                                                    @string.Join(" / ", new[] { item.KichCo, item.MauSac }.Where(x => !string.IsNullOrEmpty(x)))
+                                                </small>
+                                            }
+                                        </td>
                                         <td class="text-center">@item.SoLuong</td>
                                         <td class="text-end">@string.Format("{0:N0}₫", item.ThanhTien)</td>
                                     </tr>
                                 }
                             </tbody>
                             <tfoot>
-                                <tr><th colspan="2">Tạm tính</th><th>@string.Format("{0:N0}₫", Model.GioHang.TongTienHang)</th></tr>
-                                <tr><th colspan="2">Phí vận chuyển</th><th>@string.Format("{0:N0}₫", Model.GioHang.PhiVanChuyen)</th></tr>
-                                <tr class="table-active"><th colspan="2">Tổng cộng</th><th class="text-danger">@string.Format("{0:N0}₫", Model.GioHang.TongTien)</th></tr>
+                                <tr>
+                                    <th colspan="2">Tạm tính</th>
+                                    <th>@string.Format("{0:N0}₫", Model.GioHang?.TongTienHang ?? 0)</th>
+                                </tr>
+                                <tr id="row-giam" style="display:none;">
+                                    <th colspan="2" class="text-success">Giảm giá (<span id="span-ma-giam"></span>)</th>
+                                    <th class="text-success" id="td-giam">-0₫</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Phí vận chuyển</th>
+                                    <th>@string.Format("{0:N0}₫", Model.GioHang?.PhiVanChuyen ?? 0)</th>
+                                </tr>
+                                <tr class="table-active">
+                                    <th colspan="2">Tổng cộng</th>
+                                    <th class="text-danger" id="td-tong">@string.Format("{0:N0}₫", Model.GioHang?.TongTien ?? 0)</th>
+                                </tr>
                             </tfoot>
                         </table>
+
+                        <!-- Mã giảm giá -->
+                        <div class="form-group mb-3">
+                            <label>Mã giảm giá <small class="text-muted">(không bắt buộc)</small></label>
+                            <div class="input-group">
+                                <input type="text" id="input-coupon" class="form-control"
+                                       placeholder="Nhập mã giảm giá..."
+                                       value="@Model.MaGiamGia"
+                                       style="text-transform:uppercase;">
+                                <button type="button" id="btn-apply-coupon" class="btn btn-outline-dark">
+                                    <i class='bx bx-check-circle'></i> Áp dụng
+                                </button>
+                            </div>
+                            <div id="coupon-msg" class="mt-1 small"></div>
+                            <input type="hidden" asp-for="MaGiamGia" id="hidden-coupon" />
+                        </div>
 
                         <div class="form-group mb-3">
                             <label>Phương thức thanh toán</label>
@@ -120,15 +169,63 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script>
-        $('#btn-apply-coupon').click(function () {
-            var code = $('#MaGiamGia').val();
-            $.post('/GioHang/ApDungMaGiamGia', { maGiamGia: code }, function (res) {
-                if (res.success) {
-                    location.reload();
-                } else {
-                    alert(res.message);
-                }
-            });
+    $(document).ready(function () {
+        var tienHang = @(Model.GioHang?.TongTienHang ?? 0);
+        var ship     = @(Model.GioHang?.PhiVanChuyen ?? 0);
+        var baseTotal = tienHang + ship;
+
+        // Nếu đã có mã (khi re-render do lỗi), tự động kiểm tra lại
+        var existingCode = $('#hidden-coupon').val();
+        if (existingCode) {
+            $('#input-coupon').val(existingCode);
+            applyCode(existingCode);
+        }
+
+        // Uppercase input
+        $('#input-coupon').on('input', function () {
+            $(this).val($(this).val().toUpperCase());
         });
+
+        // Nút Áp dụng
+        $('#btn-apply-coupon').click(function () {
+            applyCode($('#input-coupon').val().trim());
+        });
+
+        // Enter để áp dụng
+        $('#input-coupon').keypress(function (e) {
+            if (e.which === 13) { e.preventDefault(); applyCode($(this).val().trim()); }
+        });
+
+        function applyCode(code) {
+            if (!code) {
+                resetDiscount();
+                return;
+            }
+            $('#btn-apply-coupon').prop('disabled', true).html('<span class="spinner-border spinner-border-sm"></span>');
+
+            $.post('/ThanhToan/KiemTraMaGiamGia', { code: code, total: tienHang }, function (res) {
+                if (res.success) {
+                    $('#coupon-msg').html('<span class="text-success"><i class="bx bx-check-circle"></i> ' + res.moTa + '</span>');
+                    $('#hidden-coupon').val(res.code);
+                    $('#span-ma-giam').text(res.code);
+                    $('#row-giam').show();
+                    $('#td-giam').text('-' + Math.round(res.soGiam).toLocaleString('vi-VN') + '₫');
+                    var newTotal = tienHang - res.soGiam + ship;
+                    $('#td-tong').text(Math.round(newTotal).toLocaleString('vi-VN') + '₫');
+                } else {
+                    $('#coupon-msg').html('<span class="text-danger"><i class="bx bx-x-circle"></i> ' + res.message + '</span>');
+                    resetDiscount();
+                }
+            }).always(function () {
+                $('#btn-apply-coupon').prop('disabled', false).html('<i class="bx bx-check-circle"></i> Áp dụng');
+            });
+        }
+
+        function resetDiscount() {
+            $('#hidden-coupon').val('');
+            $('#row-giam').hide();
+            $('#td-tong').text(baseTotal.toLocaleString('vi-VN') + '₫');
+        }
+    });
     </script>
 }

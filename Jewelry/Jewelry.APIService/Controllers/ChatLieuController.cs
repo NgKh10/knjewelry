@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Jewelry.Entities;
 using Jewelry.Repository.EFCore;
+using Jewelry.Services;
 
 namespace Jewelry.APIService.Controllers;
 
@@ -9,11 +10,11 @@ namespace Jewelry.APIService.Controllers;
 [ApiController]
 public class ChatLieuController : ControllerBase
 {
-    private readonly IChatLieuRepository _repository;
+    private readonly IChatLieuService _service;
 
-    public ChatLieuController(IChatLieuRepository repository)
+    public ChatLieuController(IChatLieuService service)
     {
-        _repository = repository;
+        _service = service;
     }
 
     /// <summary>
@@ -27,7 +28,7 @@ public class ChatLieuController : ControllerBase
         [FromQuery] int pageSize = 10,
         [FromQuery] string? sortOrder = null)
     {
-        var (items, totalCount) = await _repository.SearchAsync(keyword, doTinhKhiet, page, pageSize, sortOrder);
+        var (items, totalCount) = await _service.SearchAsync(keyword, doTinhKhiet, page, pageSize, sortOrder);
 
         return Ok(new
         {
@@ -45,7 +46,7 @@ public class ChatLieuController : ControllerBase
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetById(int id)
     {
-        var item = await _repository.GetByIdAsync(id);
+        var item = await _service.GetByIdAsync(id);
         if (item == null) return NotFound(new { message = "Không tìm thấy chất liệu!" });
         return Ok(item);
     }
@@ -60,11 +61,7 @@ public class ChatLieuController : ControllerBase
         if (string.IsNullOrWhiteSpace(entity.ten_chat_lieu))
             return BadRequest(new { message = "Tên chất liệu không được để trống!" });
 
-        var exists = await _repository.GetByNameAsync(entity.ten_chat_lieu);
-        if (exists != null)
-            return BadRequest(new { message = "Tên chất liệu đã tồn tại!" });
-
-        await _repository.AddAsync(entity);
+        await _service.CreateAsync(entity);
         return Ok(new { entity.id_chat_lieu, entity.ten_chat_lieu, message = "Thêm thành công!" });
     }
 
@@ -75,23 +72,17 @@ public class ChatLieuController : ControllerBase
     [Authorize(Roles = "quan_tri")]
     public async Task<IActionResult> Update(int id, [FromBody] ChatLieu entity)
     {
-        if (string.IsNullOrWhiteSpace(entity.ten_chat_lieu))
-            return BadRequest(new { message = "Tên chất liệu không được để trống!" });
+        entity.id_chat_lieu = id; // Đảm bảo ID đồng bộ
 
-        var existing = await _repository.GetByIdAsync(id);
-        if (existing == null)
-            return NotFound(new { message = "Không tìm thấy chất liệu!" });
-
-        var duplicate = await _repository.GetByNameAsync(entity.ten_chat_lieu);
-        if (duplicate != null && duplicate.id_chat_lieu != id)
-            return BadRequest(new { message = "Tên chất liệu đã tồn tại!" });
-
-        existing.ten_chat_lieu = entity.ten_chat_lieu;
-        existing.do_tinh_khiet = entity.do_tinh_khiet;
-        existing.mo_ta = entity.mo_ta;
-
-        await _repository.UpdateAsync(existing);
-        return Ok(new { message = "Cập nhật thành công!" });
+        try
+        {
+            await _service.UpdateAsync(entity);
+            return Ok(new { message = "Cập nhật thành công!" });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
     }
 
     /// <summary>
@@ -101,14 +92,14 @@ public class ChatLieuController : ControllerBase
     [Authorize(Roles = "quan_tri")]
     public async Task<IActionResult> Delete(int id)
     {
-        var item = await _repository.GetByIdAsync(id);
-        if (item == null)
-            return NotFound(new { message = "Không tìm thấy chất liệu!" });
-
-        if (await _repository.HasProductsAsync(id))
-            return BadRequest(new { message = "Không thể xóa: Chất liệu đang được sử dụng!" });
-
-        await _repository.DeleteAsync(item);
-        return Ok(new { message = "Xóa thành công!" });
+        try
+        {
+            await _service.DeleteAsync(id);
+            return Ok(new { message = "Xóa thành công!" });
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(new { message = ex.Message });
+        }
     }
 }

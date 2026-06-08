@@ -5,9 +5,7 @@ const AuthContext = createContext(null);
 
 export const useAuth = () => {
     const context = useContext(AuthContext);
-    if (!context) {
-        throw new Error('useAuth must be used within an AuthProvider');
-    }
+    if (!context) throw new Error('useAuth must be used within AuthProvider');
     return context;
 };
 
@@ -24,20 +22,16 @@ export const AuthProvider = ({ children }) => {
         setLoading(false);
     }, []);
 
-    // Sửa hàm login - nhận đúng tên field tiếng Việt
     const login = async (ten_dang_nhap, mat_khau) => {
         try {
             const response = await authApi.login({ ten_dang_nhap, mat_khau });
             const userData = response.data;
-
             localStorage.setItem('token', userData.token);
             localStorage.setItem('user', JSON.stringify(userData));
             setUser(userData);
-
-            return { success: true };
+            return { success: true, vai_tro: userData.vai_tro };
         } catch (error) {
-            const message = error.response?.data?.message || 'Đăng nhập thất bại';
-            return { success: false, message };
+            return { success: false, message: error.response?.data?.message || 'Đăng nhập thất bại' };
         }
     };
 
@@ -47,22 +41,19 @@ export const AuthProvider = ({ children }) => {
         setUser(null);
     };
 
-    // Sửa isAdmin - dùng vai_tro thay vì role
-    const isAdmin = () => {
-        return user?.vai_tro === 'quan_tri';
-    };
-
-    const value = {
-        user,
-        login,
-        logout,
-        isAdmin,
-        isAuthenticated: !!user,
-        loading,
-    };
+    const isAdmin = () => user?.vai_tro === 'quan_tri';
+    const isCustomer = () => user?.vai_tro === 'khach_hang';
 
     return (
-        <AuthContext.Provider value={value}>
+        <AuthContext.Provider value={{
+            user,
+            login,
+            logout,
+            isAdmin,
+            isCustomer,
+            isAuthenticated: !!user,
+            loading,
+        }}>
             {children}
         </AuthContext.Provider>
     );
