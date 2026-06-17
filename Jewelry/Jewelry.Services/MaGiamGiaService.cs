@@ -37,17 +37,17 @@ namespace Jewelry.Services
             if (exists != null)
                 throw new Exception("Mã code đã tồn tại!");
 
-            if (entity.loai_giam != "%" && entity.loai_giam != "fixed")
-                throw new Exception("Loại giảm phải là '%' hoặc 'fixed'!");
+            if (entity.loai_giam != "phan_tram" && entity.loai_giam != "tien_mat")
+                throw new Exception("Loại giảm không hợp lệ! Chỉ chấp nhận 'phan_tram' hoặc 'tien_mat'.");
 
             if (entity.gia_tri <= 0)
                 throw new Exception("Giá trị giảm phải lớn hơn 0!");
 
-            if (entity.loai_giam == "%" && entity.gia_tri > 100)
+            if (entity.loai_giam == "phan_tram" && entity.gia_tri > 100)
                 throw new Exception("Phần trăm giảm không được vượt quá 100%!");
 
             entity.da_su_dung = 0;
-            entity.trang_thai = 1;
+            entity.trang_thai = (entity.ngay_ket_thuc.HasValue && entity.ngay_ket_thuc < DateTime.Now) ? (byte)0 : (byte)1;
 
             return await _repository.AddAsync(entity);
         }
@@ -77,7 +77,12 @@ namespace Jewelry.Services
             existing.so_luong = entity.so_luong;
             existing.ngay_bat_dau = entity.ngay_bat_dau;
             existing.ngay_ket_thuc = entity.ngay_ket_thuc;
-            existing.trang_thai = entity.trang_thai;
+
+            // Nếu ngày hết hạn đã qua thì tự động ngừng, bất kể người dùng đặt gì
+            if (entity.ngay_ket_thuc.HasValue && entity.ngay_ket_thuc < DateTime.Now)
+                existing.trang_thai = 0;
+            else
+                existing.trang_thai = entity.trang_thai;
 
             await _repository.UpdateAsync(existing);
         }

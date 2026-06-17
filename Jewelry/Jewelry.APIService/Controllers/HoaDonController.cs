@@ -117,6 +117,46 @@ public class HoaDonController : ControllerBase
         return Ok(new { created.id_hoa_don, created.ma_hoa_don, message = "Đặt hàng thành công!" });
     }
 
+    /// <summary>PUT /api/hoadon/bulk-status - Admin: cập nhật hàng loạt trạng thái đơn hàng</summary>
+    [HttpPut("bulk-status")]
+    [Authorize(Roles = "quan_tri")]
+    public async Task<IActionResult> BulkUpdateStatus([FromBody] BulkUpdateStatusRequest request)
+    {
+        if (request.ids == null || request.ids.Count == 0)
+            return BadRequest(new { message = "Danh sách đơn hàng không được để trống!" });
+
+        int success = 0, failed = 0;
+        var errors = new List<string>();
+
+        foreach (var id in request.ids)
+        {
+            var order = await _repository.GetByIdAsync(id);
+            if (order == null) { failed++; errors.Add($"Đơn #{id}: Không tìm thấy"); continue; }
+
+            if (!ValidTransitions.TryGetValue(order.trang_thai, out var allowedNext) || !allowedNext.Contains(request.trang_thai))
+            {
+                failed++;
+                errors.Add($"Đơn #{id}: Không thể chuyển từ '{order.trang_thai}' sang '{request.trang_thai}'");
+                continue;
+            }
+
+            order.trang_thai = request.trang_thai;
+            if (request.trang_thai == "Hoàn thành")
+                order.thoi_gian_giao_tt = DateTime.Now;
+
+            await _repository.UpdateAsync(order);
+            success++;
+        }
+
+        return Ok(new
+        {
+            message = $"Đã cập nhật {success} đơn hàng" + (failed > 0 ? $", {failed} đơn thất bại" : ""),
+            success,
+            failed,
+            errors
+        });
+    }
+
     /// <summary>
     /// PUT /api/hoadon/{id}/status - Cập nhật trạng thái đơn hàng
     /// Chỉ admin mới chuyển trạng thái, ngoại trừ khách hàng có thể hủy đơn "Chờ xác nhận"
@@ -178,4 +218,10 @@ public class UpdateStatusRequest
 {
     public string trang_thai { get; set; } = "";
     public string? ghi_chu { get; set; }
+}
+
+public class BulkUpdateStatusRequest
+{
+    public List<int> ids { get; set; } = new();
+    public string trang_thai { get; set; } = "";
 }

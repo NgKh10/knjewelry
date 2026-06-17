@@ -46,6 +46,10 @@ const Orders = () => {
     const [loadingDetail, setLoadingDetail] = useState(false);
     const [statusUpdating, setStatusUpdating] = useState(false);
     const [statusError, setStatusError] = useState('');
+
+    const [selectedIds, setSelectedIds] = useState(new Set());
+    const [bulkUpdating, setBulkUpdating] = useState(false);
+
     const { isAdmin } = useAuth();
 
     useEffect(() => {
@@ -54,6 +58,7 @@ const Orders = () => {
 
     const loadItems = async () => {
         setLoading(true);
+        setSelectedIds(new Set());
         try {
             const params = { page, pageSize };
             if (keyword) params.keyword = keyword;
@@ -114,6 +119,60 @@ const Orders = () => {
             setStatusError(msg);
         } finally {
             setStatusUpdating(false);
+        }
+    };
+
+    const toggleSelect = (id) => {
+        setSelectedIds(prev => {
+            const next = new Set(prev);
+            if (next.has(id)) next.delete(id); else next.add(id);
+            return next;
+        });
+    };
+
+    const isAllSelected = items.length > 0 && items.every(item => selectedIds.has(item.id_hoa_don));
+
+    const toggleSelectAll = () => {
+        if (isAllSelected) {
+            setSelectedIds(prev => {
+                const next = new Set(prev);
+                items.forEach(item => next.delete(item.id_hoa_don));
+                return next;
+            });
+        } else {
+            setSelectedIds(prev => {
+                const next = new Set(prev);
+                items.forEach(item => next.add(item.id_hoa_don));
+                return next;
+            });
+        }
+    };
+
+    const getCommonNextStatuses = () => {
+        if (selectedIds.size === 0) return [];
+        const selectedItems = items.filter(item => selectedIds.has(item.id_hoa_don));
+        if (selectedItems.length === 0) return [];
+        const sets = selectedItems.map(item => new Set(getNextStatuses(item.trang_thai)));
+        return [...sets[0]].filter(status => sets.every(set => set.has(status)));
+    };
+
+    const handleBulkUpdateStatus = async (newStatus) => {
+        const ids = Array.from(selectedIds);
+        if (ids.length === 0) return;
+        if (!window.confirm(`Chuyển ${ids.length} đơn hàng sang "${newStatus}"?`)) return;
+        setBulkUpdating(true);
+        setStatusError('');
+        try {
+            const result = await orderApi.bulkUpdateStatus({ ids, trang_thai: newStatus });
+            await loadItems();
+            if (result.data.failed > 0) {
+                setStatusError(`Cập nhật ${result.data.success} thành công, ${result.data.failed} đơn thất bại.`);
+            }
+        } catch (error) {
+            const msg = error.response?.data?.message || 'Lỗi cập nhật hàng loạt';
+            setStatusError(msg);
+        } finally {
+            setBulkUpdating(false);
         }
     };
 
@@ -200,6 +259,37 @@ const Orders = () => {
                                     <i className="fas fa-exclamation-triangle mr-1"></i> {statusError}
                                 </div>
                             )}
+
+                            {isAdmin() && selectedIds.size > 0 && (
+                                <div className="d-flex align-items-center justify-content-between p-2 mb-3 border rounded" style={{ background: '#e8f4fd' }}>
+                                    <span>
+                                        Đã chọn <strong>{selectedIds.size}</strong> đơn hàng
+                                    </span>
+                                    <div>
+                                        {getCommonNextStatuses().map(status => (
+                                            <button
+                                                key={status}
+                                                className={`btn btn-sm ${getStatusButtonClass(status)} mr-1`}
+                                                onClick={() => handleBulkUpdateStatus(status)}
+                                                disabled={bulkUpdating}
+                                            >
+                                                {bulkUpdating
+                                                    ? <span className="spinner-border spinner-border-sm mr-1"></span>
+                                                    : null}
+                                                {STATUS_BUTTON_LABELS[status] || status} tất cả ({selectedIds.size})
+                                            </button>
+                                        ))}
+                                        <button
+                                            className="btn btn-sm btn-secondary"
+                                            onClick={() => setSelectedIds(new Set())}
+                                            disabled={bulkUpdating}
+                                        >
+                                            Bỏ chọn
+                                        </button>
+                                    </div>
+                                </div>
+                            )}
+
                             {loading ? (
                                 <div className="text-center py-5">
                                     <div className="spinner-border text-primary"></div>
@@ -209,6 +299,16 @@ const Orders = () => {
                                     <table className="table table-bordered table-striped">
                                         <thead>
                                             <tr>
+                                                {isAdmin() && (
+                                                    <th style={{ width: '40px' }} className="text-center">
+                                                        <input
+                                                            type="checkbox"
+                                                            checked={isAllSelected}
+                                                            onChange={toggleSelectAll}
+                                                            title="Chọn tất cả trên trang"
+                                                        />
+                                                    </th>
+                                                )}
                                                 <th style={{ width: '50px' }}>STT</th>
                                                 <th style={{ width: '130px' }}>Mã HĐ</th>
                                                 <th>Khách hàng</th>
@@ -221,11 +321,20 @@ const Orders = () => {
                                         <tbody>
                                             {items.length === 0 ? (
                                                 <tr>
-                                                    <td colSpan="7" className="text-center">Không có đơn hàng nào</td>
+                                                    <td colSpan={isAdmin() ? 8 : 7} className="text-center">Không có đơn hàng nào</td>
                                                 </tr>
                                             ) : (
                                                 items.map((item, index) => (
                                                     <tr key={item.id_hoa_don}>
+                                                        {isAdmin() && (
+                                                            <td className="text-center">
+                                                                <input
+                                                                    type="checkbox"
+                                                                    checked={selectedIds.has(item.id_hoa_don)}
+                                                                    onChange={() => toggleSelect(item.id_hoa_don)}
+                                                                />
+                                                            </td>
+                                                        )}
                                                         <td>{(page - 1) * pageSize + index + 1}</td>
                                                         <td><strong>{item.ma_hoa_don}</strong></td>
                                                         <td>

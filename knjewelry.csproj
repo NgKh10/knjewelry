@@ -40,6 +40,7 @@
     <Compile Include="Jewelry\Jewelry.APIService\Controllers\NguoiDungController.cs" />
     <Compile Include="Jewelry\Jewelry.APIService\Controllers\SanPhamController.cs" />
     <Compile Include="Jewelry\Jewelry.APIService\Controllers\UploadController.cs" />
+    <Compile Include="Jewelry\Jewelry.APIService\Services\DiscountExpiryService.cs" />
     <Compile Include="Jewelry\Jewelry.APIService\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" />
     <Compile Include="Jewelry\Jewelry.APIService\obj\Debug\net8.0\Jewelry.APIService.AssemblyInfo.cs" />
     <Compile Include="Jewelry\Jewelry.APIService\obj\Debug\net8.0\Jewelry.APIService.GlobalUsings.g.cs" />

@@ -29,7 +29,13 @@ namespace Jewelry.Repository.EFCore
             }
 
             if (!string.IsNullOrEmpty(loaiGiam))
-                query = query.Where(m => m.loai_giam == loaiGiam);
+            {
+                // Coi "%" và "phan_tram" là cùng loại giảm theo phần trăm
+                if (loaiGiam == "%" || loaiGiam == "phan_tram")
+                    query = query.Where(m => m.loai_giam == "%" || m.loai_giam == "phan_tram");
+                else
+                    query = query.Where(m => m.loai_giam == loaiGiam);
+            }
 
             if (trangThai.HasValue)
                 query = query.Where(m => m.trang_thai == trangThai.Value);

@@ -93,6 +93,7 @@ builder.Services.AddScoped<IBienTheService, BienTheService>();
 builder.Services.AddScoped<IHinhAnhSanPhamService, HinhAnhSanPhamService>();
 builder.Services.AddScoped<IMaGiamGiaService, MaGiamGiaService>();
 builder.Services.AddScoped<Jewelry.Services.Authen.INguoiDungService, Jewelry.Services.Authen.NguoiDungService>();
+builder.Services.AddHostedService<Jewelry.Services.DiscountExpiryService>();
 
 // Thêm vào Program.cs sau builder.Services.AddControllers()
 

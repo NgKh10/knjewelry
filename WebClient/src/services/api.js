@@ -121,6 +121,7 @@ export const orderApi = {
     getById: (id) => api.get(`/hoadon/${id}`),
     create: (data) => api.post('/hoadon', data),
     updateStatus: (id, data) => api.put(`/hoadon/${id}/status`, data),
+    bulkUpdateStatus: (data) => api.put('/hoadon/bulk-status', data),
 };
 
 export const dashboardApi = {
