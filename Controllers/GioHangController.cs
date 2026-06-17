@@ -15,7 +15,10 @@ namespace knjewelry.Controllers
             _context = context;
         }
 
-        // ── Helper lấy/lưu giỏ hàng session ──────────────────────
+        /// <summary>
+        /// Helper lấy/lưu giỏ hàng session 
+        /// </summary>
+        /// <returns></returns>
         private List<GioHangSessionItem> LayGioHang()
         {
             var json = HttpContext.Session.GetString("Cart");
@@ -30,11 +33,31 @@ namespace knjewelry.Controllers
             HttpContext.Session.SetInt32("CartCount", cart.Sum(x => x.SoLuong));
         }
 
-        // ── Thêm sản phẩm vào giỏ ────────────────────────────────
+        /// <summary>
+        /// Thêm sản phẩm vào giỏ 
+        /// </summary>
+        /// <param name="sanPhamId"></param>
+        /// <param name="bienTheId"></param>
+        /// <param name="soLuong"></param>
+        /// <param name="kichCo"></param>
+        /// <param name="mauSac"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> ThemVaoGio(int sanPhamId, int? bienTheId, int soLuong = 1,
             string? kichCo = null, string? mauSac = null)
         {
+            // KIỂM TRA ĐĂNG NHẬP 
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null)
+            {
+                return Json(new
+                {
+                    success = false,
+                    redirect = "/TaiKhoan/DangNhap?returnUrl=/GioHang",
+                    message = "Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng"
+                });
+            }
+
             var product = await _context.SanPhams
                 .Include(p => p.HinhAnhs)
                 .Include(p => p.BienThes)
@@ -43,17 +66,17 @@ namespace knjewelry.Controllers
             if (product == null)
                 return Json(new { success = false, message = "Sản phẩm không tồn tại" });
 
-            decimal donGia  = product.gia_khuyen_mai ?? product.gia;
+            decimal donGia = product.gia_khuyen_mai ?? product.gia;
             string? tenKichCo = kichCo;
             string? tenMauSac = mauSac;
-            int?   idBienThe  = bienTheId;
+            int? idBienThe = bienTheId;
 
             if (bienTheId.HasValue && bienTheId.Value > 0)
             {
                 var bt = product.BienThes?.FirstOrDefault(b => b.id_bien_the == bienTheId.Value);
                 if (bt != null)
                 {
-                    donGia   += bt.gia_them;
+                    donGia += bt.gia_them;
                     tenKichCo = bt.kich_co;
                     tenMauSac = bt.mau_sac;
                     if (bt.so_luong_ton < soLuong)
@@ -61,7 +84,7 @@ namespace knjewelry.Controllers
                 }
             }
 
-            var cart     = LayGioHang();
+            var cart = LayGioHang();
             var existing = cart.FirstOrDefault(x => x.SanPhamId == sanPhamId && x.BienTheId == idBienThe);
 
             if (existing != null)
@@ -69,28 +92,42 @@ namespace knjewelry.Controllers
             else
                 cart.Add(new GioHangSessionItem
                 {
-                    SanPhamId  = sanPhamId,
-                    BienTheId  = idBienThe,
+                    SanPhamId = sanPhamId,
+                    BienTheId = idBienThe,
                     TenSanPham = product.ten_sp,
-                    KichCo     = tenKichCo,
-                    MauSac     = tenMauSac,
-                    DonGia     = donGia,
-                    HinhAnh    = product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg",
-                    SoLuong    = soLuong
+                    KichCo = tenKichCo,
+                    MauSac = tenMauSac,
+                    DonGia = donGia,
+                    HinhAnh = product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg",
+                    SoLuong = soLuong
                 });
 
             LuuGioHang(cart);
-            // Trả về cartItems để JS lưu vào localStorage ngay, không cần thêm request
-            return Json(new { success = true, soLuongGioHang = cart.Sum(x => x.SoLuong), cartItems = cart });
+
+            return Json(new
+            {
+                success = true,
+                soLuongGioHang = cart.Sum(x => x.SoLuong),
+                cartItems = cart
+            });
         }
 
-        // ── Hiển thị giỏ hàng ─────────────────────────────────────
+        /// <summary>
+        /// Hiển thị giỏ hàng 
+        /// </summary>
+        /// <returns></returns>
         public IActionResult Index()
         {
             return View(LayGioHang());
         }
 
-        // ── Cập nhật số lượng ─────────────────────────────────────
+        /// <summary>
+        /// Cập nhật số lượng 
+        /// </summary>
+        /// <param name="sanPhamId"></param>
+        /// <param name="bienTheId"></param>
+        /// <param name="soLuong"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult CapNhatSoLuong(int sanPhamId, int? bienTheId, int soLuong)
         {
@@ -99,20 +136,28 @@ namespace knjewelry.Controllers
             if (item != null)
             {
                 if (soLuong <= 0) cart.Remove(item);
-                else              item.SoLuong = soLuong;
+                else item.SoLuong = soLuong;
             }
             LuuGioHang(cart);
             return Json(new { success = true });
         }
 
-        // ── Lấy toàn bộ giỏ hàng dưới dạng JSON (để localStorage lưu) ──
+        /// <summary>
+        /// /Lấy toàn bộ giỏ hàng dưới dạng JSON (để localStorage lưu)
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult GetCartJson()
         {
             return Json(LayGioHang());
         }
 
-        // ── Xóa sản phẩm khỏi giỏ ────────────────────────────────
+        /// <summary>
+        ///  Xóa sản phẩm khỏi giỏ 
+        /// </summary>
+        /// <param name="sanPhamId"></param>
+        /// <param name="bienTheId"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult XoaKhoiGio(int sanPhamId, int? bienTheId)
         {
@@ -123,7 +168,11 @@ namespace knjewelry.Controllers
             return RedirectToAction("Index");
         }
 
-        // ── Xác nhận sản phẩm chọn để thanh toán ─────────────────
+        /// <summary>
+        /// Xác nhận sản phẩm chọn để thanh toán
+        /// </summary>
+        /// <param name="selectedKeys"></param>
+        /// <returns></returns>
         // selectedKeys: chuỗi "sanPhamId-bienTheId,..." từ form giỏ hàng
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -135,8 +184,8 @@ namespace knjewelry.Controllers
                 return RedirectToAction("Index");
             }
 
-            var cart     = LayGioHang();
-            var keySet   = selectedKeys.Split(',', StringSplitOptions.RemoveEmptyEntries).ToHashSet();
+            var cart = LayGioHang();
+            var keySet = selectedKeys.Split(',', StringSplitOptions.RemoveEmptyEntries).ToHashSet();
 
             // Lọc chỉ lấy những item được chọn
             var selected = cart.Where(x =>

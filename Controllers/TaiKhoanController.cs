@@ -11,66 +11,81 @@ namespace knjewelry.Controllers
     public class TaiKhoanController : Controller
     {
         private readonly ITaiKhoanService _taiKhoanService;
-        private readonly IDonHangService  _donHangService;
+        private readonly IDonHangService _donHangService;
         private readonly TrangSucBacContext _context;
 
         public TaiKhoanController(ITaiKhoanService taiKhoanService, IDonHangService donHangService, TrangSucBacContext context)
         {
             _taiKhoanService = taiKhoanService;
-            _donHangService  = donHangService;
-            _context         = context;
+            _donHangService = donHangService;
+            _context = context;
         }
 
-        // ─── Đăng nhập GET ────────────────────────────────────────
+        /// <summary>
+        /// Đăng nhập GET 
+        /// </summary>
         [HttpGet]
-        public IActionResult DangNhap()
+        public IActionResult DangNhap(string returnUrl = null)
         {
             if (HttpContext.Session.GetInt32("UserId").HasValue)
                 return RedirectToAction("Index", "Home");
+
+            ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
-        // ─── Đăng nhập POST ───────────────────────────────────────
+        /// <summary>
+        /// Đăng nhập POST 
+        /// </summary>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DangNhap(DangNhapViewModel model)
+        public async Task<IActionResult> DangNhap(DangNhapViewModel model, string returnUrl = null)
         {
-            if (!ModelState.IsValid) return View(model);
+            if (!ModelState.IsValid)
+            {
+                ViewBag.ReturnUrl = returnUrl;
+                return View(model);
+            }
 
             var user = await _taiKhoanService.DangNhapAsync(model.TenDangNhap, model.MatKhau);
             if (user == null)
             {
                 ModelState.AddModelError("", "Tên đăng nhập hoặc mật khẩu không đúng");
+                ViewBag.ReturnUrl = returnUrl;
                 return View(model);
             }
 
             // Ghi session
             var hoTen = !string.IsNullOrWhiteSpace(user.ho_ten) ? user.ho_ten : user.ten_dang_nhap;
-            HttpContext.Session.SetInt32("UserId",   user.id_nguoi_dung);
+            HttpContext.Session.SetInt32("UserId", user.id_nguoi_dung);
             HttpContext.Session.SetString("UserName", hoTen);
             HttpContext.Session.SetString("UserRole", user.vai_tro ?? "khach_hang");
 
-            // Cookie "remember me" — lưu UserId 7 ngày để tự restore session
-            // (HttpOnly: không đọc được bằng JS → an toàn hơn)
+            // Cookie "remember me"
             Response.Cookies.Append("KN_Remember", user.id_nguoi_dung.ToString(), new CookieOptions
             {
-                Path     = "/",
-                Expires  = DateTimeOffset.UtcNow.AddDays(7),
+                Path = "/",
+                Expires = DateTimeOffset.UtcNow.AddDays(7),
                 HttpOnly = true,
                 SameSite = SameSiteMode.Lax,
                 IsEssential = true
             });
 
-            // Khôi phục giỏ hàng đã lưu của tài khoản (lưu lúc đăng xuất lần trước)
-            // và gộp với giỏ hàng khách (nếu khách đã thêm sản phẩm trước khi đăng nhập
+            // Khôi phục giỏ hàng đã lưu của tài khoản
             try
             {
-                var gioHangDaLuu  = await LayGioHangTuTaiKhoanAsync(user.id_nguoi_dung);
-                var gioHangKhach  = LayGioHangSession();
-                var gioHangGop    = GopGioHang(gioHangKhach, gioHangDaLuu);
+                var gioHangDaLuu = await LayGioHangTuTaiKhoanAsync(user.id_nguoi_dung);
+                var gioHangKhach = LayGioHangSession();
+                var gioHangGop = GopGioHang(gioHangKhach, gioHangDaLuu);
                 LuuGioHangSession(gioHangGop);
             }
             catch { }
+
+            // Nếu có returnUrl, chuyển hướng về đó
+            if (!string.IsNullOrEmpty(returnUrl))
+            {
+                return Redirect(returnUrl);
+            }
 
             if (user.vai_tro == "quan_tri")
                 return Redirect("/admin/");
@@ -78,11 +93,15 @@ namespace knjewelry.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        // ─── Đăng ký GET ──────────────────────────────────────────
+        /// <summary>
+        /// Đăng ký GET 
+        /// </summary>
         [HttpGet]
         public IActionResult DangKy() => View();
 
-        // ─── Đăng ký POST ─────────────────────────────────────────
+        /// <summary>
+        /// Đăng ký POST 
+        /// </summary>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DangKy(DangKyViewModel model)
@@ -101,7 +120,9 @@ namespace knjewelry.Controllers
             }
         }
 
-        // ─── Thông tin tài khoản GET ──────────────────────────────
+        /// <summary>
+        /// Thông tin tài khoản GET 
+        /// </summary>
         public async Task<IActionResult> ThongTin()
         {
             var userId = HttpContext.Session.GetInt32("UserId");
@@ -112,14 +133,16 @@ namespace knjewelry.Controllers
 
             return View(new CapNhatThongTinViewModel
             {
-                HoTen       = user.ho_ten        ?? "",
-                Email       = user.email         ?? "",
-                SoDienThoai = user.so_dien_thoai  ?? "",
-                DiaChi      = user.dia_chi        ?? ""
+                HoTen = user.ho_ten ?? "",
+                Email = user.email ?? "",
+                SoDienThoai = user.so_dien_thoai ?? "",
+                DiaChi = user.dia_chi ?? ""
             });
         }
 
-        // ─── Thông tin tài khoản POST ─────────────────────────────
+        /// <summary>
+        /// Thông tin tài khoản POST
+        /// </summary>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> ThongTin(CapNhatThongTinViewModel model)
@@ -137,7 +160,9 @@ namespace knjewelry.Controllers
             return View(model);
         }
 
-        // ─── Đơn hàng ─────────────────────────────────────────────
+        /// <summary>
+        /// Đơn hàng 
+        /// </summary>
         public async Task<IActionResult> DonHang()
         {
             var userId = HttpContext.Session.GetInt32("UserId");
@@ -145,7 +170,9 @@ namespace knjewelry.Controllers
             return View(await _donHangService.GetDonHangTheoNguoiDungAsync(userId.Value));
         }
 
-        // ─── Chi tiết đơn hàng ────────────────────────────────────
+        /// <summary>
+        /// Chi tiết đơn hàng 
+        /// </summary>
         public async Task<IActionResult> ChiTietDonHang(int id)
         {
             var userId = HttpContext.Session.GetInt32("UserId");
@@ -154,7 +181,9 @@ namespace knjewelry.Controllers
             return order == null ? NotFound() : View(order);
         }
 
-        // ─── Đổi mật khẩu ────────────────────────────────────────
+        /// <summary>
+        /// Đổi mật khẩu GET
+        /// </summary>
         [HttpGet]
         public IActionResult DoiMatKhau()
         {
@@ -163,13 +192,48 @@ namespace knjewelry.Controllers
             return View();
         }
 
-        // ─── Đăng xuất ────────────────────────────────────────────
+        /// <summary>
+        /// Đổi mật khẩu POST
+        /// </summary>
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DoiMatKhau(DoiMatKhauViewModel model)
+        {
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (!userId.HasValue)
+                return RedirectToAction(nameof(DangNhap));
+
+            if (!ModelState.IsValid)
+                return View(model);
+
+            var user = await _context.NguoiDungs.FindAsync(userId.Value);
+            if (user == null)
+                return RedirectToAction(nameof(DangNhap));
+
+            // Kiểm tra mật khẩu cũ
+            if (user.mat_khau != model.MatKhauHienTai)
+            {
+                ModelState.AddModelError("MatKhauHienTai", "Mật khẩu hiện tại không đúng");
+                return View(model);
+            }
+
+            // Cập nhật mật khẩu mới
+            user.mat_khau = model.MatKhauMoi;
+            _context.NguoiDungs.Update(user);
+            await _context.SaveChangesAsync();
+
+            TempData["Success"] = "Đổi mật khẩu thành công!";
+            return RedirectToAction("ThongTin");
+        }
+
+        /// <summary>
+        /// Đăng xuất 
+        /// </summary>
         public async Task<IActionResult> DangXuat()
         {
             var userId = HttpContext.Session.GetInt32("UserId");
 
-            // Lưu giỏ hàng hiện tại vào tài khoản TRƯỚC khi xóa session,
-            // để lần sau đăng nhập lại sẽ khôi phục đúng số lượng đã thêm
+            // Lưu giỏ hàng hiện tại vào tài khoản TRƯỚC khi xóa session
             if (userId.HasValue)
             {
                 var cart = LayGioHangSession();
@@ -191,8 +255,8 @@ namespace knjewelry.Controllers
             // khiến AppStateViewComponent không bao giờ nhận được tín hiệu này.
             Response.Cookies.Append("KN_ClearCart", "1", new CookieOptions
             {
-                Path        = "/",
-                Expires     = DateTimeOffset.UtcNow.AddMinutes(2),
+                Path = "/",
+                Expires = DateTimeOffset.UtcNow.AddMinutes(2),
                 IsEssential = true
             });
 
@@ -200,7 +264,8 @@ namespace knjewelry.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        // ── Helper: đọc/ghi giỏ hàng trong session ───────────────
+        // ==================== HELPERS ====================
+
         private List<GioHangSessionItem> LayGioHangSession()
         {
             var json = HttpContext.Session.GetString("Cart");
@@ -215,7 +280,6 @@ namespace knjewelry.Controllers
             HttpContext.Session.SetInt32("CartCount", cart.Sum(x => x.SoLuong));
         }
 
-        // ── Helper: gộp 2 giỏ hàng (cộng dồn số lượng nếu trùng sản phẩm + biến thể) ──
         private List<GioHangSessionItem> GopGioHang(List<GioHangSessionItem> gioHangChinh, List<GioHangSessionItem> gioHangPhu)
         {
             var ketQua = new List<GioHangSessionItem>(gioHangChinh);
@@ -228,7 +292,6 @@ namespace knjewelry.Controllers
             return ketQua;
         }
 
-        // ── Helper: lưu giỏ hàng (session) vào DB gắn với tài khoản ───
         private async Task LuuGioHangVaoTaiKhoanAsync(int userId, List<GioHangSessionItem> items)
         {
             var cart = await _context.GioHangs.FirstOrDefaultAsync(g => g.id_nguoi_dung == userId);
@@ -236,16 +299,15 @@ namespace knjewelry.Controllers
             {
                 cart = new GioHang
                 {
-                    ma_phien      = $"taikhoan-{userId}",
+                    ma_phien = $"taikhoan-{userId}",
                     id_nguoi_dung = userId,
-                    ngay_tao      = DateTime.Now,
+                    ngay_tao = DateTime.Now,
                     ngay_cap_nhat = DateTime.Now
                 };
                 _context.GioHangs.Add(cart);
                 await _context.SaveChangesAsync();
             }
 
-            // Ghi đè toàn bộ chi tiết cũ bằng giỏ hàng hiện tại
             var chiTietCu = await _context.ChiTietGioHangs.Where(c => c.id_gio_hang == cart.id_gio_hang).ToListAsync();
             _context.ChiTietGioHangs.RemoveRange(chiTietCu);
 
@@ -256,9 +318,9 @@ namespace knjewelry.Controllers
                     id_gio_hang = cart.id_gio_hang,
                     id_san_pham = item.SanPhamId,
                     id_bien_the = item.BienTheId,
-                    so_luong    = item.SoLuong,
-                    don_gia     = item.DonGia,
-                    ngay_tao    = DateTime.Now
+                    so_luong = item.SoLuong,
+                    don_gia = item.DonGia,
+                    ngay_tao = DateTime.Now
                 });
             }
 
@@ -266,7 +328,6 @@ namespace knjewelry.Controllers
             await _context.SaveChangesAsync();
         }
 
-        // ── Helper: lấy giỏ hàng đã lưu của tài khoản từ DB ───────────
         private async Task<List<GioHangSessionItem>> LayGioHangTuTaiKhoanAsync(int userId)
         {
             var cart = await _context.GioHangs
@@ -279,14 +340,14 @@ namespace knjewelry.Controllers
 
             return cart.ChiTietGioHangs.Select(item => new GioHangSessionItem
             {
-                SanPhamId  = item.id_san_pham,
-                BienTheId  = item.id_bien_the,
+                SanPhamId = item.id_san_pham,
+                BienTheId = item.id_bien_the,
                 TenSanPham = item.SanPham?.ten_sp ?? "",
-                KichCo     = item.BienThe?.kich_co,
-                MauSac     = item.BienThe?.mau_sac,
-                DonGia     = item.don_gia,
-                HinhAnh    = item.SanPham?.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg",
-                SoLuong    = item.so_luong
+                KichCo = item.BienThe?.kich_co,
+                MauSac = item.BienThe?.mau_sac,
+                DonGia = item.don_gia,
+                HinhAnh = item.SanPham?.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg",
+                SoLuong = item.so_luong
             }).ToList();
         }
     }

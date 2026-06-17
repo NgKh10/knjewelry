@@ -1,0 +1,12 @@
+﻿:root {
+    --primary: #483925;
+    --primary-light: #634d33;
+    --primary-dark: #2e2417;
+    --secondary: #c4a67a;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --text-muted: #999999;
+    --white: #FFFFFF;
+    --gray-bg: #f8f5f0;
+    --border: #e5ddd3;
+}

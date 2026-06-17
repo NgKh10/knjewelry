@@ -16,7 +16,10 @@ namespace knjewelry.Controllers
             _context = context;
         }
 
-        // ── Lấy giỏ hàng đã được chọn (từ XacNhanGioHang) ────────
+        /// <summary>
+        ///  Lấy giỏ hàng đã được chọn (từ XacNhanGioHang) 
+        /// </summary>
+        /// <returns></returns>
         private List<GioHangSessionItem> LaySelectedCart()
         {
             var json = HttpContext.Session.GetString("SelectedCart");
@@ -36,24 +39,35 @@ namespace knjewelry.Controllers
             {
                 DanhSachSanPham = items.Select(item => new GioHangItemViewModel
                 {
-                    IdSanPham    = item.SanPhamId,
-                    TenSanPham   = item.TenSanPham,
-                    DonGia       = item.DonGia,
-                    SoLuong      = item.SoLuong,
-                    DuongDanAnh  = item.HinhAnh,
-                    ThanhTien    = item.ThanhTien,
-                    KichCo       = item.KichCo,
-                    MauSac       = item.MauSac
+                    IdSanPham = item.SanPhamId,
+                    TenSanPham = item.TenSanPham,
+                    DonGia = item.DonGia,
+                    SoLuong = item.SoLuong,
+                    DuongDanAnh = item.HinhAnh,
+                    ThanhTien = item.ThanhTien,
+                    KichCo = item.KichCo,
+                    MauSac = item.MauSac
                 }).ToList()
             };
             vm.TinhTong();
             return vm;
         }
 
-        // ── GET: Trang thanh toán ──────────────────────────────────
+        /// <summary>
+        /// GET: Trang thanh toán
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Index()
         {
+            //  KIỂM TRA ĐĂNG NHẬP 
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null)
+            {
+                TempData["ReturnUrl"] = "/ThanhToan";
+                return RedirectToAction("DangNhap", "TaiKhoan", new { returnUrl = "/ThanhToan" });
+            }
+
             var cartItems = LaySelectedCart();
             if (!cartItems.Any())
                 return RedirectToAction("Index", "GioHang");
@@ -64,25 +78,34 @@ namespace knjewelry.Controllers
             };
 
             // Điền trước thông tin nếu đã đăng nhập
-            var userId = HttpContext.Session.GetInt32("UserId");
             if (userId.HasValue)
             {
                 var user = _context.NguoiDungs.Find(userId.Value);
                 if (user != null)
                 {
-                    model.HoTen        = user.ho_ten;
-                    model.Email        = user.email;
-                    model.SoDienThoai  = user.so_dien_thoai;
+                    model.HoTen = user.ho_ten;
+                    model.Email = user.email;
+                    model.SoDienThoai = user.so_dien_thoai;
                 }
             }
 
             return View(model);
         }
 
-        // ── POST: Đặt hàng ────────────────────────────────────────
+        /// <summary>
+        /// POST: Đặt hàng
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> HoanTat(ThanhToanViewModel model)
         {
+            // ========== KIỂM TRA ĐĂNG NHẬP ==========
+            var userId = HttpContext.Session.GetInt32("UserId");
+            if (userId == null)
+            {
+                return RedirectToAction("DangNhap", "TaiKhoan");
+            }
+
             // Luôn reload GioHang để tránh NullReference khi cần re-render form
             var cartItems = LaySelectedCart();
             model.GioHang = BuildGioHangVM(cartItems);
@@ -95,13 +118,12 @@ namespace knjewelry.Controllers
 
             try
             {
-                var userId       = HttpContext.Session.GetInt32("UserId");
-                var tienHang     = cartItems.Sum(x => x.ThanhTien);
+                var tienHang = cartItems.Sum(x => x.ThanhTien);
                 var phiVanChuyen = tienHang >= 150000 ? 0 : 30000;
 
                 // Áp dụng mã giảm giá (nếu có)
-                decimal tienGiam    = 0;
-                int?    idMaGiamGia = null;
+                decimal tienGiam = 0;
+                int? idMaGiamGia = null;
 
                 if (!string.IsNullOrEmpty(model.MaGiamGia))
                 {
@@ -110,7 +132,7 @@ namespace knjewelry.Controllers
 
                     if (ma != null && tienHang >= ma.don_hang_toi_thieu)
                     {
-                        tienGiam    = TinhSoGiam(ma, tienHang);
+                        tienGiam = TinhSoGiam(ma, tienHang);
                         idMaGiamGia = ma.id_ma_giam_gia;
                         ma.da_su_dung++;  // Tăng lượt đã dùng
                     }
@@ -125,22 +147,22 @@ namespace knjewelry.Controllers
 
                 var hoaDon = new HoaDon
                 {
-                    id_nguoi_dung  = userId,
-                    ho_ten         = model.HoTen,
-                    email          = model.Email,
-                    so_dien_thoai  = model.SoDienThoai,
+                    id_nguoi_dung = userId,  // Bắt buộc có userId
+                    ho_ten = model.HoTen,
+                    email = model.Email,
+                    so_dien_thoai = model.SoDienThoai,
                     tinh_thanh_pho = model.TinhTP,
-                    phuong_xa      = phuongXaDayDu,
+                    phuong_xa = phuongXaDayDu,
                     dia_chi_cu_the = model.DiaChiCuThe,
                     phuong_thuc_tt = model.PhuongThucThanhToan,
                     id_ma_giam_gia = idMaGiamGia,
-                    tien_hang      = tienHang,
-                    tien_giam      = tienGiam,
+                    tien_hang = tienHang,
+                    tien_giam = tienGiam,
                     phi_van_chuyen = phiVanChuyen,
-                    tong_tien      = tongTien,
-                    trang_thai     = "Chờ xác nhận",
-                    ghi_chu        = model.GhiChu ?? string.Empty,
-                    thoi_gian_dat  = DateTime.Now
+                    tong_tien = tongTien,
+                    trang_thai = "Chờ xác nhận",
+                    ghi_chu = model.GhiChu ?? string.Empty,
+                    thoi_gian_dat = DateTime.Now
                 };
 
                 _context.HoaDons.Add(hoaDon);
@@ -151,15 +173,15 @@ namespace knjewelry.Controllers
                 {
                     _context.ChiTietHoaDons.Add(new ChiTietHoaDon
                     {
-                        id_hoa_don    = hoaDon.id_hoa_don,
-                        id_san_pham   = item.SanPhamId,
-                        id_bien_the   = item.BienTheId,
-                        ten_sp_luu    = item.TenSanPham,
-                        kich_co_luu   = item.KichCo   ?? string.Empty,
-                        mau_sac_luu   = item.MauSac   ?? string.Empty,
+                        id_hoa_don = hoaDon.id_hoa_don,
+                        id_san_pham = item.SanPhamId,
+                        id_bien_the = item.BienTheId,
+                        ten_sp_luu = item.TenSanPham,
+                        kich_co_luu = item.KichCo ?? string.Empty,
+                        mau_sac_luu = item.MauSac ?? string.Empty,
                         chat_lieu_luu = string.Empty,
-                        so_luong      = item.SoLuong,
-                        don_gia       = item.DonGia
+                        so_luong = item.SoLuong,
+                        don_gia = item.DonGia
                     });
 
                     if (item.BienTheId.HasValue)
@@ -184,7 +206,12 @@ namespace knjewelry.Controllers
             }
         }
 
-        // ── AJAX kiểm tra mã giảm giá ─────────────────────────────
+        /// <summary>
+        /// AJAX kiểm tra mã giảm giá
+        /// </summary>
+        /// <param name="code"></param>
+        /// <param name="total"></param>
+        /// <returns></returns>
         [HttpPost]
         public async Task<IActionResult> KiemTraMaGiamGia(string code, decimal total)
         {
@@ -210,14 +237,19 @@ namespace knjewelry.Controllers
                 return Json(new { success = false, message = "Mã giảm giá đã hết lượt sử dụng" });
 
             var soGiam = TinhSoGiam(ma, total);
-            var moTa   = ma.loai_giam is "phan_tram" or "%"
+            var moTa = ma.loai_giam is "phan_tram" or "%"
                 ? $"Giảm {ma.gia_tri}%{(ma.giam_toi_da.HasValue ? $" (tối đa {ma.giam_toi_da.Value:N0}₫)" : "")}"
                 : $"Giảm {ma.gia_tri:N0}₫";
 
             return Json(new { success = true, soGiam, moTa, code = ma.ma_code });
         }
 
-        // ── Helper tính số tiền giảm ──────────────────────────────
+        /// <summary>
+        /// Helper tính số tiền giảm 
+        /// </summary>
+        /// <param name="ma"></param>
+        /// <param name="tienHang"></param>
+        /// <returns></returns>
         private static decimal TinhSoGiam(MaGiamGia ma, decimal tienHang)
         {
             decimal giam = ma.loai_giam is "phan_tram" or "%"
@@ -230,7 +262,10 @@ namespace knjewelry.Controllers
             return Math.Min(giam, tienHang); // không giảm quá tổng tiền hàng
         }
 
-        // ── Xóa các SP đã đặt khỏi giỏ hàng chính ───────────────
+        /// <summary>
+        /// Xóa các SP đã đặt khỏi giỏ hàng chính
+        /// </summary>
+        /// <param name="ordered"></param>
         private void XoaSelectedKhoiGioHangChinh(List<GioHangSessionItem> ordered)
         {
             var cartJson = HttpContext.Session.GetString("Cart");
@@ -246,7 +281,11 @@ namespace knjewelry.Controllers
             HttpContext.Session.SetInt32("CartCount", cart.Sum(x => x.SoLuong));
         }
 
-        // ── Trang thành công ──────────────────────────────────────
+        /// <summary>
+        /// Trang thành công 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public async Task<IActionResult> ThanhCong(int id)
         {
             var hoaDon = await _context.HoaDons

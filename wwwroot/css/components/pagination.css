@@ -1,0 +1,23 @@
+﻿.pagination {
+    margin-top: 30px;
+}
+
+    .pagination .page-link {
+        color: var(--text-dark);
+        border: 1px solid var(--border);
+        margin: 0 3px;
+        border-radius: 4px;
+        padding: 8px 14px;
+    }
+
+    .pagination .page-item.active .page-link {
+        background: var(--primary);
+        border-color: var(--primary);
+        color: var(--white);
+    }
+
+    .pagination .page-link:hover {
+        background: var(--primary-light);
+        border-color: var(--primary-light);
+        color: var(--white);
+    }

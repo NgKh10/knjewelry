@@ -1,7 +1,7 @@
 @{
-    var userId    = Context.Session.GetInt32("UserId");
-    var userName  = Context.Session.GetString("UserName") ?? "";
-    var userRole  = Context.Session.GetString("UserRole") ?? "";
+    var userId = Context.Session.GetInt32("UserId");
+    var userName = Context.Session.GetString("UserName") ?? "";
+    var userRole = Context.Session.GetString("UserRole") ?? "";
     var cartCount = Context.Session.GetInt32("CartCount") ?? 0;
     var daDangNhap = userId.HasValue && userId.Value > 0;
     var tenHienThi = userName.Length > 14 ? userName.Substring(0, 14) + "…" : userName;
@@ -13,6 +13,7 @@
         position: relative;
         display: inline-block;
     }
+
     .account-trigger {
         display: inline-flex;
         align-items: center;
@@ -27,10 +28,12 @@
         white-space: nowrap;
         text-decoration: none !important;
     }
-    .account-trigger:hover {
-        background: #483925;
-        color: #fff !important;
-    }
+
+        .account-trigger:hover {
+            background: #483925;
+            color: #fff !important;
+        }
+
     .account-menu {
         display: none;
         position: absolute;
@@ -43,13 +46,16 @@
         border: 1px solid #eee;
         z-index: 2000;
     }
+
     .account-wrap:hover .account-menu {
         display: block;
     }
+
     .account-menu-header {
         padding: 10px 15px;
         border-bottom: 1px solid #eee;
     }
+
     .account-menu a {
         display: block;
         padding: 10px 15px;
@@ -58,14 +64,31 @@
         text-decoration: none !important;
         transition: background 0.2s;
     }
-    .account-menu a:hover {
-        background: #f8f5f0;
-        color: #483925 !important;
-    }
+
+        .account-menu a:hover {
+            background: #f8f5f0;
+            color: #483925 !important;
+        }
+
     .account-menu hr {
         margin: 4px 0;
         border-color: #eee;
     }
+
+    /* Wishlist icon */
+    .wishlist-icon {
+        position: relative;
+        font-size: 22px;
+        color: #333 !important;
+        transition: all 0.3s;
+        line-height: 1;
+    }
+
+        .wishlist-icon:hover {
+            color: #e74c3c !important;
+        }
+
+
 </style>
 
 <div class="site-navbar bg-white py-2">
@@ -84,7 +107,8 @@
                         <li><a href="/">Trang chủ</a></li>
                         @await Component.InvokeAsync("Menu")
                         <li><a href="/LienHe">Liên hệ</a></li>
-                        <li><a href="/TraCuu">Tra cứu</a></li>
+                        <li><a href="/GioiThieu">Giới thiệu</a></li>
+
                     </ul>
                 </nav>
             </div>
@@ -107,21 +131,21 @@
                                 <div style="font-weight:600;color:#333;">@userName</div>
                             </div>
                             <a href="/TaiKhoan/ThongTin">
-                                <i class='bx bx-user mr-2'></i>Thông tin tài khoản
+                                <i class='bx bx-user mr-2'></i> Thông tin tài khoản
                             </a>
                             <a href="/TaiKhoan/DonHang">
-                                <i class='bx bx-package mr-2'></i>Đơn hàng của tôi
+                                <i class='bx bx-package mr-2'></i> Đơn hàng của tôi
                             </a>
                             @if (userRole == "quan_tri")
                             {
                                 <hr>
                                 <a href="/admin/" style="color:#007bff!important;">
-                                    <i class='bx bx-shield mr-2'></i>Quản trị
+                                    <i class='bx bx-shield mr-2'></i> Quản trị
                                 </a>
                             }
                             <hr>
                             <a href="/TaiKhoan/DangXuat" style="color:#dc3545!important;">
-                                <i class='bx bx-log-out mr-2'></i>Đăng xuất
+                                <i class='bx bx-log-out mr-2'></i> Đăng xuất
                             </a>
                         </div>
                     </div>
@@ -133,6 +157,11 @@
                         Đăng nhập
                     </a>
                 }
+
+                <!-- YÊU THÍCH -->
+                <a href="/YeuThich" class="wishlist-icon" title="Danh sách yêu thích">
+                    <i class='bx bx-heart'></i>
+                </a>
 
                 <!-- GIỎ HÀNG -->
                 <a href="/GioHang" style="position:relative;font-size:22px;color:#333!important;line-height:1;">
@@ -164,3 +193,46 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Cập nhật số lượng yêu thích từ localStorage
+    function updateWishlistCount() {
+        try {
+            var wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
+            var count = wishlist.length;
+            var badge = document.getElementById('wishlist-count');
+
+            if (badge) {
+                badge.textContent = count;
+                badge.setAttribute('data-count', count);
+
+                if (count > 0) {
+                    badge.style.display = 'flex';
+                } else {
+                    badge.style.display = 'none';
+                }
+            }
+        } catch (e) {
+            console.log('Lỗi cập nhật wishlist:', e);
+        }
+    }
+
+    // Cập nhật khi trang load
+    document.addEventListener('DOMContentLoaded', function () {
+        updateWishlistCount();
+    });
+
+    // Lắng nghe sự kiện thay đổi wishlist từ các trang khác
+    window.addEventListener('storage', function (e) {
+        if (e.key === 'wishlist') {
+            updateWishlistCount();
+        }
+    });
+
+    // Nếu có jQuery, cũng cập nhật khi AJAX hoàn tất
+    if (typeof $ !== 'undefined') {
+        $(document).ajaxComplete(function () {
+            updateWishlistCount();
+        });
+    }
+</script>

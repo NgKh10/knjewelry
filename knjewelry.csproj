@@ -9,9 +9,17 @@
   <!-- QUAN TRỌNG: Không compile bất cứ file nào trong thư mục Jewelry -->
   <ItemGroup>
     <Compile Remove="Jewelry\**\*" />
+    <Compile Remove="Views\NewFolder1\**" />
+    <Compile Remove="Views\NewFolder\**" />
     <Content Remove="Jewelry\**\*" />
+    <Content Remove="Views\NewFolder1\**" />
+    <Content Remove="Views\NewFolder\**" />
     <EmbeddedResource Remove="Jewelry\**\*" />
+    <EmbeddedResource Remove="Views\NewFolder1\**" />
+    <EmbeddedResource Remove="Views\NewFolder\**" />
     <None Remove="Jewelry\**\*" />
+    <None Remove="Views\NewFolder1\**" />
+    <None Remove="Views\NewFolder\**" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Jewelry\AppSettings.cs" />

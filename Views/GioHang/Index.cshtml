@@ -108,34 +108,34 @@
             </table>
         </div>
 
-        <!-- Tổng kết + Thanh toán -->
-        <div class="row mt-4">
-            <div class="col-md-6">
-                <small class="text-muted">
-                    <i class='bx bx-info-circle'></i>
-                    Miễn phí vận chuyển cho đơn hàng từ 150.000₫
-                </small>
-            </div>
-            <div class="col-md-6 text-right">
-                <div class="border p-3 d-inline-block" style="min-width:280px;">
-                    <div class="d-flex justify-content-between mb-2">
-                        <span class="text-muted">Đã chọn:</span>
-                        <strong><span id="selected-count">0</span> sản phẩm</strong>
+            <!-- Tổng kết + Thanh toán -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <small class="text-muted">
+                        <i class='bx bx-info-circle'></i>
+                        Miễn phí vận chuyển cho đơn hàng từ 150.000₫
+                    </small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="border p-3 d-inline-block" style="min-width:280px; width:100%;">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Đã chọn:</span>
+                            <strong><span id="selected-count">0</span> sản phẩm</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted">Tạm tính:</span>
+                            <strong class="text-danger" id="selected-total" style="font-size:1.2rem;">0₫</strong>
+                        </div>
+                        <button id="btn-checkout" class="btn-checkout" disabled>
+                            TIẾN HÀNH THANH TOÁN
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                        <a href="/SanPham" class="btn-continue mt-2">
+                            <i class='bx bx-store'></i> TIẾP TỤC MUA SẮM
+                        </a>
                     </div>
-                    <div class="d-flex justify-content-between mb-3">
-                        <span class="text-muted">Tạm tính:</span>
-                        <strong class="text-danger" id="selected-total" style="font-size:1.2rem;">0₫</strong>
-                    </div>
-                    <button id="btn-checkout" class="btn btn-black btn-block" disabled>
-                        Tiến hành thanh toán
-                        <i class='bx bx-right-arrow-alt'></i>
-                    </button>
-                    <a href="/SanPham" class="btn btn-outline-secondary btn-block mt-2">
-                        <i class='bx bx-store'></i> Tiếp tục mua sắm
-                    </a>
                 </div>
             </div>
-        </div>
     }
     else
     {

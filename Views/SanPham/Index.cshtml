@@ -109,7 +109,7 @@
                                 }
                             </div>
                             <button class="btn-add-cart mt-2 btn btn-sm btn-outline-dark w-100" data-id="@product.id_san_pham">
-                                <i class='bx bx-cart-add'></i> Thêm vào giỏ
+                                <i class='bx bx-cart-add'></i> Thêm vào giỏ 
                             </button>
                         </div>
                     }
@@ -123,7 +123,14 @@
                                 @if (Model.TrangHienTai > 1)
                                 {
                                     <li class="page-item">
-                                        <a class="page-link" href="@Url.Action("Index", new { page = Model.TrangHienTai - 1, loaiId = Model.LoaiId, search = Model.TuKhoa })">«</a>
+                                        <a class="page-link" 
+                                        href="@Url.Action("Index", new { 
+                                            page = Model.TrangHienTai - 1, 
+                                            loaiId = Model.LoaiId, 
+                                            search = Model.TuKhoa,  
+                                            giaMin = ViewBag.GiaMin,
+                                            giaMax = ViewBag.GiaMax, 
+                                            sort = ViewBag.Sort  })">«</a>
                                     </li>
                                 }
 
@@ -132,7 +139,17 @@
                                     if (i >= Model.TrangHienTai - 2 && i <= Model.TrangHienTai + 2)
                                     {
                                         <li class="page-item @(i == Model.TrangHienTai ? "active" : "")">
-                                            <a class="page-link" href="@Url.Action("Index", new { page = i, loaiId = Model.LoaiId, search = Model.TuKhoa })">@i</a>
+                                            <a class="page-link"
+                                               href="@Url.Action("Index", new {
+                                   page = i,
+                                   loaiId = Model.LoaiId,
+                                   search = ViewBag.TuKhoa,
+                                   giaMin = ViewBag.GiaMin,
+                                   giaMax = ViewBag.GiaMax,
+                                   sort = ViewBag.Sort
+                               })">
+                                                @i
+                                            </a>
                                         </li>
                                     }
                                 }
@@ -140,7 +157,17 @@
                                 @if (Model.TrangHienTai < Model.TongTrang)
                                 {
                                     <li class="page-item">
-                                        <a class="page-link" href="@Url.Action("Index", new { page = Model.TrangHienTai + 1, loaiId = Model.LoaiId, search = Model.TuKhoa })">»</a>
+                                        <a class="page-link"
+                                           href="@Url.Action("Index", new {
+                               page = Model.TrangHienTai + 1,
+                               loaiId = Model.LoaiId,
+                               search = ViewBag.TuKhoa,
+                               giaMin = ViewBag.GiaMin,
+                               giaMax = ViewBag.GiaMax,
+                               sort = ViewBag.Sort
+                           })">
+                                            »
+                                        </a>
                                     </li>
                                 }
                             </ul>

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Jewelry.ApiGateway.props" />
-</Project>

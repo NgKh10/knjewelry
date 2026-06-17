@@ -1,0 +1,297 @@
+﻿@{
+    ViewData["Title"] = "Giới thiệu - K&N JEWELRY";
+}
+
+<style>
+    .about-hero {
+        background: linear-gradient(135deg, #483925 0%, #2e2417 100%);
+        color: white;
+        padding: 80px 0;
+        text-align: center;
+    }
+
+        .about-hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .about-hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+    .about-section {
+        padding: 60px 0;
+    }
+
+        .about-section h2 {
+            color: #483925;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+            .about-section h2:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 60px;
+                height: 3px;
+                background: #483925;
+            }
+
+        .about-section p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+    .founder-card {
+        background: #f8f5f0;
+        border-radius: 12px;
+        padding: 30px;
+        text-align: center;
+        transition: all 0.3s;
+        height: 100%;
+    }
+
+        .founder-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .founder-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #483925;
+            margin-bottom: 15px;
+        }
+
+        .founder-card h4 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .founder-card .position {
+            color: #483925;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .founder-card p {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+    .value-item {
+        text-align: center;
+        padding: 25px;
+        border: 1px solid #e5ddd3;
+        border-radius: 8px;
+        transition: all 0.3s;
+        height: 100%;
+    }
+
+        .value-item:hover {
+            border-color: #483925;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+        }
+
+        .value-item i {
+            font-size: 40px;
+            color: #483925;
+            margin-bottom: 15px;
+        }
+
+        .value-item h5 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .value-item p {
+            color: #666;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+
+    .about-image {
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+</style>
+
+<!-- Hero -->
+<div class="about-hero">
+    <div class="container">
+        <h1>VỀ CHÚNG TÔI</h1>
+        <p>K&N Jewelry - Thương hiệu trang sức bạc cao cấp, nơi hội tụ của sự tinh tế và đẳng cấp</p>
+    </div>
+</div>
+
+<!-- Giới thiệu chung -->
+<div class="about-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2>Câu chuyện của chúng tôi</h2>
+                <p>
+                    K&N Jewelry được thành lập vào năm 2026 với sứ mệnh mang đến những sản phẩm trang sức bạc
+                    chất lượng cao, thiết kế tinh xảo và giá cả hợp lý cho người tiêu dùng Việt Nam.
+                </p>
+                <p>
+                    Với hơn 8 năm kinh nghiệm trong lĩnh vực chế tác và kinh doanh trang sức bạc, chúng tôi tự hào
+                    là một trong những thương hiệu uy tín hàng đầu, được hàng ngàn khách hàng tin tưởng và yêu mến.
+                </p>
+                <p>
+                    Tất cả sản phẩm của K&N Jewelry đều được làm từ bạc nguyên chất 92.5% (Bạc 925) và 99.9% (Bạc 999),
+                    kết hợp với tay nghề thủ công tinh xảo của những nghệ nhân giàu kinh nghiệm.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <div class="about-image">
+                    <img src="~/images/about-us.jpg" alt="Về chúng tôi">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Người sáng lập -->
+<div class="about-section" style="background: #f8f5f0;">
+    <div class="container">
+        <h2 class="text-center" style="text-align:center; margin-bottom:40px;">Đội ngũ sáng lập</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="founder-card">
+                    <img src="~/images/founder1.jpg" alt="Nguyễn Ngọc Khuê">
+                    <h4>Nguyễn Ngọc Khuê</h4>
+                    <div class="position">Đồng sáng lập &amp; CEO</div>
+                    <p>
+                        Với niềm đam mê trang sức và hơn 10 năm kinh nghiệm trong ngành, chị Khuê đã xây dựng
+                        K&N Jewelry trở thành thương hiệu uy tín, được khách hàng tin tưởng.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="founder-card">
+                    <img src="~/images/founder2.jpg" alt="Lê Thị Hồng Ngọc">
+                    <h4>Lê Thị Hồng Ngọc</h4>
+                    <div class="position">Đồng sáng lập &amp; Giám đốc sáng tạo</div>
+                    <p>
+                        Với gu thẩm mỹ tinh tế và sự sáng tạo không ngừng, chị Ngọc là người đứng sau những
+                        thiết kế độc đáo và ấn tượng của K&N Jewelry.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4" style="color:#666; font-size:15px;">
+            <i class='bx bx-heart' style="color:#483925;"></i>
+            Cùng nhau xây dựng K&N Jewelry từ những ngày đầu tiên
+        </div>
+    </div>
+</div>
+
+<!-- Giá trị cốt lõi -->
+<div class="about-section">
+    <div class="container">
+        <h2 class="text-center" style="text-align:center; margin-bottom:40px;">Giá trị cốt lõi</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="value-item">
+                    <i class='bx bx-diamond'></i>
+                    <h5>Chất lượng</h5>
+                    <p>100% bạc nguyên chất, kiểm định nghiêm ngặt trước khi đến tay khách hàng</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="value-item">
+                    <i class='bx bx-heart'></i>
+                    <h5>Tâm huyết</h5>
+                    <p>Mỗi sản phẩm đều được chế tác bằng tình yêu và sự tỉ mỉ cao nhất</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="value-item">
+                    <i class='bx bx-shield-alt'></i>
+                    <h5>Uy tín</h5>
+                    <p>Cam kết sản phẩm đúng chất lượng, bảo hành trọn đời cho khách hàng</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="value-item">
+                    <i class='bx bx-star'></i>
+                    <h5>Sáng tạo</h5>
+                    <p>Không ngừng đổi mới, mang đến những mẫu thiết kế độc đáo và thời thượng</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Thông tin công ty -->
+<div class="about-section" style="background: #f8f5f0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Thông tin công ty</h2>
+                <div style="margin-top:20px;">
+                    <p><i class='bx bx-calendar' style="color:#483925;font-size:18px;margin-right:10px;"></i> <strong>Năm thành lập:</strong> 2016</p>
+                    <p><i class='bx bx-map' style="color:#483925;font-size:18px;margin-right:10px;"></i> <strong>Địa chỉ:</strong> 236 Hoàng Quốc Việt, Phường Nghĩa Đô, Quận Cầu Giấy, Hà Nội</p>
+                    <p><i class='bx bx-phone' style="color:#483925;font-size:18px;margin-right:10px;"></i> <strong>Hotline:</strong> 0901 234 567</p>
+                    <p><i class='bx bx-envelope' style="color:#483925;font-size:18px;margin-right:10px;"></i> <strong>Email:</strong> contact@knjewelry.vn</p>
+                    <p><i class='bx bx-time' style="color:#483925;font-size:18px;margin-right:10px;"></i> <strong>Giờ làm việc:</strong> 8:00 - 21:00 (Thứ 2 - Chủ nhật)</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="about-image" style="height:100%;min-height:300px;">
+                    <img src="~/images/store.jpg" alt="Cửa hàng K&N Jewelry" style="width:100%;height:100%;object-fit:cover;">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mời gọi hành động -->
+<div class="about-hero" style="padding:60px 0; background: linear-gradient(135deg, #483925 0%, #2e2417 100%);">
+    <div class="container">
+        <h2 style="color:white; font-size:32px; margin-bottom:15px;">Khám phá bộ sưu tập</h2>
+        <p style="color:rgba(255,255,255,0.9); max-width:500px; margin:0 auto 25px;">
+            Hãy đến với K&N Jewelry để tìm cho mình những món trang sức bạc hoàn hảo nhất
+        </p>
+        <a href="/SanPham" class="btn btn-light" style="padding:12px 40px; font-weight:600; border-radius:30px;">
+            Xem sản phẩm
+        </a>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Animation AOS nếu có
+        if (typeof AOS !== 'undefined') {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        }
+    </script>
+}

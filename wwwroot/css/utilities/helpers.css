@@ -1,0 +1,256 @@
+﻿/* ============================================
+   HELPERS - Bỏ gạch chân & màu xanh dương
+   ============================================ */
+
+/* Bỏ gạch chân tất cả link */
+a, a:hover, a:focus, a:active {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* Màu mặc định cho link - dùng màu nâu chủ đạo */
+a, .item-title a, .list-unstyled li a, .dropdown li a {
+    color: #333 !important;
+}
+
+    a:hover, .item-title a:hover, .list-unstyled li a:hover, .dropdown li a:hover {
+        color: #483925 !important;
+    }
+
+/* Link trong breadcrumb */
+.breadcrumb a {
+    color: #666 !important;
+}
+
+    .breadcrumb a:hover {
+        color: #483925 !important;
+    }
+
+/* Pagination links */
+.pagination .page-link {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: #483925 !important;
+    border-color: #483925 !important;
+    color: white !important;
+}
+
+.pagination .page-link:hover {
+    background: #483925 !important;
+    border-color: #483925 !important;
+    color: white !important;
+}
+
+/* Màu chủ đạo */
+.text-primary {
+    color: #483925 !important;
+}
+
+.btn-primary {
+    background-color: #483925 !important;
+    border-color: #483925 !important;
+}
+
+/* Border và padding helpers */
+.border {
+    border: 1px solid #e5ddd3 !important;
+    border-radius: 8px;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-2 {
+    margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+/* ============================================
+   HELPERS - Bỏ gạch chân & màu xanh dương
+   ============================================ */
+
+/* Bỏ gạch chân tất cả link */
+a, a:hover, a:focus, a:active {
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+/* Màu mặc định cho link - dùng màu nâu chủ đạo */
+a, .item-title a, .list-unstyled li a, .dropdown li a {
+    color: #333 !important;
+}
+
+    a:hover, .item-title a:hover, .list-unstyled li a:hover, .dropdown li a:hover {
+        color: #483925 !important;
+    }
+
+/* Link trong breadcrumb */
+.breadcrumb a {
+    color: #666 !important;
+}
+
+    .breadcrumb a:hover {
+        color: #483925 !important;
+    }
+
+/* Pagination links */
+.pagination .page-link {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: #483925 !important;
+    border-color: #483925 !important;
+    color: white !important;
+}
+
+.pagination .page-link:hover {
+    background: #483925 !important;
+    border-color: #483925 !important;
+    color: white !important;
+}
+
+/* Màu chủ đạo */
+.text-primary {
+    color: #483925 !important;
+}
+
+.btn-primary {
+    background-color: #483925 !important;
+    border-color: #483925 !important;
+}
+
+/* Border và padding helpers */
+.border {
+    border: 1px solid #e5ddd3 !important;
+    border-radius: 8px;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-2 {
+    margin-top: 0.5rem !important;
+}
+
+.mt-3 {
+    margin-top: 1rem !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+/* Badge trạng thái đơn hàng - SỬA LẠI MÀU CHỮ */
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.375rem;
+}
+
+/* Đảm bảo tất cả badge có chữ tối màu, dễ đọc */
+.badge-warning {
+    background-color: #ffc107;
+    color: #000 !important;  /* Chữ đen */
+}
+
+.badge-info {
+    background-color: #17a2b8;
+    color: #fff !important;  /* Chữ trắng */
+}
+
+.badge-primary {
+    background-color: #007bff;
+    color: #fff !important;
+}
+
+.badge-success {
+    background-color: #28a745;
+    color: #fff !important;
+}
+
+.badge-danger {
+    background-color: #dc3545;
+    color: #fff !important;
+}
+
+.badge-secondary {
+    background-color: #6c757d;
+    color: #fff !important;
+}
+
+/* Nếu dùng class khác */
+.badge.bg-warning {
+    color: #000 !important;
+}
+
+.badge.bg-info, .badge.bg-primary, .badge.bg-success, .badge.bg-danger, .badge.bg-secondary {
+    color: #fff !important;
+}
+
+/* Button chi tiết đơn hàng */
+.btn-outline-dark {
+    border: 1px solid #483925;
+    background: transparent;
+    color: #483925;
+    transition: all 0.3s;
+}
+
+    .btn-outline-dark:hover {
+        background: #483925;
+        color: white;
+    }
+
+/* Table hover */
+.table-hover tbody tr:hover {
+    background-color: #f8f5f0;
+}

@@ -23,6 +23,8 @@ namespace knjewelry.Data
         public DbSet<ChiTietHoaDon> ChiTietHoaDons { get; set; }
         public DbSet<GioHang> GioHangs { get; set; }
         public DbSet<ChiTietGioHang> ChiTietGioHangs { get; set; }
+        public DbSet<YeuThich> YeuThichs { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

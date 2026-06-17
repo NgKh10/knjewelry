@@ -51,16 +51,78 @@ $(document).ready(function () {
         });
     });
 
-    // ── Toast thông báo ───────────────────────────────────────────
-    function showToast(message, type) {
-        var bg = type === 'success' ? '#28a745' : '#dc3545';
-        var t  = $('<div>').text(message).css({
-            position: 'fixed', bottom: '20px', right: '20px', zIndex: 9999,
-            background: bg, color: '#fff', padding: '12px 22px',
-            borderRadius: '8px', fontSize: '14px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.25)'
-        });
-        $('body').append(t);
-        setTimeout(function () { t.fadeOut(400, function () { t.remove(); }); }, 3000);
+    // Hàm xử lý response từ server
+    function handleAddToCartResponse(data, productName, btn) {
+        var originalText = btn.innerHTML;
+
+        if (data.redirect) {
+            // Chưa đăng nhập -> hiển thị thông báo và chuyển hướng
+            showToast(' Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng!', 'warning');
+            btn.innerHTML = 'Đang chuyển...';
+            btn.disabled = true;
+            setTimeout(function () {
+                window.location.href = data.redirect;
+            }, 1500);
+            return;
+        }
+
+        // Phục hồi nút
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+
+        if (data.success) {
+            var cartBadge = document.getElementById('cart-count');
+            if (cartBadge) cartBadge.textContent = data.soLuongGioHang;
+            showToast(' Đã thêm "' + productName + '" vào giỏ hàng!', 'success');
+        } else {
+            showToast('❌ ' + (data.message || 'Thêm vào giỏ hàng thất bại!'), 'error');
+        }
     }
-});
+
+    // Hàm showToast
+    function showToast(message, type = 'success') {
+        var colors = {
+            success: '#28a745',
+            error: '#dc3545',
+            warning: '#ffc107',
+            info: '#17a2b8'
+        };
+
+        var oldToast = document.querySelector('.custom-toast');
+        if (oldToast) oldToast.remove();
+
+        var toast = document.createElement('div');
+        toast.className = 'custom-toast';
+        toast.textContent = message;
+        toast.style.cssText = `
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: ${colors[type] || '#28a745'};
+        color: ${type === 'warning' ? '#333' : 'white'};
+        padding: 14px 24px;
+        border-radius: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        z-index: 99999;
+        transform: translateY(80px);
+        opacity: 0;
+        transition: all 0.4s ease;
+        max-width: 400px;
+    `;
+        document.body.appendChild(toast);
+
+        setTimeout(function () {
+            toast.style.transform = 'translateY(0)';
+            toast.style.opacity = '1';
+        }, 50);
+
+        setTimeout(function () {
+            toast.style.transform = 'translateY(80px)';
+            toast.style.opacity = '0';
+            setTimeout(function () {
+                toast.remove();
+            }, 400);
+        }, 3000);
+    }

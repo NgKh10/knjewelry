@@ -1,0 +1,273 @@
+﻿/* Ẩn menu clone để tránh trùng lặp */
+.site-menu.js-clone-nav {
+    display: block;
+}
+
+/* Đảm bảo chỉ hiện 1 menu trên desktop */
+@media (min-width: 992px) {
+    .site-menu.js-clone-nav.d-none.d-lg-block {
+        display: flex !important;
+    }
+}
+
+/* Ẩn logo trên mobile menu */
+.site-mobile-menu-logo {
+    display: none !important;
+}
+
+/* Header & Navigation */
+.site-navbar {
+    background: var(--white) !important;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-logo a {
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--primary) !important;
+    text-transform: uppercase;
+}
+
+/* Navigation Menu */
+.site-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+    .site-menu > li {
+        position: relative;
+    }
+
+        .site-menu > li > a {
+            display: block;
+            padding: 10px 18px;
+            color: var(--text-dark);
+            font-weight: 500;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+            .site-menu > li > a:hover,
+            .site-menu > li.active > a {
+                color: var(--primary);
+            }
+
+    /* Dropdown menu 2 cấp */
+    .site-menu .has-children {
+        position: relative;
+    }
+
+/* Nav dropdown — CHỈ áp dụng cho menu nav con, KHÔNG áp dụng cho Bootstrap .dropdown */
+.has-children > .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: var(--white);
+    min-width: 220px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    z-index: 100;
+    border-top: 3px solid var(--primary);
+    border-radius: 0 0 8px 8px;
+}
+
+.has-children:hover > .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.has-children > .dropdown li {
+    list-style: none;
+    border-bottom: 1px solid var(--border);
+}
+
+    .has-children > .dropdown li a {
+        display: block;
+        padding: 10px 20px;
+        color: var(--text-dark) !important;
+        font-size: 14px;
+    }
+
+        .has-children > .dropdown li a:hover {
+            background: var(--gray-bg);
+            color: var(--primary) !important;
+            padding-left: 25px;
+        }
+
+/* Dropdown cấp 3 */
+.has-children > .dropdown .has-children {
+    position: relative;
+}
+
+    .has-children > .dropdown .has-children > .dropdown {
+        top: 0;
+        left: 100%;
+    }
+
+/* Header Icons */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons-btn {
+    font-size: 20px;
+    color: var(--text-dark);
+    transition: all 0.3s;
+    position: relative;
+}
+
+    .icons-btn:hover {
+        color: var(--primary);
+    }
+
+.bag {
+    position: relative;
+}
+
+    .bag .number {
+        position: absolute;
+        top: -8px;
+        right: -12px;
+        background: var(--primary);
+        color: var(--white);
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+/* Search Box */
+.search-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.95);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+    .search-wrap.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .search-wrap .search-close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        color: var(--white);
+        font-size: 30px;
+    }
+
+    .search-wrap .form-control {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid var(--white);
+        color: var(--white);
+        font-size: 28px;
+        text-align: center;
+    }
+
+        .search-wrap .form-control::placeholder {
+            color: rgba(255,255,255,0.5);
+        }
+
+/* Header - sắp xếp các icon */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Form tìm kiếm trong header */
+.search-form-header {
+    margin-right: 10px;
+}
+
+    .search-form-header .input-group {
+        width: 240px;
+        border-radius: 30px;
+    }
+
+    .search-form-header .form-control {
+        border: 1px solid #ddd;
+        border-right: none;
+        font-size: 13px;
+        padding: 6px 12px;
+        height: 35px;
+        border-radius: 4px 0 0 4px;
+    }
+
+        .search-form-header .form-control:focus {
+            border-color: #483925;
+            box-shadow: none;
+            outline: none;
+        }
+
+    .search-form-header .btn {
+        background: #483925;
+        color: white;
+        border: 1px solid #483925;
+        height: 35px;
+        padding: 0 12px;
+        display: flex;
+        align-items: center;
+        border-radius: 0 4px 4px 0;
+    }
+
+        .search-form-header .btn:hover {
+            background: #2e2417;
+        }
+
+/* Icon buttons */
+.icons-btn {
+    font-size: 20px;
+    color: #333;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+    .icons-btn:hover {
+        color: #483925;
+    }
+
+/* Cart badge */
+.bag .number {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background: #483925;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

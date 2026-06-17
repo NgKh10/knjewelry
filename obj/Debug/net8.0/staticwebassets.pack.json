@@ -1,831 +1,935 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\knjewelry.bundle.scp.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\knjewelry.bundle.scp.css",
       "PackagePath": "staticwebassets\\knjewelry.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\admin\\assets\\index-Bc5DG8Gu.js",
-      "PackagePath": "staticwebassets\\admin\\assets\\index-Bc5DG8Gu.js"
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\admin\\assets\\index-BqD6MkdI.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\index-BqD6MkdI.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\admin\\assets\\index-CKFYSywn.js",
-      "PackagePath": "staticwebassets\\admin\\assets\\index-CKFYSywn.js"
-    },
-    {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\admin\\assets\\index-CROqUWS3.css",
-      "PackagePath": "staticwebassets\\admin\\assets\\index-CROqUWS3.css"
-    },
-    {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\admin\\assets\\index-CWBOEmY5.js",
-      "PackagePath": "staticwebassets\\admin\\assets\\index-CWBOEmY5.js"
-    },
-    {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\admin\\index.html",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\admin\\index.html",
       "PackagePath": "staticwebassets\\admin\\index.html"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\base\\reset.css",
+      "PackagePath": "staticwebassets\\css\\base\\reset.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\base\\variables.css",
+      "PackagePath": "staticwebassets\\css\\base\\variables.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\breadcrumb.css",
+      "PackagePath": "staticwebassets\\css\\components\\breadcrumb.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\buttons.css",
+      "PackagePath": "staticwebassets\\css\\components\\buttons.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\cart.css",
+      "PackagePath": "staticwebassets\\css\\components\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\checkout.css",
+      "PackagePath": "staticwebassets\\css\\components\\checkout.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\filter.css",
+      "PackagePath": "staticwebassets\\css\\components\\filter.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\notification.css",
+      "PackagePath": "staticwebassets\\css\\components\\notification.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\pagination.css",
+      "PackagePath": "staticwebassets\\css\\components\\pagination.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\product.css",
+      "PackagePath": "staticwebassets\\css\\components\\product.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\components\\sidebar.css",
+      "PackagePath": "staticwebassets\\css\\components\\sidebar.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\layouts\\features.css",
+      "PackagePath": "staticwebassets\\css\\layouts\\features.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\layouts\\footer.css",
+      "PackagePath": "staticwebassets\\css\\layouts\\footer.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\layouts\\header.css",
+      "PackagePath": "staticwebassets\\css\\layouts\\header.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\layouts\\hero.css",
+      "PackagePath": "staticwebassets\\css\\layouts\\hero.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\layouts\\title.css",
+      "PackagePath": "staticwebassets\\css\\layouts\\title.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\utilities\\helpers.css",
+      "PackagePath": "staticwebassets\\css\\utilities\\helpers.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\css\\utilities\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\utilities\\responsive.css"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\icomoon.eot",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\icomoon.eot",
       "PackagePath": "staticwebassets\\icomoon.eot"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\icomoon.svg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\icomoon.svg",
       "PackagePath": "staticwebassets\\icomoon.svg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\icomoon.ttf",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\icomoon.ttf",
       "PackagePath": "staticwebassets\\icomoon.ttf"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\icomoon.woff",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\icomoon.woff",
       "PackagePath": "staticwebassets\\icomoon.woff"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\about_1.png",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\about-us.jpg",
+      "PackagePath": "staticwebassets\\images\\about-us.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\about_1.png",
       "PackagePath": "staticwebassets\\images\\about_1.png"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\default.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\default.jpg",
       "PackagePath": "staticwebassets\\images\\default.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\model_3.png",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\founder1.JPG",
+      "PackagePath": "staticwebassets\\images\\founder1.JPG"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\founder2.jpg",
+      "PackagePath": "staticwebassets\\images\\founder2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\model_3.png",
       "PackagePath": "staticwebassets\\images\\model_3.png"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp100_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp100_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp100_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp101_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp101_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp101_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp102_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp102_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp102_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp103_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp103_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp103_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp104_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp104_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp104_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp105_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp105_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp105_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp106_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp106_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp106_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp107_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp107_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp107_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp108_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp108_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp108_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp109_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp109_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp109_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp10_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp10_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp10_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp110_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp110_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp110_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp112_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp112_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp112_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp113_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp113_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp113_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp114_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp114_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp114_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp115_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp115_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp115_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp116_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp116_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp116_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp117_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp117_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp117_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp119_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp119_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp119_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp11_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp11_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp11_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp12_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp12_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp12_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp133_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp133_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp133_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp134_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp134_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp134_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp135_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp135_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp135_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp136_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp136_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp136_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp137_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp137_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp137_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp139_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp139_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp139_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp13_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp13_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp13_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp140_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp140_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp140_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp141_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp141_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp141_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp142_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp142_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp142_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp143_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp143_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp143_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp144_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp144_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp144_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp145_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp145_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp145_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp146_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp146_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp146_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp147_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp147_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp147_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp148_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp148_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp148_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp149_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp149_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp149_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp14_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp14_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp14_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp150_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp150_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp150_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp151_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp151_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp151_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp152_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp152_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp152_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp16_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp16_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp16_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp17_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp17_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp17_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp18_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp18_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp18_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp19_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp19_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp19_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp1_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp1_1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp1_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp1_2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp1_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp1_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp1_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp20_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp20_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp20_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp21_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp21_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp21_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp22_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp22_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp22_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp23_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp23_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp23_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp24_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp24_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp24_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp25_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp25_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp25_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp26_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp26_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp26_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp27_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp27_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp27_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp28_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp28_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp28_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp29_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp29_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp29_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp2_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp2_1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp2_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp2_2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp2_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp2_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp2_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp30_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp30_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp30_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp31_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp31_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp31_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp32_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp32_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp32_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp33_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp33_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp33_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp34_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp34_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp34_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp35_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp35_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp35_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp36_1.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp36_1.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp36_1.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp36_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp36_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp36_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp37_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp37_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp37_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp38_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp38_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp38_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp39_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp39_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp39_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp3_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp3_1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp3_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp3_2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp3_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp3_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp3_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp40_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp40_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp40_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp41_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp41_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp41_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp42_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp42_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp42_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp43_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp43_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp43_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp44_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp44_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp44_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp45_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp45_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp45_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp46_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp46_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp46_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp47_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp47_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp47_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp48_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp48_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp48_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp49_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp49_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp49_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp4_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp4_1.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp4_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp4_2.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\sp4_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp4_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp4_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp50_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp50_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp50_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp51_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp51_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp51_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp52_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp52_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp52_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp53_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp53_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp53_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp54_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp54_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp54_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp55_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp55_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp55_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp56_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp56_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp56_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp57_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp57_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp57_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp58_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp58_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp58_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp59_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp59_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp59_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp5_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp5_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp5_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp60_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp60_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp60_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp61_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp61_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp61_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp62_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp62_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp62_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp63_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp63_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp63_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp64_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp64_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp64_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp65_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp65_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp65_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp66_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp66_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp66_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp69_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp69_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp69_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp6_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp6_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp6_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp70_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp70_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp70_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp71_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp71_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp71_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp72_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp72_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp72_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp73_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp73_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp73_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp74_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp74_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp74_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp75_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp75_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp75_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp79_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp79_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp79_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp7_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp7_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp7_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp80_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp80_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp80_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp81_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp81_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp81_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp82_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp82_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp82_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp83_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp83_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp83_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp84_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp84_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp84_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp85_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp85_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp85_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp86_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp86_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp86_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp88_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp88_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp88_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp89_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp89_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp89_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp8_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp8_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp8_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp90_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp90_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp90_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp92_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp92_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp92_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp93_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp93_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp93_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp94_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp94_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp94_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp95_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp95_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp95_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp97_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp97_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp97_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp98_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp98_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp98_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp99_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp99_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp99_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\products\\sp9_main.jpg",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\products\\sp9_main.jpg",
       "PackagePath": "staticwebassets\\images\\products\\sp9_main.jpg"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\images\\sale.png",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\images\\sale.png",
       "PackagePath": "staticwebassets\\images\\sale.png"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\js\\cart.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\js\\cart.js",
       "PackagePath": "staticwebassets\\js\\cart.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\scss\\_site-base.scss",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\scss\\_site-base.scss",
       "PackagePath": "staticwebassets\\scss\\_site-base.scss"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\scss\\_site-blocks.scss",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\scss\\_site-blocks.scss",
       "PackagePath": "staticwebassets\\scss\\_site-blocks.scss"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\scss\\_site-navbar.scss",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\scss\\_site-navbar.scss",
       "PackagePath": "staticwebassets\\scss\\_site-navbar.scss"
     },
     {
-      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\BTL\\knjewelry\\wwwroot\\scss\\style.scss",
+      "Id": "C:\\Users\\nguye\\source\\repos\\ki2nam3\\cnweb\\btl thi\\wwwroot\\scss\\style.scss",
       "PackagePath": "staticwebassets\\scss\\style.scss"
     },
     {

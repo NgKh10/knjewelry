@@ -1,0 +1,93 @@
+﻿@model knjewelry.Models.ViewModels.DoiMatKhauViewModel
+@{
+    ViewData["Title"] = "Đổi mật khẩu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-light py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mb-0">
+                <a href="/">Trang chủ</a> <span class="mx-2 mb-0">/</span>
+                <strong class="text-black">Đổi mật khẩu</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar trái -->
+            <div class="col-md-3">
+                <div class="border p-3 mb-3">
+                    <h4 class="mb-3">Tài khoản</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="/TaiKhoan/ThongTin">Thông tin cá nhân</a></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DonHang">Đơn hàng của tôi</a></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DoiMatKhau" class="fw-bold text-dark">Đổi mật khẩu</a></li>
+                        <li><hr class="my-2"></li>
+                        <li class="mb-2"><a href="/TaiKhoan/DangXuat" class="text-danger">Đăng xuất</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Nội dung chính -->
+            <div class="col-md-9">
+                <div class="border p-4">
+                    <h3 class="mb-4">Đổi mật khẩu</h3>
+
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            @TempData["Success"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            @TempData["Error"]
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    }
+
+                    <form method="post" asp-action="DoiMatKhau">
+                        <div class="form-group mb-3">
+                            <label asp-for="MatKhauHienTai" class="form-label">Mật khẩu hiện tại</label>
+                            <input asp-for="MatKhauHienTai" type="password" class="form-control" placeholder="Nhập mật khẩu hiện tại" />
+                            <span asp-validation-for="MatKhauHienTai" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <label asp-for="MatKhauMoi" class="form-label">Mật khẩu mới</label>
+                            <input asp-for="MatKhauMoi" type="password" class="form-control" placeholder="Nhập mật khẩu mới (tối thiểu 6 ký tự)" />
+                            <span asp-validation-for="MatKhauMoi" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group mb-4">
+                            <label asp-for="XacNhanMatKhauMoi" class="form-label">Xác nhận mật khẩu mới</label>
+                            <input asp-for="XacNhanMatKhauMoi" type="password" class="form-control" placeholder="Nhập lại mật khẩu mới" />
+                            <span asp-validation-for="XacNhanMatKhauMoi" class="text-danger"></span>
+                        </div>
+
+                        <div class="d-flex gap-2">
+                            <button type="submit" class="btn btn-black">Đổi mật khẩu</button>
+                            <a href="/TaiKhoan/ThongTin" class="btn btn-outline-secondary">Hủy</a>
+                        </div>
+                    </form>
+
+                    <div class="mt-4 p-3 bg-light rounded">
+                        <small class="text-muted">
+                            <i class='bx bx-info-circle'></i> Lưu ý: Mật khẩu mới phải có ít nhất 6 ký tự.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
