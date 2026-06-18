@@ -1,0 +1,32 @@
+﻿.feature-item{
+    padding: 25px;
+}
+
+.feature-item i {
+    display: block !important;
+    width: auto;
+    height: auto;
+    font-size: 40px;
+    color: #4b3c2b;
+    margin-bottom: 15px;
+}
+
+    .feature-item i {
+        font-size: 40px;
+        color: var(--primary);
+        margin-bottom: 15px;
+    }
+
+    .feature-item h4 {
+        margin: 0 0 8px;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        padding: 0;
+    }
+
+    .feature-item p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--text-light);
+    }

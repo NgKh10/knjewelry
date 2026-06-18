@@ -5,33 +5,12 @@
     var currentLoaiIdInt = string.IsNullOrEmpty(currentLoaiId) ? 0 : int.Parse(currentLoaiId);
 }
 
-@foreach (var category in Model)
+@if (Model != null && Model.Any())
 {
-    var isActive = (currentLoaiIdInt == category.id_loai_sp);
-
-    if (category.LoaiCon != null && category.LoaiCon.Any())
+    foreach (var category in Model)
     {
-        <li class="mb-2">
-            <a href="/SanPham?loaiId=@category.id_loai_sp"
-               class="@(isActive ? "fw-bold text-dark" : "")">
-                @category.ten_loai
-            </a>
-            <ul class="sub-menu" style="padding-left: 20px; margin-top: 5px;">
-                @foreach (var child in category.LoaiCon)
-                {
-                    var isChildActive = (currentLoaiIdInt == child.id_loai_sp);
-                    <li class="mb-1">
-                        <a href="/SanPham?loaiId=@child.id_loai_sp"
-                           class="@(isChildActive ? "fw-bold text-dark" : "")">
-                            - @child.ten_loai
-                        </a>
-                    </li>
-                }
-            </ul>
-        </li>
-    }
-    else
-    {
+        var isActive = (currentLoaiIdInt == category.id_loai_sp);
+        
         <li class="mb-2">
             <a href="/SanPham?loaiId=@category.id_loai_sp"
                class="@(isActive ? "fw-bold text-dark" : "")">
@@ -39,4 +18,10 @@
             </a>
         </li>
     }
+}
+else
+{
+    <li class="mb-2">
+        <span class="text-muted">Đang cập nhật...</span>
+    </li>
 }

@@ -26,7 +26,17 @@
                         <div class="alert alert-success">@TempData["Success"]</div>
                     }
 
-                    <form method="post">
+                    @if (!ViewData.ModelState.IsValid)
+                    {
+                        <div class="alert alert-danger">
+                            @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                            {
+                                <div>@err.ErrorMessage</div>
+                            }
+                        </div>
+                    }
+
+                    <form asp-action="DangNhap" method="post">
                         <div class="form-group mb-3">
                             <label asp-for="TenDangNhap">Tên đăng nhập</label>
                             <input asp-for="TenDangNhap" class="form-control" placeholder="Tên đăng nhập">

@@ -1,0 +1,23 @@
+﻿/* Ẩn nút lên xuống của số lượng */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.table-bordered th,
+.table-bordered td {
+    vertical-align: middle;
+    text-align: center;
+    border-color: var(--border);
+}
+
+.cart-qty {
+    width: 60px;
+    text-align: center;
+}

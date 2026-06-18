@@ -23,6 +23,18 @@
                     <div class="border p-4">
                         <h3 class="mb-4">Thông tin nhận hàng</h3>
 
+                        @if (!ViewData.ModelState.IsValid)
+                        {
+                            <div class="alert alert-danger">
+                                <ul class="mb-0">
+                                    @foreach (var err in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                                    {
+                                        <li>@err.ErrorMessage</li>
+                                    }
+                                </ul>
+                            </div>
+                        }
+
                         <div class="form-group mb-3">
                             <label asp-for="HoTen">Họ tên <span class="text-danger">*</span></label>
                             <input asp-for="HoTen" class="form-control" />
@@ -40,22 +52,30 @@
                             <input asp-for="SoDienThoai" class="form-control" />
                             <span asp-validation-for="SoDienThoai" class="text-danger"></span>
                         </div>
-
+                        <!-- Tỉnh/Thành phố -->
                         <div class="form-group mb-3">
-                            <label asp-for="TinhTP">Tỉnh/Thành phố <span class="text-danger">*</span></label>
-                            <input asp-for="TinhTP" class="form-control" />
+                            <label asp-for="TinhTP" class="form-label">Tỉnh/Thành phố <span class="text-danger">*</span></label>
+                            <select asp-for="TinhTP" id="province" class="form-control">
+                                <option value="">-- Chọn tỉnh/thành phố --</option>
+                            </select>
                             <span asp-validation-for="TinhTP" class="text-danger"></span>
                         </div>
 
+                        <!-- Quận/Huyện -->
                         <div class="form-group mb-3">
-                            <label asp-for="QuanHuyen">Quận/Huyện <span class="text-danger">*</span></label>
-                            <input asp-for="QuanHuyen" class="form-control" />
+                            <label asp-for="QuanHuyen" class="form-label">Quận/Huyện <span class="text-danger">*</span></label>
+                            <select asp-for="QuanHuyen" id="district" class="form-control" disabled>
+                                <option value="">-- Chọn quận/huyện --</option>
+                            </select>
                             <span asp-validation-for="QuanHuyen" class="text-danger"></span>
                         </div>
 
+                        <!-- Phường/Xã -->
                         <div class="form-group mb-3">
-                            <label asp-for="PhuongXa">Phường/Xã <span class="text-danger">*</span></label>
-                            <input asp-for="PhuongXa" class="form-control" />
+                            <label asp-for="PhuongXa" class="form-label">Phường/Xã <span class="text-danger">*</span></label>
+                            <select asp-for="PhuongXa" id="ward" class="form-control" disabled>
+                                <option value="">-- Chọn phường/xã --</option>
+                            </select>
                             <span asp-validation-for="PhuongXa" class="text-danger"></span>
                         </div>
 
@@ -81,21 +101,58 @@
                                 <tr><th>Sản phẩm</th><th>Số lượng</th><th>Thành tiền</th></tr>
                             </thead>
                             <tbody>
-                                @foreach (var item in Model.GioHang.DanhSachSanPham)
+                                @foreach (var item in (Model.GioHang?.DanhSachSanPham ?? new List<knjewelry.Models.ViewModels.GioHangItemViewModel>()))
                                 {
                                     <tr>
-                                        <td>@item.TenSanPham</td>
+                                        <td>
+                                            @item.TenSanPham
+                                            @if (!string.IsNullOrEmpty(item.KichCo) || !string.IsNullOrEmpty(item.MauSac))
+                                            {
+                                                <small class="text-muted d-block">
+                                                    @string.Join(" / ", new[] { item.KichCo, item.MauSac }.Where(x => !string.IsNullOrEmpty(x)))
+                                                </small>
+                                            }
+                                        </td>
                                         <td class="text-center">@item.SoLuong</td>
                                         <td class="text-end">@string.Format("{0:N0}₫", item.ThanhTien)</td>
                                     </tr>
                                 }
                             </tbody>
                             <tfoot>
-                                <tr><th colspan="2">Tạm tính</th><th>@string.Format("{0:N0}₫", Model.GioHang.TongTienHang)</th></tr>
-                                <tr><th colspan="2">Phí vận chuyển</th><th>@string.Format("{0:N0}₫", Model.GioHang.PhiVanChuyen)</th></tr>
-                                <tr class="table-active"><th colspan="2">Tổng cộng</th><th class="text-danger">@string.Format("{0:N0}₫", Model.GioHang.TongTien)</th></tr>
+                                <tr>
+                                    <th colspan="2">Tạm tính</th>
+                                    <th>@string.Format("{0:N0}₫", Model.GioHang?.TongTienHang ?? 0)</th>
+                                </tr>
+                                <tr id="row-giam" style="display:none;">
+                                    <th colspan="2" class="text-success">Giảm giá (<span id="span-ma-giam"></span>)</th>
+                                    <th class="text-success" id="td-giam">-0₫</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">Phí vận chuyển</th>
+                                    <th>@string.Format("{0:N0}₫", Model.GioHang?.PhiVanChuyen ?? 0)</th>
+                                </tr>
+                                <tr class="table-active">
+                                    <th colspan="2">Tổng cộng</th>
+                                    <th class="text-danger" id="td-tong">@string.Format("{0:N0}₫", Model.GioHang?.TongTien ?? 0)</th>
+                                </tr>
                             </tfoot>
                         </table>
+
+                        <!-- Mã giảm giá -->
+                        <div class="form-group mb-3">
+                            <label>Mã giảm giá <small class="text-muted">(không bắt buộc)</small></label>
+                            <div class="input-group">
+                                <input type="text" id="input-coupon" class="form-control"
+                                       placeholder="Nhập mã giảm giá..."
+                                       value="@Model.MaGiamGia"
+                                       style="text-transform:uppercase;">
+                                <button type="button" id="btn-apply-coupon" class="btn btn-outline-dark">
+                                    <i class='bx bx-check-circle'></i> Áp dụng
+                                </button>
+                            </div>
+                            <div id="coupon-msg" class="mt-1 small"></div>
+                            <input type="hidden" asp-for="MaGiamGia" id="hidden-coupon" />
+                        </div>
 
                         <div class="form-group mb-3">
                             <label>Phương thức thanh toán</label>
@@ -120,15 +177,143 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script>
+    $(document).ready(function () {
+        var tienHang = @(Model.GioHang?.TongTienHang ?? 0);
+        var ship     = @(Model.GioHang?.PhiVanChuyen ?? 0);
+        var baseTotal = tienHang + ship;
+
+        // Nếu đã có mã (khi re-render do lỗi), tự động kiểm tra lại
+        var existingCode = $('#hidden-coupon').val();
+        if (existingCode) {
+            $('#input-coupon').val(existingCode);
+            applyCode(existingCode);
+        }
+
+        // Uppercase input
+        $('#input-coupon').on('input', function () {
+            $(this).val($(this).val().toUpperCase());
+        });
+
+        // Nút Áp dụng
         $('#btn-apply-coupon').click(function () {
-            var code = $('#MaGiamGia').val();
-            $.post('/GioHang/ApDungMaGiamGia', { maGiamGia: code }, function (res) {
+            applyCode($('#input-coupon').val().trim());
+        });
+
+        // Enter để áp dụng
+        $('#input-coupon').keypress(function (e) {
+            if (e.which === 13) { e.preventDefault(); applyCode($(this).val().trim()); }
+        });
+
+        function applyCode(code) {
+            if (!code) {
+                resetDiscount();
+                return;
+            }
+            $('#btn-apply-coupon').prop('disabled', true).html('<span class="spinner-border spinner-border-sm"></span>');
+
+            $.post('/ThanhToan/KiemTraMaGiamGia', { code: code, total: tienHang }, function (res) {
                 if (res.success) {
-                    location.reload();
+                    $('#coupon-msg').html('<span class="text-success"><i class="bx bx-check-circle"></i> ' + res.moTa + '</span>');
+                    $('#hidden-coupon').val(res.code);
+                    $('#span-ma-giam').text(res.code);
+                    $('#row-giam').show();
+                    $('#td-giam').text('-' + Math.round(res.soGiam).toLocaleString('vi-VN') + '₫');
+                    var newTotal = tienHang - res.soGiam + ship;
+                    $('#td-tong').text(Math.round(newTotal).toLocaleString('vi-VN') + '₫');
                 } else {
-                    alert(res.message);
+                    $('#coupon-msg').html('<span class="text-danger"><i class="bx bx-x-circle"></i> ' + res.message + '</span>');
+                    resetDiscount();
                 }
+            }).always(function () {
+                $('#btn-apply-coupon').prop('disabled', false).html('<i class="bx bx-check-circle"></i> Áp dụng');
+            });
+        }
+
+        function resetDiscount() {
+            $('#hidden-coupon').val('');
+            $('#row-giam').hide();
+            $('#td-tong').text(baseTotal.toLocaleString('vi-VN') + '₫');
+        }
+    });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+<script>
+    // API tỉnh thành (dùng miễn phí)
+    const provinceApi = 'https://provinces.open-api.vn/api/p/';
+    let districts = [];
+    let wards = [];
+
+    // Load tỉnh thành
+    axios.get(provinceApi)
+        .then(response => {
+            const provinces = response.data;
+            const provinceSelect = document.getElementById('province');
+            provinces.forEach(province => {
+                const option = document.createElement('option');
+                option.value = province.name;
+                option.textContent = province.name;
+                provinceSelect.appendChild(option);
             });
         });
-    </script>
+
+    // Khi chọn tỉnh thành
+    document.getElementById('province').addEventListener('change', function() {
+        const provinceName = this.value;
+        const districtSelect = document.getElementById('district');
+        const wardSelect = document.getElementById('ward');
+        
+        // Reset và disable quận/huyện
+        districtSelect.innerHTML = '<option value="">-- Chọn quận/huyện --</option>';
+        districtSelect.disabled = true;
+        wardSelect.innerHTML = '<option value="">-- Chọn phường/xã --</option>';
+        wardSelect.disabled = true;
+
+        if (provinceName) {
+            // Tìm mã tỉnh từ tên
+            axios.get(provinceApi)
+                .then(response => {
+                    const province = response.data.find(p => p.name === provinceName);
+                    if (province) {
+                        // Lấy danh sách quận/huyện theo tỉnh
+                        axios.get(`https://provinces.open-api.vn/api/p/${province.code}?depth=2`)
+                            .then(res => {
+                                districts = res.data.districts;
+                                districtSelect.disabled = false;
+                                districts.forEach(district => {
+                                    const option = document.createElement('option');
+                                    option.value = district.name;
+                                    option.textContent = district.name;
+                                    districtSelect.appendChild(option);
+                                });
+                            });
+                    }
+                });
+        }
+    });
+
+    // Khi chọn quận/huyện
+    document.getElementById('district').addEventListener('change', function() {
+        const districtName = this.value;
+        const wardSelect = document.getElementById('ward');
+        wardSelect.innerHTML = '<option value="">-- Chọn phường/xã --</option>';
+        wardSelect.disabled = true;
+
+        if (districtName) {
+            const district = districts.find(d => d.name === districtName);
+            if (district) {
+                axios.get(`https://provinces.open-api.vn/api/d/${district.code}?depth=2`)
+                    .then(res => {
+                        wards = res.data.wards;
+                        wardSelect.disabled = false;
+                        wards.forEach(ward => {
+                            const option = document.createElement('option');
+                            option.value = ward.name;
+                            option.textContent = ward.name;
+                            wardSelect.appendChild(option);
+                        });
+                    });
+            }
+        }
+    });
+</script>
 }

@@ -1,0 +1,114 @@
+﻿/* ============================================
+   BUTTONS - CUSTOM
+   ============================================ */
+
+/* Nút đen chính (giữ nguyên cho các nút khác) */
+.btn-black {
+    background: #483925;
+    color: #ffffff !important;
+    border: none;
+    padding: 14px 40px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+}
+
+    .btn-black:hover {
+        background: #2e2417;
+        color: #ffffff !important;
+        transform: translateY(-2px);
+    }
+
+/* Nút thanh toán trong giỏ hàng (không có margin-bottom) */
+.btn-checkout {
+    background: #483925;
+    color: #ffffff !important;
+    border: none;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    .btn-checkout:hover {
+        background: #2e2417;
+        color: #ffffff !important;
+        transform: translateY(-2px);
+    }
+
+    .btn-checkout:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+/* Nút tiếp tục mua sắm */
+.btn-continue {
+    display: inline-block;
+    background: transparent;
+    color: #483925 !important;
+    border: 1px solid #483925;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+    .btn-continue:hover {
+        background: #483925;
+        color: #ffffff !important;
+        text-decoration: none;
+    }
+
+/* Nút outline dark (giữ nguyên) */
+.btn-outline-dark {
+    border: 1px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+    .btn-outline-dark:hover {
+        background: var(--primary);
+        color: var(--white);
+    }
+
+/* Nút thêm giỏ hàng */
+.btn-add-cart {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+    .btn-add-cart:hover {
+        background: var(--primary);
+        border-color: var(--primary);
+        color: var(--white);
+    }
+
+.btn-primary {
+    background-color: #483925 !important;
+    border-color: #483925 !important;
+}
+
+/* Button links */
+.btn, .btn-link {
+    text-decoration: none !important;
+}

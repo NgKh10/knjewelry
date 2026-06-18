@@ -1,0 +1,41 @@
+﻿.price-range {
+    margin-top: 15px;
+}
+
+.form-range {
+    width: 100%;
+}
+
+/* Search box nhỏ gọn */
+.search-form .input-group {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-form .form-control {
+    border: 1px solid #ddd;
+    border-right: none;
+    font-size: 13px;
+    padding: 5px 12px;
+}
+
+    .search-form .form-control:focus {
+        border-color: #483925;
+        box-shadow: none;
+    }
+
+.search-form .btn {
+    background: #483925;
+    color: white;
+    border: 1px solid #483925;
+}
+
+    .search-form .btn:hover {
+        background: #2e2417;
+    }
+/* Input group z-index fix */
+.input-group > .form-control,
+.input-group > .btn {
+    position: relative;
+    z-index: 1;
+}

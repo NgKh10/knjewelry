@@ -71,7 +71,7 @@ public class MaGiamGiaController : ControllerBase
             return BadRequest(new { message = $"Đơn hàng tối thiểu {item.don_hang_toi_thieu:N0}đ để dùng mã này!" });
 
         decimal discountAmount = 0;
-        if (item.loai_giam == "%")
+        if (item.loai_giam == "%" || item.loai_giam == "phan_tram")
         {
             discountAmount = orderTotal * item.gia_tri / 100;
             if (item.giam_toi_da.HasValue && discountAmount > item.giam_toi_da)

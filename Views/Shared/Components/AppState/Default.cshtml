@@ -1,0 +1,57 @@
+@* AppStateContext — Quản lý trạng thái tài khoản & giỏ hàng bền vững *@
+<script>
+window.AppContext = {
+    CART_KEY       : 'kn_cart_v2',
+    serverCartCount: @(ViewData["SessionCartCount"] ?? 0),
+    clearLocalCart : @((ViewData["ClearLocalCart"] is bool b && b) ? "true" : "false"),
+
+    // ── localStorage helpers ──────────────────────────────────────
+    saveLocalCart: function (items) {
+        localStorage.setItem(this.CART_KEY, JSON.stringify(items || []));
+    },
+
+    // ── Cập nhật badge số lượng ───────────────────────────────────
+    updateCartBadge: function (count) {
+        var badge = document.getElementById('cart-count');
+        if (badge) badge.textContent = (count || 0);
+    },
+
+    // ── Server có cart → lưu xuống localStorage ──────────────────
+    saveServerCartToLocal: function () {
+        fetch('/GioHang/GetCartJson')
+            .then(function (r) { return r.json(); })
+            .then(function (items) {
+                if (Array.isArray(items) && items.length > 0) {
+                    window.AppContext.saveLocalCart(items);
+                }
+            })
+            .catch(function () {});
+    },
+
+    // ── Khởi động ─────────────────────────────────────────────────
+    // LƯU Ý: localStorage CHỈ đóng vai trò bản sao một chiều (mirror)
+    // từ server xuống, KHÔNG được dùng để "phục hồi" ngược vào server.
+    // Lý do: nếu phục hồi từ localStorage, một phiên/khách hoàn toàn
+    // mới (chưa từng thêm gì) vẫn có thể "thừa hưởng" giỏ hàng cũ còn
+    // sót lại trong trình duyệt từ lần đăng nhập/test trước — sai lệch
+    // số lượng hiển thị, và tệ hơn là rò rỉ giỏ hàng giữa các tài khoản
+    // dùng chung trình duyệt. Server session (khách) / DB (tài khoản)
+    // đã là nguồn dữ liệu giỏ hàng duy nhất và đáng tin cậy.
+    init: function () {
+        if (this.clearLocalCart) {
+            localStorage.removeItem(this.CART_KEY);
+        }
+
+        if (this.serverCartCount > 0) {
+            // Server có cart → đồng bộ xuống localStorage để cập nhật bản mirror
+            this.saveServerCartToLocal();
+        } else {
+            // Server không có cart → bản mirror cũng không còn ý nghĩa
+            localStorage.removeItem(this.CART_KEY);
+        }
+    }
+};
+
+// Script ở cuối body → DOM sẵn sàng, gọi thẳng
+AppContext.init();
+</script>

@@ -1,8 +1,10 @@
 import axios from 'axios';
 
+// Khi VITE_API_URL trống: dùng relative URL '/api' để Vite proxy định tuyến đúng port
+// Khi VITE_API_URL có giá trị (production): dùng URL tuyệt đối
 const API_BASE_URL = import.meta.env.VITE_API_URL
     ? `${import.meta.env.VITE_API_URL}/api`
-    : 'http://localhost:5000/api';
+    : '/api';
 
 const api = axios.create({
     baseURL: API_BASE_URL,
@@ -35,8 +37,8 @@ api.interceptors.response.use(
 );
 
 export const authApi = {
-    login: (data) => api.post('/Auth/login', data),
-    register: (data) => api.post('/Auth/register', data),
+    login: (data) => api.post('/auth/login', data),
+    register: (data) => api.post('/auth/register', data),
 };
 
 export const userApi = {
@@ -119,6 +121,7 @@ export const orderApi = {
     getById: (id) => api.get(`/hoadon/${id}`),
     create: (data) => api.post('/hoadon', data),
     updateStatus: (id, data) => api.put(`/hoadon/${id}/status`, data),
+    bulkUpdateStatus: (data) => api.put('/hoadon/bulk-status', data),
 };
 
 export const dashboardApi = {

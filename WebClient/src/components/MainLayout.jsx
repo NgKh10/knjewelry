@@ -31,7 +31,8 @@ const MainLayout = ({ children }) => {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item dropdown">
                         <a className="nav-link" data-toggle="dropdown" href="#">
-                            <i className="far fa-user"></i> {user?.name || user?.username}
+                            {/* Sửa: dùng đúng field từ API (ho_ten, ten_dang_nhap) */}
+                            <i className="far fa-user"></i> {user?.ho_ten || user?.ten_dang_nhap}
                         </a>
                         <div className="dropdown-menu dropdown-menu-right">
                             <span className="dropdown-item dropdown-header">{user?.email}</span>
@@ -57,7 +58,8 @@ const MainLayout = ({ children }) => {
                             <i className="fas fa-user-circle fa-2x text-light"></i>
                         </div>
                         <div className="info">
-                            <Link to="#" className="d-block">{user?.name || user?.username}</Link>
+                            {/* Sửa: dùng đúng field từ API */}
+                            <Link to="#" className="d-block">{user?.ho_ten || user?.ten_dang_nhap}</Link>
                         </div>
                     </div>
 
@@ -137,7 +139,7 @@ const MainLayout = ({ children }) => {
             {children}
 
             <footer className="main-footer">
-                <strong>Copyright &copy; 2024 <a href="#">Trang Sức Bạc</a>.</strong>
+                <strong>Copyright &copy; 2026 <a href="#">Trang Sức Bạc</a>.</strong>
                 <div className="float-right d-none d-sm-inline-block">
                     <b>Version</b> 1.0.0
                 </div>
@@ -147,3 +149,4 @@ const MainLayout = ({ children }) => {
 };
 
 export default MainLayout;
+

@@ -10,6 +10,12 @@ namespace knjewelry.Repository
         {
         }
 
+        /// <summary>
+        /// Lấy thông tin chi tiết của đơn hàng theo mã đơn hàng,
+        /// bao gồm người dùng, mã giảm giá và danh sách sản phẩm trong đơn hàng.
+        /// </summary>
+        /// <param name="id">Mã đơn hàng cần tìm.</param>
+        /// <returns>Đối tượng hóa đơn cùng các thông tin liên quan.</returns>
         public async Task<HoaDon> GetOrderWithDetailsAsync(int id)
         {
             return await _dbSet
@@ -20,6 +26,13 @@ namespace knjewelry.Repository
                 .FirstOrDefaultAsync(h => h.id_hoa_don == id);
         }
 
+
+        /// <summary>
+        /// Lấy danh sách đơn hàng của một người dùng,
+        /// sắp xếp theo thời gian đặt mới nhất.
+        /// </summary>
+        /// <param name="userId">Mã người dùng.</param>
+        /// <returns>Danh sách các đơn hàng của người dùng.</returns>
         public async Task<IEnumerable<HoaDon>> GetOrdersByUserAsync(int userId)
         {
             return await _dbSet
@@ -29,6 +42,13 @@ namespace knjewelry.Repository
                 .ToListAsync();
         }
 
+        /// <summary>
+        /// Tạo mới đơn hàng và lưu các chi tiết đơn hàng tương ứng trong một giao dịch.
+        /// Nếu xảy ra lỗi, toàn bộ thao tác sẽ được hoàn tác.
+        /// </summary>
+        /// <param name="hoaDon">Thông tin hóa đơn cần tạo.</param>
+        /// <param name="chiTiets">Danh sách chi tiết hóa đơn.</param>
+        /// <returns>Hóa đơn vừa được tạo.</returns>
         public async Task<HoaDon> CreateOrderAsync(HoaDon hoaDon, List<ChiTietHoaDon> chiTiets)
         {
             using var transaction = await _context.Database.BeginTransactionAsync();
@@ -55,6 +75,15 @@ namespace knjewelry.Repository
             }
         }
 
+        /// <summary>
+        /// Cập nhật trạng thái của đơn hàng.
+        /// Nếu trạng thái là "Hoàn thành" thì ghi nhận thời gian giao hàng thực tế.
+        /// </summary>
+        /// <param name="orderId">Mã đơn hàng cần cập nhật.</param>
+        /// <param name="trangThai">Trạng thái mới của đơn hàng.</param>
+        /// <returns>
+        /// True nếu cập nhật thành công, False nếu không tìm thấy đơn hàng.
+        /// </returns>
         public async Task<bool> UpdateOrderStatusAsync(int orderId, string trangThai)
         {
             var order = await GetByIdAsync(orderId);

@@ -1,20 +1,103 @@
-﻿@using Microsoft.AspNetCore.Http
-@inject IHttpContextAccessor HttpContextAccessor
-
 @{
-    var userName = Context.Session.GetString("UserName");
-    var userRole = Context.Session.GetString("UserRole");
+    var userId = Context.Session.GetInt32("UserId");
+    var userName = Context.Session.GetString("UserName") ?? "";
+    var userRole = Context.Session.GetString("UserRole") ?? "";
     var cartCount = Context.Session.GetInt32("CartCount") ?? 0;
+    var daDangNhap = userId.HasValue && userId.Value > 0;
+    var tenHienThi = userName.Length > 14 ? userName.Substring(0, 14) + "…" : userName;
 }
+
+<style>
+    /* Account menu — dùng CSS thuần, không phụ thuộc Bootstrap dropdown */
+    .account-wrap {
+        position: relative;
+        display: inline-block;
+    }
+
+    .account-trigger {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: #333;
+        color: #fff !important;
+        padding: 5px 13px;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+        text-decoration: none !important;
+    }
+
+        .account-trigger:hover {
+            background: #483925;
+            color: #fff !important;
+        }
+
+    .account-menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 6px);
+        background: #fff;
+        min-width: 210px;
+        border-radius: 8px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        border: 1px solid #eee;
+        z-index: 2000;
+    }
+
+    .account-wrap:hover .account-menu {
+        display: block;
+    }
+
+    .account-menu-header {
+        padding: 10px 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .account-menu a {
+        display: block;
+        padding: 10px 15px;
+        font-size: 14px;
+        color: #333 !important;
+        text-decoration: none !important;
+        transition: background 0.2s;
+    }
+
+        .account-menu a:hover {
+            background: #f8f5f0;
+            color: #483925 !important;
+        }
+
+    .account-menu hr {
+        margin: 4px 0;
+        border-color: #eee;
+    }
+
+    /* Wishlist icon */
+    .wishlist-icon {
+        position: relative;
+        font-size: 22px;
+        color: #333 !important;
+        transition: all 0.3s;
+        line-height: 1;
+    }
+
+        .wishlist-icon:hover {
+            color: #e74c3c !important;
+        }
+
+
+</style>
 
 <div class="site-navbar bg-white py-2">
     <div class="container">
         <div class="d-flex align-items-center justify-content-between">
+
             <!-- Logo -->
-            <div class="logo">
-                <div class="site-logo">
-                    <a href="/" class="js-logo-clone">K&N JEWELRY</a>
-                </div>
+            <div class="site-logo" style="flex-shrink:0;">
+                <a href="/" class="js-logo-clone">K&N JEWELRY</a>
             </div>
 
             <!-- Menu chính -->
@@ -24,55 +107,132 @@
                         <li><a href="/">Trang chủ</a></li>
                         @await Component.InvokeAsync("Menu")
                         <li><a href="/LienHe">Liên hệ</a></li>
-                        <li><a href="/TraCuu">Tra cứu</a></li>
+                        <li><a href="/GioiThieu">Giới thiệu</a></li>
+
                     </ul>
                 </nav>
             </div>
 
-            <!-- Icon bên phải (tìm kiếm, giỏ hàng, user) -->
-            <div class="icons">
-                <!-- Form tìm kiếm nhỏ gọn -->
-                <form action="/SanPham/Index" method="get" class="search-form-header">
-                    <div class="input-group input-group-sm">
-                        <input type="text" name="search" class="form-control"
-                               placeholder="Tìm kiếm..."
-                               value="@Context.Request.Query["search"]">
-                        <button class="btn btn-dark" type="submit">
-                            <i class='bx bx-search'></i>
-                        </button>
-                    </div>
-                </form>
+            <!-- Icons bên phải -->
+            <div class="d-flex align-items-center" style="gap:10px;flex-shrink:0;">
 
-                <a href="/GioHang" class="icons-btn bag">
-                    <i class='bx bx-shopping-bag'></i>
-                    <span class="number" id="cart-count">@cartCount</span>
-                </a>
-
-                @if (!string.IsNullOrEmpty(userName))
+                <!-- TÀI KHOẢN — CSS thuần :hover, không dùng Bootstrap dropdown -->
+                @if (daDangNhap)
                 {
-                    <div class="dropdown d-inline-block">
-                        <a href="#" class="icons-btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class='bx bx-user'></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item" href="/TaiKhoan/ThongTin"><i class='bx bx-user me-2'></i>Tài khoản</a></li>
-                            <li><a class="dropdown-item" href="/TaiKhoan/DonHang"><i class='bx bx-package me-2'></i>Đơn hàng</a></li>
-                            <li><a class="dropdown-item" href="/TaiKhoan/DoiMatKhau"><i class='bx bx-key me-2'></i>Đổi mật khẩu</a></li>
+                    <div class="account-wrap">
+                        <span class="account-trigger">
+                            <i class='bx bx-user-circle' style="font-size:16px;"></i>
+                            @tenHienThi
+                            <i class='bx bx-chevron-down' style="font-size:13px;"></i>
+                        </span>
+                        <div class="account-menu">
+                            <div class="account-menu-header">
+                                <small style="color:#999;">Xin chào,</small>
+                                <div style="font-weight:600;color:#333;">@userName</div>
+                            </div>
+                            <a href="/TaiKhoan/ThongTin">
+                                <i class='bx bx-user mr-2'></i> Thông tin tài khoản
+                            </a>
+                            <a href="/TaiKhoan/DonHang">
+                                <i class='bx bx-package mr-2'></i> Đơn hàng của tôi
+                            </a>
                             @if (userRole == "quan_tri")
                             {
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="/Admin"><i class='bx bx-chart me-2'></i>Quản trị</a></li>
+                                <hr>
+                                <a href="/admin/" style="color:#007bff!important;">
+                                    <i class='bx bx-shield mr-2'></i> Quản trị
+                                </a>
                             }
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/TaiKhoan/DangXuat"><i class='bx bx-log-out me-2'></i>Đăng xuất</a></li>
-                        </ul>
+                            <hr>
+                            <a href="/TaiKhoan/DangXuat" style="color:#dc3545!important;">
+                                <i class='bx bx-log-out mr-2'></i> Đăng xuất
+                            </a>
+                        </div>
                     </div>
                 }
                 else
                 {
-                    <a href="/TaiKhoan/DangNhap" class="icons-btn"><i class='bx bx-user'></i></a>
+                    <a href="/TaiKhoan/DangNhap" class="account-trigger">
+                        <i class='bx bx-user-circle' style="font-size:16px;"></i>
+                        Đăng nhập
+                    </a>
                 }
+
+                <!-- YÊU THÍCH -->
+                <a href="/YeuThich" class="wishlist-icon" title="Danh sách yêu thích">
+                    <i class='bx bx-heart'></i>
+                </a>
+
+                <!-- GIỎ HÀNG -->
+                <a href="/GioHang" style="position:relative;font-size:22px;color:#333!important;line-height:1;">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span id="cart-count"
+                          style="position:absolute;top:-5px;right:-8px;
+                                 background:#c0392b;color:#fff;border-radius:50%;
+                                 min-width:16px;height:16px;font-size:10px;font-weight:bold;
+                                 display:flex;align-items:center;justify-content:center;padding:0 2px;">
+                        @cartCount
+                    </span>
+                </a>
+
+                <!-- TÌM KIẾM -->
+                <form action="/SanPham/Index" method="get" class="d-none d-xl-block" style="margin:0;">
+                    <div class="input-group input-group-sm" style="width:155px;">
+                        <input type="text" name="search" class="form-control"
+                               placeholder="Tìm kiếm..."
+                               value="@Context.Request.Query["search"]">
+                        <div class="input-group-append">
+                            <button class="btn btn-dark" type="submit">
+                                <i class='bx bx-search'></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
             </div>
+
         </div>
     </div>
 </div>
+
+<script>
+    // Cập nhật số lượng yêu thích từ localStorage
+    function updateWishlistCount() {
+        try {
+            var wishlist = JSON.parse(localStorage.getItem('wishlist') || '[]');
+            var count = wishlist.length;
+            var badge = document.getElementById('wishlist-count');
+
+            if (badge) {
+                badge.textContent = count;
+                badge.setAttribute('data-count', count);
+
+                if (count > 0) {
+                    badge.style.display = 'flex';
+                } else {
+                    badge.style.display = 'none';
+                }
+            }
+        } catch (e) {
+            console.log('Lỗi cập nhật wishlist:', e);
+        }
+    }
+
+    // Cập nhật khi trang load
+    document.addEventListener('DOMContentLoaded', function () {
+        updateWishlistCount();
+    });
+
+    // Lắng nghe sự kiện thay đổi wishlist từ các trang khác
+    window.addEventListener('storage', function (e) {
+        if (e.key === 'wishlist') {
+            updateWishlistCount();
+        }
+    });
+
+    // Nếu có jQuery, cũng cập nhật khi AJAX hoàn tất
+    if (typeof $ !== 'undefined') {
+        $(document).ajaxComplete(function () {
+            updateWishlistCount();
+        });
+    }
+</script>

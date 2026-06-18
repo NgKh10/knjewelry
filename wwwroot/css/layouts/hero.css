@@ -1,0 +1,27 @@
+﻿.site-blocks-cover {
+    background: var(--gray-bg);
+    padding: 60px 0;
+    min-height: auto;
+}
+
+    .site-blocks-cover h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: var(--text-dark);
+        margin-bottom: 20px;
+    }
+
+    .site-blocks-cover .sub-title {
+        font-family: "Mukta", "Segoe UI";
+        color: var(--primary);
+        font-size: 14px;
+        letter-spacing: 4px;
+        margin-bottom: 15px;
+        font-weight: 500;
+    }
+
+@media (min-width: 768px) {
+    .site-blocks-cover h1 {
+        font-size: 64px;
+    }
+}

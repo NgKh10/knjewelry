@@ -33,10 +33,15 @@ namespace Jewelry.Services
             if (string.IsNullOrWhiteSpace(entity.duong_dan))
                 throw new Exception("Đường dẫn hình ảnh không được để trống!");
 
+            var siblings = await _repository.GetBySanPhamAsync(entity.id_san_pham);
+
+            // Thứ tự thêm mới không được trùng với ảnh đã có
+            if (siblings.Any(i => i.thu_tu == entity.thu_tu))
+                throw new Exception($"Thứ tự {entity.thu_tu} đã tồn tại cho sản phẩm này. Vui lòng chọn thứ tự khác!");
+
             if (entity.la_chinh)
             {
-                var existing = await _repository.GetBySanPhamAsync(entity.id_san_pham);
-                foreach (var img in existing.Where(i => i.la_chinh))
+                foreach (var img in siblings.Where(i => i.la_chinh))
                 {
                     img.la_chinh = false;
                     await _repository.UpdateAsync(img);
@@ -55,19 +60,34 @@ namespace Jewelry.Services
             if (existing == null)
                 throw new Exception("Không tìm thấy hình ảnh!");
 
+            var siblings = await _repository.GetBySanPhamAsync(existing.id_san_pham);
+
             if (entity.la_chinh && !existing.la_chinh)
             {
-                var siblings = await _repository.GetBySanPhamAsync(existing.id_san_pham);
-                foreach (var img in siblings.Where(i => i.la_chinh && i.id_hinh_anh != id))
+                // Đặt làm ảnh chính: chuyển thứ tự thành 1, ảnh chính cũ nhận thứ tự hiện tại
+                var oldMain = siblings.FirstOrDefault(i => i.la_chinh && i.id_hinh_anh != id);
+                if (oldMain != null)
                 {
-                    img.la_chinh = false;
-                    await _repository.UpdateAsync(img);
+                    oldMain.la_chinh = false;
+                    oldMain.thu_tu = existing.thu_tu;
+                    await _repository.UpdateAsync(oldMain);
                 }
+                existing.thu_tu = 1;
+            }
+            else if (entity.thu_tu != existing.thu_tu)
+            {
+                // Nếu thứ tự mới đã tồn tại, hoán đổi với ảnh đó
+                var conflict = siblings.FirstOrDefault(i => i.thu_tu == entity.thu_tu && i.id_hinh_anh != id);
+                if (conflict != null)
+                {
+                    conflict.thu_tu = existing.thu_tu;
+                    await _repository.UpdateAsync(conflict);
+                }
+                existing.thu_tu = entity.thu_tu;
             }
 
             existing.duong_dan = entity.duong_dan;
             existing.la_chinh = entity.la_chinh;
-            existing.thu_tu = entity.thu_tu;
 
             await _repository.UpdateAsync(existing);
         }
@@ -79,11 +99,19 @@ namespace Jewelry.Services
                 throw new Exception("Không tìm thấy hình ảnh!");
 
             var siblings = await _repository.GetBySanPhamAsync(item.id_san_pham);
-            foreach (var img in siblings)
+
+            // Hoán đổi thứ tự với ảnh chính cũ
+            var previousMain = siblings.FirstOrDefault(i => i.la_chinh && i.id_hinh_anh != id);
+            if (previousMain != null)
             {
-                img.la_chinh = (img.id_hinh_anh == id);
-                await _repository.UpdateAsync(img);
+                previousMain.la_chinh = false;
+                previousMain.thu_tu = item.thu_tu;
+                await _repository.UpdateAsync(previousMain);
             }
+
+            item.la_chinh = true;
+            item.thu_tu = 1;
+            await _repository.UpdateAsync(item);
         }
 
         public async Task DeleteAsync(int id)

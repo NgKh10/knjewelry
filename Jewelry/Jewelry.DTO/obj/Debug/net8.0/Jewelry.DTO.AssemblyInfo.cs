@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Jewelry.DTO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+585fba3dfd17a6e0794b77a183bc9081303c110a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bfdaa991ed417c5ccb6517d1d220c08ba1e4bc6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Jewelry.DTO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Jewelry.DTO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

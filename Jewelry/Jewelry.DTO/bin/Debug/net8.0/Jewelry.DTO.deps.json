@@ -46,12 +46,6 @@
           }
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {},
-      "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
-        }
-      },
       "Microsoft.IdentityModel.Abstractions/8.17.0": {
         "runtime": {
           "lib/net8.0/Microsoft.IdentityModel.Abstractions.dll": {
@@ -108,7 +102,6 @@
       },
       "Microsoft.IdentityModel.Tokens/8.17.0": {
         "dependencies": {
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0",
           "Microsoft.IdentityModel.Logging": "8.17.0"
         },
         "runtime": {
@@ -158,20 +151,6 @@
       "sha512": "sha512-TaK5LqMJRZTJPMqO6nWDSdMibrRzf7csP43qTgI8WpPuxhZX+uKIyHiUlXWfcqhQo5iNfDu2AGbOnnW/5mQE+g==",
       "path": "microsoft.aspnetcore.cryptography.keyderivation/8.0.26",
       "hashPath": "microsoft.aspnetcore.cryptography.keyderivation.8.0.26.nupkg.sha512"
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-cjWrLkJXK0rs4zofsK4bSdg+jhDLTaxrkXu4gS6Y7MAlCvRyNNgwY/lJi5RDlQOnSZweHqoyvgvbdvQsRIW+hg==",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
-    },
-    "Microsoft.Extensions.Logging.Abstractions/8.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-arDBqTgFCyS0EvRV7O3MZturChstm50OJ0y9bDJvAcmEPJm0FFpFyjU/JLYyStNGGey081DvnQYlncNX5SJJGA==",
-      "path": "microsoft.extensions.logging.abstractions/8.0.0",
-      "hashPath": "microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512"
     },
     "Microsoft.IdentityModel.Abstractions/8.17.0": {
       "type": "package",

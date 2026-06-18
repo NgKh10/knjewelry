@@ -1,4 +1,4 @@
-﻿@model List<knjewelry.Models.ViewModels.GioHangSessionItem>
+@model List<knjewelry.Models.ViewModels.GioHangSessionItem>
 @{
     ViewData["Title"] = "Giỏ hàng - K&N JEWELRY";
 }
@@ -16,12 +16,29 @@
 
 <div class="site-section">
     <div class="container">
+
+        @if (TempData["CartError"] != null)
+        {
+            <div class="alert alert-danger alert-dismissible">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                @TempData["CartError"]
+            </div>
+        }
+
         @if (Model != null && Model.Any())
         {
+            <!-- Form gửi sản phẩm đã chọn đến thanh toán -->
+            <form id="form-checkout" asp-controller="GioHang" asp-action="XacNhanGioHang" method="post">
+                <input type="hidden" id="selected-keys" name="selectedKeys" />
+            </form>
+
             <div class="table-responsive">
-                <table class="table table-bordered">
-                    <thead>
+                <table class="table table-bordered align-middle">
+                    <thead class="thead-light">
                         <tr>
+                            <th style="width:44px;" class="text-center">
+                                <input type="checkbox" id="check-all" checked title="Chọn tất cả">
+                            </th>
                             <th>Hình ảnh</th>
                             <th>Tên sản phẩm</th>
                             <th>Đơn giá</th>
@@ -33,34 +50,101 @@
                     <tbody>
                         @foreach (var item in Model)
                         {
-                            <tr>
-                                <td><img src="@item.HinhAnh" alt="@item.TenSanPham" style="width: 60px; height: 60px; object-fit: cover;"></td>
-                                <td>@item.TenSanPham</td>
-                                <td>@string.Format("{0:N0}₫", item.DonGia)</td>
+                            var key = $"{item.SanPhamId}-{(item.BienTheId?.ToString() ?? "0")}";
+                            <tr class="cart-row">
+                                <td class="text-center">
+                                    <input type="checkbox" class="item-check"
+                                           data-key="@key"
+                                           data-price="@item.DonGia"
+                                           data-qty="@item.SoLuong"
+                                           checked>
+                                </td>
                                 <td>
-                                    <div class="input-group" style="width: 100px;">
-                                        <button class="btn btn-outline-secondary btn-minus" data-id="@item.SanPhamId">-</button>
-                                        <input type="text" class="form-control text-center qty-input" value="@item.SoLuong" data-id="@item.SanPhamId" style="width: 40px;">
-                                        <button class="btn btn-outline-secondary btn-plus" data-id="@item.SanPhamId">+</button>
+                                    <img src="@item.HinhAnh" alt="@item.TenSanPham"
+                                         style="width:60px;height:60px;object-fit:cover;border-radius:4px;">
+                                </td>
+                                <td>
+                                    <strong>@item.TenSanPham</strong>
+                                    @if (!string.IsNullOrEmpty(item.KichCo) || !string.IsNullOrEmpty(item.MauSac))
+                                    {
+                                        <br>
+                                        <small class="text-muted">
+                                            @string.Join(" / ", new[] { item.KichCo, item.MauSac }.Where(x => !string.IsNullOrEmpty(x)))
+                                        </small>
+                                    }
+                                </td>
+                                <td class="text-nowrap">@string.Format("{0:N0}₫", item.DonGia)</td>
+                                <td>
+                                    <div class="input-group" style="width:120px;">
+                                        <button class="btn btn-outline-secondary btn-minus"
+                                                data-id="@item.SanPhamId"
+                                                data-bien-the-id="@(item.BienTheId?.ToString() ?? "")">
+                                            -
+                                        </button>
+                                        <input type="text" class="form-control text-center qty-input"
+                                               value="@item.SoLuong"
+                                               data-id="@item.SanPhamId"
+                                               data-price="@item.DonGia"
+                                               data-bien-the-id="@(item.BienTheId?.ToString() ?? "")"
+                                               style="width:40px;">
+                                        <button class="btn btn-outline-secondary btn-plus"
+                                                data-id="@item.SanPhamId"
+                                                data-bien-the-id="@(item.BienTheId?.ToString() ?? "")">
+                                            +
+                                        </button>
                                     </div>
                                 </td>
-                                <td>@string.Format("{0:N0}₫", item.ThanhTien)</td>
-                                <td><a href="/GioHang/XoaKhoiGio?sanPhamId=@item.SanPhamId" class="btn btn-danger btn-sm">Xóa</a></td>
+                                <td class="text-nowrap row-total" data-key="@key">
+                                    @string.Format("{0:N0}₫", item.ThanhTien)
+                                </td>
+                                <td>
+                                    <form method="post" asp-controller="GioHang" asp-action="XoaKhoiGio" style="display:inline;">
+                                        <input type="hidden" name="sanPhamId" value="@item.SanPhamId" />
+                                        <input type="hidden" name="bienTheId" value="@(item.BienTheId?.ToString() ?? "")" />
+                                        <button type="submit" class="btn btn-danger btn-sm">
+                                            <i class='bx bx-trash'></i>
+                                        </button>
+                                    </form>
+                                </td>
                             </tr>
                         }
                     </tbody>
                 </table>
             </div>
 
-            <div class="text-right mt-4">
-                <h4>Tổng tiền: <strong class="text-danger">@string.Format("{0:N0}₫", Model.Sum(x => x.ThanhTien))</strong></h4>
-                <a href="/ThanhToan" class="btn btn-black mt-3">Tiến hành thanh toán</a>
+            <!-- Tổng kết + Thanh toán -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <small class="text-muted">
+                        <i class='bx bx-info-circle'></i>
+                        Miễn phí vận chuyển cho đơn hàng từ 150.000₫
+                    </small>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="border p-3 d-inline-block" style="min-width:280px; width:100%;">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Đã chọn:</span>
+                            <strong><span id="selected-count">0</span> sản phẩm</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted">Tạm tính:</span>
+                            <strong class="text-danger" id="selected-total" style="font-size:1.2rem;">0₫</strong>
+                        </div>
+                        <button id="btn-checkout" class="btn-checkout" disabled>
+                            TIẾN HÀNH THANH TOÁN
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                        <a href="/SanPham" class="btn-continue mt-2">
+                            <i class='bx bx-store'></i> TIẾP TỤC MUA SẮM
+                        </a>
+                    </div>
+                </div>
             </div>
         }
         else
         {
             <div class="text-center py-5">
-                <i class='bx bx-cart bx-lg' style="font-size: 60px; color: #ccc;"></i>
+                <i class='bx bx-cart bx-lg' style="font-size:60px;color:#ccc;"></i>
                 <h3 class="mt-3">Giỏ hàng của bạn đang trống</h3>
                 <p><a href="/SanPham" class="btn btn-black mt-3">Mua sắm ngay</a></p>
             </div>
@@ -68,27 +152,137 @@
     </div>
 </div>
 
-<script>
-    $(document).ready(function () {
-        $('.btn-plus').click(function () {
-            var id = $(this).data('id');
-            var input = $(this).closest('tr').find('.qty-input');
-            var qty = parseInt(input.val()) + 1;
-            updateCart(id, qty);
-        });
+@section Scripts {
+    <script>
+        $(document).ready(function () {
 
-        $('.btn-minus').click(function () {
-            var id = $(this).data('id');
-            var input = $(this).closest('tr').find('.qty-input');
-            var qty = parseInt(input.val()) - 1;
-            if (qty < 1) qty = 1;
-            updateCart(id, qty);
-        });
+            // ── Cập nhật tổng tiền sản phẩm được chọn ─────────────────
+            function updateSubtotal() {
+                var total = 0;
+                var count = 0;
+                var keys = [];
 
-        function updateCart(id, qty) {
-            $.post('/GioHang/CapNhatSoLuong', { sanPhamId: id, soLuong: qty }, function () {
-                location.reload();
+                $('.item-check:checked').each(function () {
+                    var $row = $(this).closest('tr');
+                    var price = parseFloat($(this).data('price'));
+                    var qty = parseInt($row.find('.qty-input').val()) || 1;
+                    total += price * qty;
+                    count++;
+                    keys.push($(this).data('key'));
+                });
+
+                $('#selected-count').text(count);
+                $('#selected-total').text(total.toLocaleString('vi-VN') + '₫');
+                $('#btn-checkout').prop('disabled', count === 0);
+                $('#selected-keys').val(keys.join(','));
+            }
+
+            // ── Chọn tất cả / bỏ chọn tất cả ─────────────────────────
+            $('#check-all').change(function () {
+                $('.item-check').prop('checked', $(this).is(':checked'));
+                updateSubtotal();
             });
-        }
-    });
-</script>
+
+            // ── Checkbox từng dòng ────────────────────────────────────
+            $('.item-check').change(function () {
+                var allChecked = $('.item-check:checked').length === $('.item-check').length;
+                $('#check-all').prop('checked', allChecked);
+                updateSubtotal();
+            });
+
+            // ── Nút thanh toán → submit form ──────────────────────────
+            $('#btn-checkout').click(function () {
+                if ($('#selected-keys').val()) {
+                    $('#form-checkout').submit();
+                }
+            });
+
+            // ── Tăng số lượng ─────────────────────────────────────────
+            $('.btn-plus').click(function () {
+                var id = $(this).data('id');
+                var bienTheId = $(this).data('bien-the-id') || '';
+                var input = $(this).closest('tr').find('.qty-input');
+                var qty = parseInt(input.val()) + 1;
+                updateQty(id, bienTheId, qty, input);
+            });
+
+            // ── Giảm số lượng ─────────────────────────────────────────
+            $('.btn-minus').click(function () {
+                var id = $(this).data('id');
+                var bienTheId = $(this).data('bien-the-id') || '';
+                var input = $(this).closest('tr').find('.qty-input');
+                var qty = parseInt(input.val()) - 1;
+                if (qty < 1) qty = 1;
+                updateQty(id, bienTheId, qty, input);
+            });
+
+            // ====== NHẬP TRỰC TIẾP SỐ LƯỢNG ======
+            // ── Khi thay đổi giá trị trong ô input ────────────────────
+            $('.qty-input').on('change', function () {
+                var id = $(this).data('id');
+                var bienTheId = $(this).data('bien-the-id') || '';
+                var qty = parseInt($(this).val()) || 1;
+
+                // Kiểm tra số lượng hợp lệ
+                if (qty < 1) {
+                    qty = 1;
+                    $(this).val(1);
+                }
+
+                // Cập nhật số lượng
+                updateQty(id, bienTheId, qty, $(this));
+            });
+
+            // ── Khi nhấn phím Enter trong ô input ─────────────────────
+            $('.qty-input').on('keypress', function (e) {
+                if (e.which === 13) { // Enter
+                    $(this).trigger('change');
+                }
+            });
+
+            // ── Khi rời khỏi ô input (blur) ──────────────────────────
+            $('.qty-input').on('blur', function () {
+                var val = parseInt($(this).val()) || 1;
+                if (val < 1) $(this).val(1);
+                // Không cần trigger change vì đã có change ở trên
+            });
+
+            // ── Hàm cập nhật số lượng ──────────────────────────────────
+            function updateQty(id, bienTheId, qty, input) {
+                var $row = input.closest('tr');
+                var price = parseFloat($row.find('.qty-input').data('price')) || 0;
+
+                // Cập nhật giao diện trước
+                input.val(qty);
+
+                // Cập nhật thành tiền của dòng
+                var total = price * qty;
+                $row.find('.row-total').text(total.toLocaleString('vi-VN') + '₫');
+
+                // Cập nhật data-qty cho checkbox
+                $row.find('.item-check').data('qty', qty);
+
+                // Gửi request lên server
+                $.post('/GioHang/CapNhatSoLuong',
+                    { sanPhamId: id, bienTheId: bienTheId, soLuong: qty },
+                    function (res) {
+                        if (res.success) {
+                            // Cập nhật tổng tiền
+                            updateSubtotal();
+                        } else {
+                            // Nếu lỗi, reload trang để đồng bộ
+                            location.reload();
+                        }
+                    }
+                ).fail(function () {
+                    // Nếu lỗi network, reload trang
+                    location.reload();
+                });
+            }
+
+            // ── Khởi tạo ──────────────────────────────────────────────
+            updateSubtotal();
+
+        });
+    </script>
+}

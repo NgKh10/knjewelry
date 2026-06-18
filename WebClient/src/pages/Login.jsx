@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
 const Login = () => {
-    const [ten_dang_nhap, setTenDangNhap] = useState('');  // Sửa tên field
-    const [mat_khau, setMatKhau] = useState('');          // Sửa tên field
+    const [ten_dang_nhap, setTenDangNhap] = useState('');
+    const [mat_khau, setMatKhau] = useState('');
     const [error, setError] = useState('');
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
@@ -15,7 +15,6 @@ const Login = () => {
         setError('');
         setLoading(true);
 
-        // Sửa: gọi login với đúng tên biến
         const result = await login(ten_dang_nhap, mat_khau);
 
         if (result.success) {
@@ -31,7 +30,7 @@ const Login = () => {
         <div className="login-page" style={{ minHeight: '100vh', background: '#f4f6f9' }}>
             <div className="login-box" style={{ width: '360px', margin: 'auto', paddingTop: '100px' }}>
                 <div className="login-logo">
-                    <a href="/" style={{ color: '#007bff', fontSize: '28px', fontWeight: 'bold' }}>
+                    <a href="#" style={{ color: '#007bff', fontSize: '28px', fontWeight: 'bold' }}>
                         Trang Sức Bạc
                     </a>
                 </div>
