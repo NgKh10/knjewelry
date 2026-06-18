@@ -1,13 +1,13 @@
 @model IEnumerable<knjewelry.Models.Entities.HoaDon>
 @{
     ViewData["Title"] = "Đơn hàng của tôi - K&N JEWELRY";
-    var statusBadge = new Dictionary<string, string>
+    var statusStyle = new Dictionary<string, (string bg, string color)>
     {
-        { "Chờ xác nhận", "badge-warning" },
-        { "Đã xác nhận",  "badge-primary" },
-        { "Đang giao",    "badge-info"    },
-        { "Hoàn thành",   "badge-success" },
-        { "Hủy",          "badge-danger"  },
+        { "Chờ xác nhận", ("#fff3cd", "#856404") },
+        { "Đã xác nhận",  ("#cce5ff", "#004085") },
+        { "Đang giao",    ("#d1ecf1", "#0c5460") },
+        { "Hoàn thành",   ("#d4edda", "#155724") },
+        { "Hủy",          ("#f8d7da", "#721c24") },
     };
 }
 
@@ -66,19 +66,22 @@
                                 <tbody>
                                     @foreach (var order in Model.OrderByDescending(o => o.thoi_gian_dat))
                                     {
+                                        var trangThai = order.trang_thai ?? "";
+                                        var st = statusStyle.GetValueOrDefault(trangThai, ("#e2e3e5", "#383d41"));
                                         <tr>
                                             <td><strong>@order.ma_hoa_don</strong></td>
                                             <td>@order.thoi_gian_dat.ToString("dd/MM/yyyy HH:mm")</td>
-                                            <td class="text-danger fw-bold">@string.Format("{0:N0}₫", order.tong_tien)</td>
+                                            <td style="color:#c0392b;font-weight:600;">@string.Format("{0:N0}₫", order.tong_tien)</td>
                                             <td>
-                                                @{
-                                                    var cls = statusBadge.GetValueOrDefault(order.trang_thai ?? "", "badge-secondary");
-                                                }
-                                                <span class="badge @cls">@order.trang_thai</span>
+                                                <span style="display:inline-block;padding:4px 12px;border-radius:20px;font-size:13px;font-weight:600;background:@st.Item1;color:@st.Item2;white-space:nowrap;">
+                                                    @trangThai
+                                                </span>
                                             </td>
-                                            <td>
+                                            <td style="text-align:right;">
                                                 <a href="/TaiKhoan/ChiTietDonHang/@order.id_hoa_don"
-                                                   class="btn btn-sm btn-outline-dark">
+                                                   style="display:inline-block;padding:5px 16px;border:1.5px solid #333;border-radius:4px;color:#333;font-size:13px;text-decoration:none;white-space:nowrap;"
+                                                   onmouseover="this.style.background='#333';this.style.color='#fff'"
+                                                   onmouseout="this.style.background='transparent';this.style.color='#333'">
                                                     Chi tiết
                                                 </a>
                                             </td>

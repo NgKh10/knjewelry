@@ -97,6 +97,7 @@ builder.Services.AddScoped<Jewelry.Services.IBienTheService, Jewelry.Services.Bi
 builder.Services.AddScoped<Jewelry.Services.IHinhAnhSanPhamService, Jewelry.Services.HinhAnhSanPhamService>();
 builder.Services.AddScoped<Jewelry.Services.IMaGiamGiaService, Jewelry.Services.MaGiamGiaService>();
 builder.Services.AddScoped<Jewelry.Services.Authen.INguoiDungService, Jewelry.Services.Authen.NguoiDungService>();
+builder.Services.AddHostedService<Jewelry.Services.DiscountExpiryService>();
 
 // Helpers (dùng cho API - tạo JWT token, xử lý file)
 builder.Services.AddScoped<TokenHelper>();
@@ -139,6 +140,21 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
+
+// Ngăn browser cache index.html của admin SPA
+app.Use(async (context, next) =>
+{
+    if (context.Request.Path.StartsWithSegments("/admin"))
+    {
+        var ext = Path.GetExtension(context.Request.Path.Value);
+        if (string.IsNullOrEmpty(ext) || ext.Equals(".html", StringComparison.OrdinalIgnoreCase))
+        {
+            context.Response.Headers["Cache-Control"] = "no-store, no-cache, must-revalidate";
+            context.Response.Headers["Pragma"] = "no-cache";
+        }
+    }
+    await next();
+});
 
 // React Admin SPA: mọi request /admin/* không phải file tĩnh → trả về index.html
 app.MapFallbackToFile("/admin/{**path}", "admin/index.html");

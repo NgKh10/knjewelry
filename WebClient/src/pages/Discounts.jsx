@@ -22,7 +22,7 @@ const Discounts = () => {
     const [formData, setFormData] = useState({
         ma_code: '',
         mo_ta: '',
-        loai_giam: '%',
+        loai_giam: 'phan_tram',
         gia_tri: '',
         giam_toi_da: '',
         don_hang_toi_thieu: 0,
@@ -70,7 +70,7 @@ const Discounts = () => {
             setFormData({
                 ma_code: item.ma_code || '',
                 mo_ta: item.mo_ta || '',
-                loai_giam: item.loai_giam || '%',
+                loai_giam: item.loai_giam === '%' ? 'phan_tram' : item.loai_giam === 'fixed' ? 'tien_mat' : (item.loai_giam || 'phan_tram'),
                 gia_tri: item.gia_tri || '',
                 giam_toi_da: item.giam_toi_da || '',
                 don_hang_toi_thieu: item.don_hang_toi_thieu || 0,
@@ -82,7 +82,7 @@ const Discounts = () => {
         } else {
             setEditingItem(null);
             setFormData({
-                ma_code: '', mo_ta: '', loai_giam: '%', gia_tri: '', giam_toi_da: '',
+                ma_code: '', mo_ta: '', loai_giam: 'phan_tram', gia_tri: '', giam_toi_da: '',
                 don_hang_toi_thieu: 0, so_luong: '', ngay_bat_dau: '', ngay_ket_thuc: '', trang_thai: 1,
             });
         }
@@ -143,7 +143,7 @@ const Discounts = () => {
     };
 
     const formatDiscount = (item) => {
-        if (item.loai_giam === '%') return `${item.gia_tri}%`;
+        if (item.loai_giam === 'phan_tram' || item.loai_giam === '%') return `${item.gia_tri}%`;
         return `${Number(item.gia_tri).toLocaleString('vi-VN')}đ`;
     };
 
@@ -185,8 +185,8 @@ const Discounts = () => {
                                             onChange={(e) => setLoaiGiam(e.target.value)}
                                         >
                                             <option value="">Tất cả loại</option>
-                                            <option value="%">Phần trăm (%)</option>
-                                            <option value="fixed">Tiền cố định</option>
+                                            <option value="phan_tram">Phần trăm (%)</option>
+                                            <option value="tien_mat">Tiền cố định</option>
                                         </select>
                                         <select
                                             className="form-control mr-2 mb-2"
@@ -328,8 +328,8 @@ const Discounts = () => {
                                                     <label>Loại giảm <span className="text-danger">*</span></label>
                                                     <select className="form-control" value={formData.loai_giam}
                                                         onChange={(e) => setFormData({ ...formData, loai_giam: e.target.value, giam_toi_da: '' })}>
-                                                        <option value="%">Phần trăm (%)</option>
-                                                        <option value="fixed">Tiền cố định (đ)</option>
+                                                        <option value="phan_tram">Phần trăm (%)</option>
+                                                        <option value="tien_mat">Tiền cố định (đ)</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -346,21 +346,21 @@ const Discounts = () => {
                                                     <label>Giá trị giảm <span className="text-danger">*</span></label>
                                                     <input type="number" className="form-control" value={formData.gia_tri}
                                                         onChange={(e) => setFormData({ ...formData, gia_tri: e.target.value })}
-                                                        placeholder={formData.loai_giam === '%' ? 'VD: 10' : 'VD: 50000'}
-                                                        min="0" max={formData.loai_giam === '%' ? 100 : undefined}
-                                                        step={formData.loai_giam === '%' ? 0.1 : 1000} required />
+                                                        placeholder={formData.loai_giam === 'phan_tram' ? 'VD: 10' : 'VD: 50000'}
+                                                        min="0" max={formData.loai_giam === 'phan_tram' ? 100 : undefined}
+                                                        step="any" required />
                                                 </div>
                                             </div>
                                             <div className="col-6">
                                                 <div className="form-group">
                                                     <label>
                                                         Giảm tối đa (đ)
-                                                        {formData.loai_giam !== '%' && <small className="text-muted ml-1">(N/A)</small>}
+                                                        {formData.loai_giam !== 'phan_tram' && <small className="text-muted ml-1">(N/A)</small>}
                                                     </label>
                                                     <input type="number" className="form-control" value={formData.giam_toi_da}
                                                         onChange={(e) => setFormData({ ...formData, giam_toi_da: e.target.value })}
                                                         placeholder="Không giới hạn"
-                                                        disabled={formData.loai_giam !== '%'} min="0" step="1000" />
+                                                        disabled={formData.loai_giam !== 'phan_tram'} min="0" step="any" />
                                                 </div>
                                             </div>
                                         </div>
@@ -370,7 +370,7 @@ const Discounts = () => {
                                                     <label>Đơn hàng tối thiểu (đ)</label>
                                                     <input type="number" className="form-control" value={formData.don_hang_toi_thieu}
                                                         onChange={(e) => setFormData({ ...formData, don_hang_toi_thieu: e.target.value })}
-                                                        min="0" step="10000" />
+                                                        min="0" step="any" />
                                                 </div>
                                             </div>
                                             <div className="col-6">
