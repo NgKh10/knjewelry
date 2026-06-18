@@ -5,22 +5,43 @@ $(document).ready(function () {
     $('.btn-add-cart').click(function (e) {
         e.preventDefault();
         var productId = $(this).data('id');
+        var $btn = $(this);
+        var originalText = $btn.html();
+
+        // Hiệu ứng loading
+        $btn.html('<span class="spinner-border spinner-border-sm"></span> Đang xử lý...');
+        $btn.prop('disabled', true);
 
         $.ajax({
-            url : '/GioHang/ThemVaoGio',
+            url: '/GioHang/ThemVaoGio',
             type: 'POST',
             data: { sanPhamId: productId, soLuong: 1 },
             success: function (res) {
+                // Phục hồi nút
+                $btn.html(originalText);
+                $btn.prop('disabled', false);
+
+                if (res.redirect) {
+                    showToast(' Vui lòng đăng nhập để thêm sản phẩm!', 'warning');
+                    setTimeout(function () {
+                        window.location.href = res.redirect;
+                    }, 1500);
+                    return;
+                }
+
                 if (res.success) {
                     AppContext.updateCartBadge(res.soLuongGioHang);
-                    // Lưu cartItems trả về thẳng vào localStorage (không cần request phụ)
                     if (res.cartItems) AppContext.saveLocalCart(res.cartItems);
-                    showToast('Đã thêm vào giỏ hàng!', 'success');
+                    showToast(' Đã thêm vào giỏ hàng!', 'success');
                 } else {
-                    showToast(res.message || 'Có lỗi xảy ra!', 'error');
+                    showToast(res.message || '❌ Có lỗi xảy ra!', 'error');
                 }
             },
-            error: function () { showToast('Có lỗi xảy ra!', 'error'); }
+            error: function () {
+                $btn.html(originalText);
+                $btn.prop('disabled', false);
+                showToast('❌ Có lỗi xảy ra!', 'error');
+            }
         });
     });
 
@@ -29,57 +50,70 @@ $(document).ready(function () {
         e.preventDefault();
         var productId = $(this).data('id');
         var bienTheId = $(this).data('bien-the-id') || null;
-        var quantity  = parseInt($('#quantity').val()) || 1;
-        var size      = $('.btn-size.active').data('size')   || null;
-        var color     = $('.btn-color.active').data('color') || null;
+        var quantity = parseInt($('#quantity').val()) || 1;
+        var size = $('.btn-size.active').data('size') || null;
+        var color = $('.btn-color.active').data('color') || null;
+        var $btn = $(this);
+        var originalText = $btn.html();
 
-        $.ajax({
-            url : '/GioHang/ThemVaoGio',
-            type: 'POST',
-            data: { sanPhamId: productId, bienTheId: bienTheId,
-                    soLuong: quantity, kichCo: size, mauSac: color },
-            success: function (res) {
-                if (res.success) {
-                    AppContext.updateCartBadge(res.soLuongGioHang);
-                    if (res.cartItems) AppContext.saveLocalCart(res.cartItems);
-                    showToast('Đã thêm vào giỏ hàng!', 'success');
-                } else {
-                    showToast(res.message || 'Có lỗi xảy ra!', 'error');
-                }
-            },
-            error: function () { showToast('Có lỗi xảy ra!', 'error'); }
-        });
-    });
-
-    // Hàm xử lý response từ server
-    function handleAddToCartResponse(data, productName, btn) {
-        var originalText = btn.innerHTML;
-
-        if (data.redirect) {
-            // Chưa đăng nhập -> hiển thị thông báo và chuyển hướng
-            showToast(' Vui lòng đăng nhập để thêm sản phẩm vào giỏ hàng!', 'warning');
-            btn.innerHTML = 'Đang chuyển...';
-            btn.disabled = true;
-            setTimeout(function () {
-                window.location.href = data.redirect;
-            }, 1500);
+        // Kiểm tra nếu có size nhưng chưa chọn
+        var hasSizeButtons = $('.btn-size').length > 0;
+        if (hasSizeButtons && !size) {
+            showToast(' Vui lòng chọn kích cỡ', 'warning');
             return;
         }
 
-        // Phục hồi nút
-        btn.innerHTML = originalText;
-        btn.disabled = false;
-
-        if (data.success) {
-            var cartBadge = document.getElementById('cart-count');
-            if (cartBadge) cartBadge.textContent = data.soLuongGioHang;
-            showToast(' Đã thêm "' + productName + '" vào giỏ hàng!', 'success');
-        } else {
-            showToast('❌ ' + (data.message || 'Thêm vào giỏ hàng thất bại!'), 'error');
+        // Kiểm tra nếu có màu nhưng chưa chọn
+        var hasColorButtons = $('.btn-color').length > 0;
+        if (hasColorButtons && !color) {
+            showToast(' Vui lòng chọn màu sắc', 'warning');
+            return;
         }
-    }
 
-    // Hàm showToast
+        // Hiệu ứng loading
+        $btn.html('<span class="spinner-border spinner-border-sm"></span> Đang xử lý...');
+        $btn.prop('disabled', true);
+
+        $.ajax({
+            url: '/GioHang/ThemVaoGio',
+            type: 'POST',
+            data: {
+                sanPhamId: productId,
+                bienTheId: bienTheId,
+                soLuong: quantity,
+                kichCo: size,
+                mauSac: color
+            },
+            success: function (res) {
+                // Phục hồi nút
+                $btn.html(originalText);
+                $btn.prop('disabled', false);
+
+                if (res.redirect) {
+                    showToast(' Vui lòng đăng nhập để thêm sản phẩm!', 'warning');
+                    setTimeout(function () {
+                        window.location.href = res.redirect;
+                    }, 1500);
+                    return;
+                }
+
+                if (res.success) {
+                    AppContext.updateCartBadge(res.soLuongGioHang);
+                    if (res.cartItems) AppContext.saveLocalCart(res.cartItems);
+                    showToast(' Đã thêm vào giỏ hàng!', 'success');
+                } else {
+                    showToast(res.message || '❌ Có lỗi xảy ra!', 'error');
+                }
+            },
+            error: function () {
+                $btn.html(originalText);
+                $btn.prop('disabled', false);
+                showToast('❌ Có lỗi xảy ra!', 'error');
+            }
+        });
+    });
+
+    // ── Hàm showToast ────────────────────────────────────────────
     function showToast(message, type = 'success') {
         var colors = {
             success: '#28a745',
@@ -95,22 +129,22 @@ $(document).ready(function () {
         toast.className = 'custom-toast';
         toast.textContent = message;
         toast.style.cssText = `
-        position: fixed;
-        bottom: 30px;
-        right: 30px;
-        background: ${colors[type] || '#28a745'};
-        color: ${type === 'warning' ? '#333' : 'white'};
-        padding: 14px 24px;
-        border-radius: 10px;
-        font-size: 15px;
-        font-weight: 500;
-        box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-        z-index: 99999;
-        transform: translateY(80px);
-        opacity: 0;
-        transition: all 0.4s ease;
-        max-width: 400px;
-    `;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: ${colors[type] || '#28a745'};
+            color: ${type === 'warning' ? '#333' : 'white'};
+            padding: 14px 24px;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 500;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            z-index: 99999;
+            max-width: 400px;
+            transform: translateY(80px);
+            opacity: 0;
+            transition: all 0.4s ease;
+        `;
         document.body.appendChild(toast);
 
         setTimeout(function () {
@@ -126,3 +160,50 @@ $(document).ready(function () {
             }, 400);
         }, 3000);
     }
+
+}); // ← ĐÓNG $(document).ready()
+
+// ── AppContext (đồng bộ giỏ hàng giữa các tab) ─────────────
+var AppContext = {
+    updateCartBadge: function (count) {
+        var badge = document.getElementById('cart-count');
+        if (badge) {
+            badge.textContent = count;
+            badge.style.display = count > 0 ? 'flex' : 'none';
+        }
+        localStorage.setItem('cartCount', count);
+    },
+    saveLocalCart: function (cartItems) {
+        localStorage.setItem('cart', JSON.stringify(cartItems));
+    },
+    getLocalCart: function () {
+        try {
+            return JSON.parse(localStorage.getItem('cart') || '[]');
+        } catch {
+            return [];
+        }
+    }
+};
+
+// ── Đồng bộ giỏ hàng khi mở tab mới ────────────────────────
+window.addEventListener('storage', function (e) {
+    if (e.key === 'cartCount') {
+        var badge = document.getElementById('cart-count');
+        if (badge) {
+            badge.textContent = e.newValue || '0';
+            badge.style.display = parseInt(e.newValue || '0') > 0 ? 'flex' : 'none';
+        }
+    }
+});
+
+// Khôi phục số lượng giỏ hàng từ localStorage khi load trang
+document.addEventListener('DOMContentLoaded', function () {
+    var savedCount = localStorage.getItem('cartCount');
+    if (savedCount) {
+        var badge = document.getElementById('cart-count');
+        if (badge) {
+            badge.textContent = savedCount;
+            badge.style.display = parseInt(savedCount) > 0 ? 'flex' : 'none';
+        }
+    }
+});

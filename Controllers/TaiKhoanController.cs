@@ -107,9 +107,43 @@ namespace knjewelry.Controllers
         public async Task<IActionResult> DangKy(DangKyViewModel model)
         {
             if (!ModelState.IsValid) return View(model);
+
             try
             {
-                await _taiKhoanService.DangKyAsync(model);
+                // 1. Đăng ký tài khoản
+                var user = await _taiKhoanService.DangKyAsync(model);
+
+                // 2. Đăng nhập tự động sau khi đăng ký thành công
+                var loggedInUser = await _taiKhoanService.DangNhapAsync(model.TenDangNhap, model.MatKhau);
+
+                if (loggedInUser != null)
+                {
+                    // Lưu session
+                    var hoTen = !string.IsNullOrWhiteSpace(loggedInUser.ho_ten)
+                        ? loggedInUser.ho_ten
+                        : loggedInUser.ten_dang_nhap;
+
+                    HttpContext.Session.SetInt32("UserId", loggedInUser.id_nguoi_dung);
+                    HttpContext.Session.SetString("UserName", hoTen);
+                    HttpContext.Session.SetString("UserRole", loggedInUser.vai_tro ?? "khach_hang");
+
+                    // Cookie remember me
+                    Response.Cookies.Append("KN_Remember", loggedInUser.id_nguoi_dung.ToString(), new CookieOptions
+                    {
+                        Path = "/",
+                        Expires = DateTimeOffset.UtcNow.AddDays(7),
+                        HttpOnly = true,
+                        SameSite = SameSiteMode.Lax,
+                        IsEssential = true
+                    });
+
+                    TempData["Success"] = "Đăng ký thành công! Chào mừng bạn đến với K&N Jewelry!";
+
+                    // Chuyển về trang chủ
+                    return RedirectToAction("Index", "Home");
+                }
+
+                // Nếu đăng nhập tự động thất bại, chuyển đến trang đăng nhập
                 TempData["Success"] = "Đăng ký thành công! Vui lòng đăng nhập.";
                 return RedirectToAction(nameof(DangNhap));
             }

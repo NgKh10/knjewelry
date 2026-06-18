@@ -88,12 +88,18 @@
                 <div class="row">
                     @foreach (var product in Model.DanhSachSanPham)
                     {
+                        var hasVariants = product.BienThes != null && product.BienThes.Any();
+
                         <div class="col-lg-4 col-md-6 item-entry mb-4">
                             <a href="/SanPham/Detail/@product.id_san_pham" class="product-item d-block">
-                                <img src="@(product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "images/default.png")" alt="@product.ten_sp" class="img-fluid">
+                                <img src="@(product.HinhAnhs?.FirstOrDefault()?.duong_dan ?? "/images/default.jpg")" alt="@product.ten_sp" class="img-fluid">
                                 @if (product.gia_khuyen_mai.HasValue)
                                 {
                                     <span class="sale-badge">-@((int)((product.gia - product.gia_khuyen_mai.Value) / product.gia * 100))%</span>
+                                }
+                                @if (hasVariants)
+                                {
+                                    <span class="variant-badge"><i class='bx bx-select'></i> Nhiều phân loại</span>
                                 }
                             </a>
                             <h3 class="item-title mt-2"><a href="/SanPham/Detail/@product.id_san_pham">@product.ten_sp</a></h3>
@@ -108,9 +114,25 @@
                                     <span class="current-price">@string.Format("{0:N0}₫", product.gia)</span>
                                 }
                             </div>
-                            <button class="btn-add-cart mt-2 btn btn-sm btn-outline-dark w-100" data-id="@product.id_san_pham">
-                                <i class='bx bx-cart-add'></i> Thêm vào giỏ 
-                            </button>
+
+                            <!-- ====== NÚT THÊM VÀO GIỎ ====== -->
+                            @if (hasVariants)
+                            {
+                                // Có biến thể → Chuyển đến trang chi tiết để chọn
+                                <a href="/SanPham/Detail/@product.id_san_pham" class="btn btn-outline-dark btn-sm w-100 mt-2">
+                                    <i class='bx bx-select'></i> Chọn phân loại
+                                </a>
+                            }
+                            else
+                            {
+                                // Không có biến thể → Thêm trực tiếp
+                                <button class="btn-add-cart btn btn-sm btn-outline-dark w-100 mt-2"
+                                        data-id="@product.id_san_pham"
+                                        data-name="@product.ten_sp">
+                                    <i class='bx bx-cart-add'></i> Thêm vào giỏ
+                                </button>
+                            }
+                            <!-- ====== KẾT THÚC ====== -->
                         </div>
                     }
                 </div>

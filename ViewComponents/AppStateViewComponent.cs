@@ -19,7 +19,7 @@ namespace knjewelry.ViewComponents
 
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            // ── Trạng thái 1: Tài khoản ──────────────────────────────────
+            // ── Trạng thái 1: Tài khoản 
             // Nếu session trống nhưng có cookie "remember" → tự restore session
             if (!HttpContext.Session.GetInt32("UserId").HasValue)
             {
@@ -40,7 +40,7 @@ namespace knjewelry.ViewComponents
                 }
             }
 
-            // ── Trạng thái 2: Giỏ hàng ──────────────────────────────────
+            // ── Trạng thái 2: Giỏ hàng 
             // Dữ liệu để JavaScript biết session cart hiện tại
             var sessionCartCount = HttpContext.Session.GetInt32("CartCount") ?? 0;
             var isLoggedIn = HttpContext.Session.GetInt32("UserId").HasValue;

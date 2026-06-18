@@ -47,6 +47,7 @@ namespace knjewelry.Controllers
                                         string sort = null)
         {
             int pageSize = 12;
+            //khởi tạo query 
             var query = _context.SanPhams
                 .Include(p => p.LoaiSanPham)
                 .Include(p => p.ChatLieu)
@@ -160,6 +161,20 @@ namespace knjewelry.Controllers
             ViewBag.CartCount = await GetCartCount();
 
             return View(product);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> KiemTraBienThe(int id)
+        {
+            var product = await _context.SanPhams
+                .Include(p => p.BienThes)
+                .FirstOrDefaultAsync(p => p.id_san_pham == id);
+
+            if (product == null)
+                return Json(new { hasVariant = false });
+
+            var hasVariant = product.BienThes != null && product.BienThes.Any();
+            return Json(new { hasVariant = hasVariant });
         }
     }
 }

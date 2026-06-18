@@ -19,11 +19,13 @@ namespace knjewelry.Services
             return await _taiKhoanRepository.LoginAsync(tenDangNhap, matKhau);
         }
 
-        public async Task<bool> DangKyAsync(DangKyViewModel model)
+        public async Task<NguoiDung> DangKyAsync(DangKyViewModel model)
         {
+            // Kiểm tra tên đăng nhập đã tồn tại
             if (await _taiKhoanRepository.UsernameExistsAsync(model.TenDangNhap))
                 throw new Exception("Tên đăng nhập đã tồn tại");
 
+            // Kiểm tra email đã tồn tại
             if (await _taiKhoanRepository.EmailExistsAsync(model.Email))
                 throw new Exception("Email đã được sử dụng");
 
@@ -33,8 +35,8 @@ namespace knjewelry.Services
                 email = model.Email,
                 ten_dang_nhap = model.TenDangNhap,
                 mat_khau = model.MatKhau,
-                so_dien_thoai = model.SoDienThoai,
-                dia_chi = model.DiaChi,
+                so_dien_thoai = model.SoDienThoai ?? "",
+                dia_chi = model.DiaChi ?? "",
                 vai_tro = "khach_hang",
                 trang_thai = 1,
                 ngay_tao = DateTime.Now
@@ -42,7 +44,8 @@ namespace knjewelry.Services
 
             await _taiKhoanRepository.AddAsync(user);
             await _taiKhoanRepository.SaveChangesAsync();
-            return true;
+
+            return user;  // Trả về user vừa tạo để đăng nhập tự động
         }
 
         public async Task<NguoiDung> GetThongTinAsync(int userId)

@@ -76,3 +76,34 @@
     color: #ffc107;
     font-size: 12px;
 }
+
+/* Badge cho sản phẩm có biến thể */
+.variant-badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(72, 57, 37, 0.85);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    z-index: 2;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #dc3545;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    z-index: 2;
+}

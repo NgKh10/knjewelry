@@ -13,9 +13,7 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// =====================================================
 // MVC + API Controllers (gộp cả 2 phần trong 1 app)
-// =====================================================
 builder.Services.AddControllersWithViews()
     .AddJsonOptions(options =>
     {
@@ -26,9 +24,7 @@ builder.Services.AddControllersWithViews()
 
 builder.Services.AddEndpointsApiExplorer();
 
-// =====================================================
 // Session (dùng cho phần giao diện User - MVC)
-// =====================================================
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
@@ -43,9 +39,7 @@ builder.Services.AddRouting(options =>
     options.LowercaseUrls = true;
 });
 
-// =====================================================
 // CORS (cần cho React admin gọi API)
-// =====================================================
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
@@ -56,39 +50,29 @@ builder.Services.AddCors(options =>
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")!;
 
-// =====================================================
 // DbContext - phần User MVC (TrangSucBacContext)
-// =====================================================
 builder.Services.AddDbContext<TrangSucBacContext>(options =>
     options.UseSqlServer(connectionString));
 
-// =====================================================
 // DbContext - phần API Jewelry (AppDbContext)
-// =====================================================
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// =====================================================
 // Repositories - phần User MVC
-// =====================================================
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<knjewelry.Repository.ISanPhamRepository, knjewelry.Repository.SanPhamRepository>();
 builder.Services.AddScoped<knjewelry.Repository.IDonHangRepository, knjewelry.Repository.DonHangRepository>();
 builder.Services.AddScoped<knjewelry.Repository.ITaiKhoanRepository, knjewelry.Repository.TaiKhoanRepository>();
 builder.Services.AddScoped<knjewelry.Repository.IGioHangRepository, knjewelry.Repository.GioHangRepository>();
 
-// =====================================================
 // Services - phần User MVC
-// =====================================================
 builder.Services.AddScoped<knjewelry.Services.ISanPhamService, knjewelry.Services.SanPhamService>();
 builder.Services.AddScoped<knjewelry.Services.IGioHangService, knjewelry.Services.GioHangService>();
 builder.Services.AddScoped<knjewelry.Services.IDonHangService, knjewelry.Services.DonHangService>();
 builder.Services.AddScoped<knjewelry.Services.ITaiKhoanService, knjewelry.Services.TaiKhoanService>();
 
-// =====================================================
 // Repositories - phần API Jewelry
 // Dùng fully-qualified name để tránh xung đột với knjewelry.Repository
-// =====================================================
 builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 builder.Services.AddScoped<Jewelry.Repository.EFCore.ISanPhamRepository, Jewelry.Repository.EFCore.SanPhamRepository>();
 builder.Services.AddScoped<ILoaiSanPhamRepository, LoaiSanPhamRepository>();
@@ -114,15 +98,11 @@ builder.Services.AddScoped<Jewelry.Services.IHinhAnhSanPhamService, Jewelry.Serv
 builder.Services.AddScoped<Jewelry.Services.IMaGiamGiaService, Jewelry.Services.MaGiamGiaService>();
 builder.Services.AddScoped<Jewelry.Services.Authen.INguoiDungService, Jewelry.Services.Authen.NguoiDungService>();
 
-// =====================================================
 // Helpers (dùng cho API - tạo JWT token, xử lý file)
-// =====================================================
 builder.Services.AddScoped<TokenHelper>();
 builder.Services.AddScoped<FileHelper>();
 
-// =====================================================
 // JWT Authentication (dùng cho React admin)
-// =====================================================
 var jwtKey = builder.Configuration["Jwt:SecretKey"]
     ?? "YourSecretKeyForAuthenticationShouldBeLongEnough";
 var keyBytes = Encoding.ASCII.GetBytes(jwtKey);
@@ -153,9 +133,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 var app = builder.Build();
 
-// =====================================================
 // Configure HTTP Pipeline
-// =====================================================
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
@@ -167,11 +145,11 @@ app.MapFallbackToFile("/admin/{**path}", "admin/index.html");
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAll");
-app.UseStaticFiles();
+app.UseStaticFiles(); //cho phép truy cập wwwroot
 app.UseRouting();
-app.UseSession();
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseSession(); // cho phép dùng session
+app.UseAuthentication(); 
+app.UseAuthorization(); // phân quyền 
 
 // MVC routes (phần giao diện User)
 app.MapControllerRoute(
